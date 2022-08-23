@@ -21,7 +21,7 @@ from fabrictestbed_extensions.fablib.fablib import FablibManager as fablib_manag
 BLAZAR_TIME_FORMAT = '%Y-%m-%d %H:%M'
 
 
-def create_chameleon_fabnet_stitch(name='fabric_chameleon_stitch', add_chameleon_router=False, os_username=None, os_password=None, os_project_id=None):
+def create_chameleon_fabnetv4_network(name='fabric_chameleon_stitch', add_chameleon_router=False, os_username=None, os_password=None, os_project_id=None):
     import os
 
     if os_project_id != None:
@@ -130,6 +130,7 @@ def create_chameleon_stitched_network(name=None, stitch_provider='fabric'):
 
     # Build list of reservations (in this case there is only one reservation)
     reservation_list = []
+    print(f"FABRIC network reservation: name: {network_name}, stitch_provider: {stitch_provider}")
     reservation_list.append(
             {
                 "resource_type": "network",
@@ -199,7 +200,8 @@ def create_fabric_slice(fablib=None, fabric_slice_name=None, vlan=None):
         #Create a slice
         fabric_slice = fablib.new_slice(name=fabric_slice_name)
 
-        #print(f"create_fabric_slice:  name {fabric_slice_name} vlan: {vlan}")
+        print(f"create_fabric_slice:  name {fabric_slice_name} vlan: {vlan}")
+
         fabric_facility_port = fabric_slice.add_facility_port(name='Chameleon-StarLight', site='STAR', vlan=str(vlan))
         fabric_facility_port_iface = fabric_facility_port.get_interfaces()[0]
 
@@ -207,6 +209,8 @@ def create_fabric_slice(fablib=None, fabric_slice_name=None, vlan=None):
 
         #Submit the Request
         fabric_slice.submit(progress=False)
+        
+        
     except Exception as e:
         print(f"Exception: {e}")
         traceback.print_exc()
