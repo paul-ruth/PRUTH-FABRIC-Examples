@@ -248,6 +248,7 @@ def execute(command, retry=3, retry_interval=10, username=None, ip_addr=None, pr
             client = paramiko.SSHClient()
             client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
+            
             key = get_paramiko_key(private_key_file=private_key_file, private_key_passphrase=private_key_passphrase)
             client.connect(ip_addr,username=username,pkey = key)
 

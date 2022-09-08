@@ -21,7 +21,7 @@ from fabrictestbed_extensions.fablib.fablib import FablibManager as fablib_manag
 BLAZAR_TIME_FORMAT = '%Y-%m-%d %H:%M'
 
 
-def create_chameleon_fabnetv4_network(name='fabric_chameleon_stitch', add_chameleon_router=False, os_username=None, os_password=None, os_project_id=None):
+def create_chameleon_fabnetv4_network(name='fabric_chameleon_stitch', add_chameleon_router=False, os_username=None, os_password=None, os_project_id=None, lease=None):
     import os
 
     if os_project_id != None:
@@ -35,7 +35,11 @@ def create_chameleon_fabnetv4_network(name='fabric_chameleon_stitch', add_chamel
     
     print(f"Creating Chameleon lease and network {name} ...") 
 
-    chameleon_lease = create_chameleon_stitched_network(name=name, stitch_provider='fabric') 
+    if lease == None:
+        chameleon_lease = create_chameleon_stitched_network(name=name, stitch_provider='fabric') 
+    else:
+        chameleon_lease = lease
+    
     print(f"Chameleon lease: {chameleon_lease['id']}") 
     
     chameleon_network = get_chameleon_network(chameleon_network_name=name, lease=chameleon_lease)

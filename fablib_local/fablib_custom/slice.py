@@ -157,6 +157,75 @@ class Slice_Custom():
     # fablib.Slice.get_slice_id()
     def get_slice_id(self):
         return self.slice_id
+    
+
+    def submit(self, wait=True, wait_timeout=600, wait_interval=10, progress=True, wait_jupyter="text"):
+        """
+        Submits a slice request to FABRIC.
+
+        Can be blocking or non-blocking.
+
+        Blocking calls can, optionally,configure timeouts and intervals.
+
+        Blocking calls can, optionally, print progress info.
+
+
+        :param wait: indicator for whether to wait for the slice's resources to be active
+        :type wait: bool
+        :param wait_timeout: how many seconds to wait on the slice resources
+        :type wait_timeout: int
+        :param wait_interval: how often to check on the slice resources
+        :type wait_interval: int
+        :param progress: indicator for whether to show progress while waiting
+        :type progress: bool
+        :param wait_jupyter: Special wait for jupyter notebooks.
+        :type wait_jupyter: String
+        :return: slice_id
+        :rtype: String
+        """
+        from fabrictestbed_extensions.fablib.fablib import fablib
+        
+        if not wait:
+            progress = False
+
+        # Generate Slice Graph
+        slice_graph = self.get_fim_topology().serialize()
+
+        # Request slice from Orchestrator
+        return_status, slice_reservations = self.fablib_manager.get_slice_manager().create(slice_name=self.slice_name,
+                                                                slice_graph=slice_graph,
+                                                                ssh_key=self.get_slice_public_key())
+        if return_status != Status.OK:
+            raise Exception("Failed to submit slice: {}, {}".format(return_status, slice_reservations))
+
+        logging.debug(f'slice_reservations: {slice_reservations}')
+        logging.debug(f"slice_id: {slice_reservations[0].slice_id}")
+        self.slice_id = slice_reservations[0].slice_id
+
+        time.sleep(1)
+        #self.update_slice()
+        self.update()
+
+        if progress and wait_jupyter == 'text' and self.fablib_manager.isJupyterNotebook():
+            self.wait_jupyter(timeout=wait_timeout, interval=wait_interval)
+            return self.slice_id
+
+        if wait:
+            self.wait_ssh(timeout=wait_timeout,interval=wait_interval,progress=progress)
+
+            if progress:
+                print("Running post boot config ... ",end="")
+
+            self.update()
+            #self.test_ssh()
+            self.post_boot_config()
+
+        if progress:
+            print("Done! from Local Submit")
+
+
+        return self.slice_id
+
 
 
 
@@ -181,11 +250,13 @@ class Slice_Custom():
 
             #pre-get the strings for quicker screen update
             # slice_string=str(self)
+            
+            print(f"sm_slice: {self.sm_slice}")
 
-            table = [["Slice Name", self.sm_slice.slice_name],
+            table = [["Slice Name", self.sm_slice.name],
                  ["Slice ID", self.sm_slice.slice_id],
-                 ["Slice State", self.sm_slice.slice_state],
-                 ["Lease End (UTC)", self.sm_slice.lease_end]
+                 ["Slice State", self.sm_slice.state],
+                 ["Lease End (UTC)", self.sm_slice.lease_end_time]
                 ]
 
             time_string = f"{time.time() - start:.0f} sec"

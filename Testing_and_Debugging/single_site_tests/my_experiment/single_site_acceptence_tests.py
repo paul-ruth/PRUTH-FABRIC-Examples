@@ -15,7 +15,7 @@ import sys
 module_path = os.path.abspath(os.path.join(f"{os.environ['HOME']}/work/fablib_local"))
 if module_path not in sys.path:
     sys.path.append(module_path)
-from fablib_custom.fablib_custom import *
+#from fablib_custom.fablib_custom import *
 #from performance_testing.iperf3 import *
 
 # Define Experiment
@@ -28,6 +28,7 @@ class MyExperiment():
     
     def __init__(self, name, output_type='HTML', node_tools="node_tools"):
         self.fablib = fablib_manager(output_type=output_type)
+        #self.fablib = fablib_manager()
         self.slice = None
         self.slice_id = None
         self.node_tools=node_tools
@@ -38,6 +39,11 @@ class MyExperiment():
 
         # Used for cleanup
         self.slice_names = []
+        
+        
+    def wait_jupyter(self):
+        self.slice = self.fablib.get_slice(name=self.slice_name)
+        self.slice.wait_jupyter()
         
     def load(self, name):
         try:
@@ -63,9 +69,9 @@ class MyExperiment():
                                   ram=8,
                                   disk=10,
                                   image='default_rocky_8'): 
-        slice_name = f'test1_{name}_{self.timestamp}'
+        self.slice_name = f'test1_{name}_{self.timestamp}'
         
-        slice = self.fablib.new_slice(name=slice_name)
+        slice = self.fablib.new_slice(name=self.slice_name)
 
         if hosts == None:
             for i in range(count):
@@ -90,7 +96,7 @@ class MyExperiment():
                                    disk=disk, 
                                    image=image)
                 
-        self.slice_names.append(slice_name)
+        self.slice_names.append(self.slice_name)
         
         slice_id = slice.submit()
         

@@ -28,20 +28,24 @@ default_chameleon_node_type="compute_cascadelake_r"
 default_chameleon_server_count=1
 default_chameleon_key_name='my_chameleon_key'
 
+
+
 def create_chameleon_servers(name='chameleon_servers', 
                               count=default_chameleon_server_count, 
                               node_type=default_chameleon_node_type,
                               image_name=default_chameleon_image_name,
                               key_name=default_chameleon_key_name,
-                              network_name=None):
+                              network_name=None,
+                              lease=None):
     
-    print(f"Creating lease {name}")
-    lease = create_chameleon_server_lease(name=name, 
-                                  count=count, 
-                                  node_type=node_type,
-                                  image_name=image_name,
-                                  key_name=key_name,
-                                  network_name=network_name)
+    if lease == None:
+        print(f"Creating lease {name}")
+        lease = create_chameleon_server_lease(name=name, 
+                                      count=count, 
+                                      node_type=node_type,
+                                      image_name=image_name,
+                                      key_name=key_name,
+                                      network_name=network_name)
           
     compute_reservation_id = [reservation for reservation in lease['reservations'] if reservation['resource_type'] == 'physical:host'][0]['id']
     print(f"Compute reservation_id {compute_reservation_id}")
@@ -60,9 +64,13 @@ def create_chameleon_servers(name='chameleon_servers',
     print(f'Waiting for server fixed IPs .', end='')
     while True:
         try:
+            if count == 1:
+                server_id = chi.server.get_server_id(f'{name}')
+            else:
+                server_id = chi.server.get_server_id(f'{name}-1')
+
             #server = chi.server.get_server(f'{name}-1')
             #try to get the fixed ip. retry on failure
-            server_id = chi.server.get_server_id(f'{name}-1')
             chi.server.get_server(server_id).interface_list()[0].to_dict()["fixed_ips"][0]["ip_address"]
             print('done!')
             break;
