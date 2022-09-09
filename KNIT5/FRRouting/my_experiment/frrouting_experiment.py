@@ -170,6 +170,86 @@ class FRRouting_Experiment():
         
         return router_link
 
+    def add_chameleon_local_network(self, name=None, router=None, subnet=None, 
+                                       router_ip=None, node_count=0):
+         # Organize the subnets and IPs
+        if subnet:
+            local_network_subnet = subnet
+        else:
+            local_network_subnet = self.get_available_local_subnet() #IPv4Network("192.168.101.0/24")
+            
+        local_network_available_ips = list(local_network_subnet)[1:]
+        
+        if not router_ip:
+            router_ip = local_network_available_ips.pop(0)
+            
+        
+        # Create Chameleon leases
+        server_lease = create_chameleon_server_lease(name=f"{name}_servers") #, node_type='compute_skylake')
+        fabric_net_lease = create_chameleon_stitched_network_lease(name=f"{name}_stitched_network")
+        
+        #create_chameleon_fabnetv4_network(name=stitch_name, lease=fabric_net_lease)
+        
+        
+        ifaces = []
+        
+        router = self.slice.get_node(name=router.get_name())
+        router_iface = router.add_component(model='NIC_Basic', name=f'{name}').get_interfaces()[0]
+        
+        ifaces.append(router_iface)
+            
+        site = router.get_site()
+        
+        #Create Chameleon network
+        lease = create_chameleon_stitched_network(name=None, stitch_provider='fabric')
+        chameleon_network = get_chameleon_network(chameleon_network_name=None, lease=None, retry=25, retry_interval=5)
+        stitch_vlan = get_chameleon_network_vlan(chameleon_network=None)
+        chameleon_network_id = get_chameleon_network_id(chameleon_network=None):
+        
+        chameleon_subnet = chi.network.create_subnet(chameleon_subnet_name, chameleon_network_id, 
+                                             cidr=str(subnet),
+                                             allocation_pool_start=chameleon_allocation_pool_start,
+                                             allocation_pool_end=chameleon_allocation_pool_end,
+                                             gateway_ip=chameleon_gateway_ip)
+        print(json.dumps(chameleon_subnet, indent=2))
+        
+        chameleon_router = chi.network.create_router(chameleon_router_name, gw_network_name='public')
+        print(json.dumps(chameleon_router, indent=2))
+        
+        chi.network.add_subnet_to_router_by_name(chameleon_router_name, chameleon_subnet_name)
+        
+        fabric_facility_port = fabric_slice.add_facility_port(name='Chameleon-StarLight', site='STAR', vlan=str(network_vlan))
+        fabric_facility_port_iface = fabric_facility_port.get_interfaces()[0]
+
+        fabric_net = fabric_slice.add_l2network(name=f'net_facility_port', interfaces=[fabric_node_iface,fabric_facility_port_iface]) 
+    
+        
+        
+        nodes = []
+        #for i in range(node_count):
+        #    node_name=f'{name}{i+1}'
+        #    node = self.slice.add_node(name=node_name, site=site, cores=cores, ram=ram, disk=disk, image=image)
+        #    node_iface = node.add_component(model='NIC_Basic', name=f'{name}').get_interfaces()[0]
+        #    ifaces.append(node_iface)
+        #    node_ip = local_network_available_ips.pop(0)
+        #    nodes.append({'name': node_name, 'ip': str(node_ip)})
+        
+        router_local_network = self.slice.add_l2network(name=name, interfaces=ifaces)
+ 
+        local_network_info = {  'name': name,
+                                'router_site': site,
+                                'node_site': 'Chameleon@UC',                                
+                                'subnet': str(local_network_subnet),
+                                'router': {'name': router.get_name(), 'ip': str(router_ip) },
+                                'nodes' : nodes 
+                                }
+        
+        self.local_networks.append(local_network_info)
+        
+        self.save_config()
+            
+        
+    
     def add_local_network(self, name=None, 
                                        router=None, 
                                        subnet=None, 
@@ -206,11 +286,13 @@ class FRRouting_Experiment():
         
         router_local_network = self.slice.add_l2network(name=name, interfaces=ifaces)
  
-        local_network_info = {'name': name,
-                            'subnet': str(local_network_subnet),
-                            'router': {'name': router.get_name(), 'ip': str(router_ip) },
-                            'nodes' : nodes 
-                            }
+        local_network_info = {  'name': name,
+                                'router_site': site,
+                                'node_site': site,
+                                'subnet': str(local_network_subnet),
+                                'router': {'name': router.get_name(), 'ip': str(router_ip) },
+                                'nodes' : nodes 
+                                }
         
         self.local_networks.append(local_network_info)
         

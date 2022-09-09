@@ -21,7 +21,12 @@ from fabrictestbed_extensions.fablib.fablib import FablibManager as fablib_manag
 BLAZAR_TIME_FORMAT = '%Y-%m-%d %H:%M'
 
 
-def create_chameleon_fabnetv4_network(name='fabric_chameleon_stitch', add_chameleon_router=False, os_username=None, os_password=None, os_project_id=None, lease=None):
+def create_chameleon_fabnetv4_network(name='fabric_chameleon_stitch', 
+                                      add_chameleon_router=False, 
+                                      os_username=None, 
+                                      os_password=None, 
+                                      os_project_id=None, 
+                                      lease=None):
     import os
 
     if os_project_id != None:
@@ -75,7 +80,11 @@ def create_chameleon_fabnetv4_network(name='fabric_chameleon_stitch', add_chamel
     
     print(f"Chameleon FABnet stitch is ready")
 
-def delete_chameleon_fabnet_stitch(name='fabric_chameleon_stitch', delete_chameleon_router=False, os_username=None, os_password=None, os_project_id=None):
+def delete_chameleon_fabnet_stitch(name='fabric_chameleon_stitch', 
+                                   delete_chameleon_router=False, 
+                                   os_username=None, 
+                                   os_password=None, 
+                                   os_project_id=None):
     import os
     
     if os_project_id != None:
