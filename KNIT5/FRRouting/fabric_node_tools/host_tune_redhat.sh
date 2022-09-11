@@ -23,9 +23,15 @@ EOL
 sysctl --system
 
 # Turn on jumbo frames  8900??
-ip link set dev $dev mtu 9000
+#ip link set dev $dev mtu 9000
 
-tc qdisc add dev $dev root fq maxrate 30gbit
+for dev in `basename -a /sys/class/net/*`; do
+    # Turn on jumbo frames
+    ip link set dev $dev mtu 9000
+done
+
+
+#tc qdisc add dev $dev root fq maxrate 30gbit
 
 # increase TCP max buffer size setable using setsockopt()
 #net.core.rmem_max = 536870912

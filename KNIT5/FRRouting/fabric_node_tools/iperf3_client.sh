@@ -18,6 +18,7 @@ for i in $(seq 1 $processes); do
     echo $i; 
     port=$((start_port + i)) 
 
+    echo iperf3 -c $target_ip -J $@ -p $port --logfile ${file_name}_${port}_output
     iperf3 -c $target_ip -J $@ -p $port --logfile ${file_name}_${port}_output &
     pids[${i}]=$!
     echo pids[${i}]

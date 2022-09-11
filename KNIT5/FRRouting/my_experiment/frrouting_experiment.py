@@ -13,6 +13,13 @@ import sys
 #if module_path not in sys.path:
 #    sys.path.append(module_path)
 
+from chameleon_utils.chameleon_stitching import *
+from chameleon_utils.chameleon_servers import *
+from fablib_common_utils.utils import *
+
+from concurrent.futures import ThreadPoolExecutor
+
+
 #from fablib_local_imports.common_notebook_utils.utils import *
 #from fablib_local_imports.common_notebook_utils.fablib_plugin_methods import *
 #from fablib_local_imports.common_notebook_utils.fabric_fabnet_slice import *
@@ -39,6 +46,8 @@ class FRRouting_Experiment():
     router_links = []
     local_networks = []
     
+    nodes = []
+    
     def __init__(self, 
                  name,
                  output_type='HTML',
@@ -54,6 +63,8 @@ class FRRouting_Experiment():
         self.router_links = []
         self.local_networks = []
         
+        self.nodes = []
+        
         # Default IP pools: TODO: allow custom IP pools
         self.all_cidr = '192.168.0.0/16'
         self.all_ip = '192.168.0.0'
@@ -67,6 +78,11 @@ class FRRouting_Experiment():
         self.local_subnets = []
         for i in range(1,33):
             self.local_subnets.append(IPv4Network(f"192.168.{i}.0/24"))
+            
+        self.thread_pool_executor = ThreadPoolExecutor(10)
+            
+    def get_ssh_thread_pool_executor(self):
+        return self.thread_pool_executor
 
     def list_resources(self):
         self.fablib.get_resources().list()                
@@ -93,12 +109,15 @@ class FRRouting_Experiment():
         self.router_names = config['router_names']
         self.router_links = config['router_links']
         self.local_networks = config['local_networks']
+        self.nodes = config['nodes']
         
         print(f"self.slice_id: {self.slice_id}")
         print(f"self.slice_name: {self.slice_name}")
         print(f"self.router_names: {self.router_names}")
         print(f"self.router_links: {self.router_links}")
         print(f"self.local_networks: {self.local_networks}")
+        print(f"self.nodes: {self.nodes}")
+
         
         self.slice = self.fablib.get_slice(name=self.slice_name)
         print(f"{self.slice}")
@@ -185,11 +204,10 @@ class FRRouting_Experiment():
             
         
         # Create Chameleon leases
-        server_lease = create_chameleon_server_lease(name=f"{name}_servers") #, node_type='compute_skylake')
-        fabric_net_lease = create_chameleon_stitched_network_lease(name=f"{name}_stitched_network")
-        
-        #create_chameleon_fabnetv4_network(name=stitch_name, lease=fabric_net_lease)
-        
+        time_stamp = datetime.now(tz=tz.tzutc()).strftime('%Y%m%d%H%M')
+
+        network_lease_name = f"pruth_{time_stamp}_{name}_stitched_network"
+        server_lease_name = f"pruth_{time_stamp}_{name}_stitched_servers"
         
         ifaces = []
         
@@ -201,41 +219,86 @@ class FRRouting_Experiment():
         site = router.get_site()
         
         #Create Chameleon network
-        lease = create_chameleon_stitched_network(name=None, stitch_provider='fabric')
-        chameleon_network = get_chameleon_network(chameleon_network_name=None, lease=None, retry=25, retry_interval=5)
-        stitch_vlan = get_chameleon_network_vlan(chameleon_network=None)
-        chameleon_network_id = get_chameleon_network_id(chameleon_network=None):
+        fabric_net_lease = create_chameleon_stitched_network(name=network_lease_name)
         
-        chameleon_subnet = chi.network.create_subnet(chameleon_subnet_name, chameleon_network_id, 
-                                             cidr=str(subnet),
-                                             allocation_pool_start=chameleon_allocation_pool_start,
-                                             allocation_pool_end=chameleon_allocation_pool_end,
-                                             gateway_ip=chameleon_gateway_ip)
-        print(json.dumps(chameleon_subnet, indent=2))
+        chameleon_network = get_chameleon_network(chameleon_network_name=network_lease_name, lease=fabric_net_lease)
+        stitch_vlan = get_chameleon_network_vlan(chameleon_network=chameleon_network)
+        chameleon_network_id = get_chameleon_network_id(chameleon_network=chameleon_network)
         
-        chameleon_router = chi.network.create_router(chameleon_router_name, gw_network_name='public')
-        print(json.dumps(chameleon_router, indent=2))
+        print(f"network_lease_name: {network_lease_name}")
+        print(f"stitch_vlan: {stitch_vlan}")
+        print(f"chameleon_network_id: {chameleon_network_id}")
         
-        chi.network.add_subnet_to_router_by_name(chameleon_router_name, chameleon_subnet_name)
         
-        fabric_facility_port = fabric_slice.add_facility_port(name='Chameleon-StarLight', site='STAR', vlan=str(network_vlan))
+        #chameleon_server_name = network_lease_name
+        chameleon_network_name = network_lease_name
+        chameleon_subnet_name = network_lease_name
+        chameleon_router_name = network_lease_name
+        
+        #Network Config
+        #subnet = IPv4Network("192.168.100.0/24")
+        
+        chameleon_gateway_ip=local_network_available_ips[10]
+        router_ip=local_network_available_ips[11]
+        chameleon_allocation_pool_start=local_network_available_ips[12]
+        chameleon_allocation_pool_end=local_network_available_ips[43]    
+        local_network_available_ips = local_network_available_ips[44:] 
+        
+        print(f"chameleon_gateway_ip: {chameleon_gateway_ip}")
+        print(f"router_ip: {router_ip}")
+        print(f"chameleon_allocation_pool_start: {chameleon_allocation_pool_start}")
+        print(f"chameleon_allocation_pool_end: {chameleon_allocation_pool_end}")
+                
+        configure_chameleon_network(chameleon_network_name=network_lease_name,
+                                chameleon_network=chameleon_network, 
+                                subnet=local_network_subnet, 
+                                chameleon_allocation_pool_start=chameleon_allocation_pool_start, 
+                                chameleon_allocation_pool_end=chameleon_allocation_pool_end,
+                                chameleon_gateway_ip=chameleon_gateway_ip,
+                                fabric_gateway=router_ip,
+                                add_chameleon_router=True,
+                                fabric_route_subnet="192.168.0.0/16")    
+        
+        
+        fabric_facility_port = self.slice.add_facility_port(name='Chameleon-StarLight', site='STAR', vlan=str(stitch_vlan))
         fabric_facility_port_iface = fabric_facility_port.get_interfaces()[0]
 
-        fabric_net = fabric_slice.add_l2network(name=f'net_facility_port', interfaces=[fabric_node_iface,fabric_facility_port_iface]) 
+        fabric_net = self.slice.add_l2network(name=f'{name}', 
+                                              interfaces=[router_iface,fabric_facility_port_iface]) 
     
-        
-        
         nodes = []
-        #for i in range(node_count):
-        #    node_name=f'{name}{i+1}'
-        #    node = self.slice.add_node(name=node_name, site=site, cores=cores, ram=ram, disk=disk, image=image)
-        #    node_iface = node.add_component(model='NIC_Basic', name=f'{name}').get_interfaces()[0]
-        #    ifaces.append(node_iface)
-        #    node_ip = local_network_available_ips.pop(0)
-        #    nodes.append({'name': node_name, 'ip': str(node_ip)})
-        
-        router_local_network = self.slice.add_l2network(name=name, interfaces=ifaces)
- 
+        if node_count > 0:
+            server_lease = create_chameleon_server_lease(name=server_lease_name, count=node_count) 
+            
+            for i in range(1,node_count+1):
+                node_name = f"{server_lease_name}{i}"
+                create_chameleon_servers(name=node_name, 
+                                  count=1, 
+                                  #node_type=default_chameleon_node_type,
+                                  #image_name=default_chameleon_image_name,
+                                  key_name='my_chameleon_key',
+                                  network_name=chameleon_network_name,
+                                  lease=server_lease)
+                
+                server_id = chi.server.get_server_id(node_name)
+                fixed_ip = chi.server.get_server(server_id).interface_list()[0].to_dict()["fixed_ips"][0]["ip_address"]
+                
+                floating_ip=get_free_floating_ip()
+                floating_ip_address = floating_ip['floating_ip_address']
+    
+                associate_floating_ip(server_id, floating_ip_address=floating_ip_address)
+                
+                self.nodes.append( { 'name': node_name,
+                                     'facility': 'Chameleon',
+                                     'site': 'CHI@UC',
+                                     'management_ip': str(floating_ip_address),
+                                     'data_plane_ip': str(fixed_ip),
+                                   } 
+                                 )
+                
+                
+
+         
         local_network_info = {  'name': name,
                                 'router_site': site,
                                 'node_site': 'Chameleon@UC',                                
@@ -283,6 +346,14 @@ class FRRouting_Experiment():
             ifaces.append(node_iface)
             node_ip = local_network_available_ips.pop(0)
             nodes.append({'name': node_name, 'ip': str(node_ip)})
+            
+            self.nodes.append( { 'name': node_name,
+                                 'facility': 'FABRIC',
+                                 'site': site,
+                                 'management_ip': None,
+                                 'data_plane_ip': str(node_ip),
+                                   } 
+                                 )
         
         router_local_network = self.slice.add_l2network(name=name, interfaces=ifaces)
  
@@ -314,6 +385,8 @@ class FRRouting_Experiment():
     
     def configure_devs(self):
         
+        
+        
         # Configure router links
         for router_link in self.router_links:
             router_link_name = router_link['name']
@@ -335,6 +408,8 @@ class FRRouting_Experiment():
 
         # Configure local networks
         for local_network in self.local_networks:
+            
+            
             local_network_name = local_network['name']
             local_network_subnet = IPv4Network(local_network['subnet'])
             local_network_router = self.slice.get_node(local_network['router']['name'])
@@ -342,6 +417,9 @@ class FRRouting_Experiment():
             local_network_router_iface = local_network_router.get_interface(network_name=local_network_name)
 
             local_network_router_iface.ip_addr_add(addr=local_network_router_ip, subnet=local_network_subnet) 
+            
+            if local_network['node_site'] == 'Chameleon@UC':
+                continue
             
             for node_info in local_network['nodes']:
                 node_name=node_info['name']
@@ -361,6 +439,119 @@ class FRRouting_Experiment():
             routers.append(self.slice.get_node(router_name))
         return routers
     
+    
+    def upload_directory(self, node, directory, verbose=True):
+        if verbose:
+                print(json.dumps(node, indent=4))
+
+        if node['facility'] == 'FABRIC':
+
+            fnode = self.slice.get_node(node['name'])
+            rtn_val = fnode.upload_directory(directory,'.')
+            if verbose:
+                print(f"rtn_val: {rtn_val}")
+
+        elif node['facility'] == 'Chameleon':        
+            rtn_val = upload_directory(directory,'.', 
+                    username='cc', 
+                    ip_addr= node['management_ip'],
+                    private_key_file='/home/fabric/work/fablib_local_private_config/my_chameleon_key') 
+            if verbose:
+                print(f"rtn_val: {rtn_val}")
+        else:
+            if verbose:
+                print('Unkown facility')
+    
+    def upload_file(self, node, local_file=None, remote_file='.', verbose=True):
+        if verbose:
+                print(json.dumps(node, indent=4))
+
+        if node['facility'] == 'FABRIC':
+
+            fnode = self.slice.get_node(node['name'])
+            rtn_val = fnode.upload_file(local_file, remote_file)
+            if verbose:
+                print(f"rtn_val: {rtn_val}")
+
+        elif node['facility'] == 'Chameleon':        
+            rtn_val = upload_file(local_file, remote_file, 
+                    username='cc', 
+                    ip_addr= node['management_ip'],
+                    private_key_file='/home/fabric/work/fablib_local_private_config/my_chameleon_key') 
+            if verbose:
+                print(f"rtn_val: {rtn_val}")
+        else:
+            if verbose:
+                print('Unkown facility')
+                
+    def download_file(self, node, local_file=None, remote_file=None, verbose=True):
+        if verbose:
+                print(json.dumps(node, indent=4))
+
+        if node['facility'] == 'FABRIC':
+
+            fnode = self.slice.get_node(node['name'])
+            rtn_val = fnode.download_file(local_file, remote_file)
+            if verbose:
+                print(f"rtn_val: {rtn_val}")
+
+        elif node['facility'] == 'Chameleon':        
+            rtn_val = download_file(local_file, remote_file, 
+                    username='cc', 
+                    ip_addr= node['management_ip'],
+                    private_key_file='/home/fabric/work/fablib_local_private_config/my_chameleon_key') 
+            if verbose:
+                print(f"rtn_val: {rtn_val}")
+        else:
+            if verbose:
+                print('Unkown facility')
+        
+    
+    def upload_directory_to_all_edge_nodes(self, directory, verbose=True):
+        for node in self.nodes:
+            self.upload_directory(node,directory,verbose=verbose)
+    
+    
+    def execute(self, node, command, verbose=True):
+        stdout = None
+        stderr = None
+        
+        if verbose:
+                print(json.dumps(node, indent=4))
+
+        if node['facility'] == 'FABRIC':
+
+            fnode = self.slice.get_node(node['name'])
+            stdout, stderr = fnode.execute(command)
+            if verbose:
+                print(f"stdout: {stdout}")
+                print(f"stderr: {stderr}")
+
+        elif node['facility'] == 'Chameleon':        
+            stdout, stderr = execute(command, 
+                    username='cc', 
+                    ip_addr= node['management_ip'],
+                    private_key_file='/home/fabric/work/fablib_local_private_config/my_chameleon_key') 
+            if verbose:
+                print(f"stdout: {stdout}")
+                print(f"stderr: {stderr}")
+        else:
+            if verbose:
+                print('Unkown facility')
+                
+        return stdout,stderr
+
+    def execute_thread(self, node, command, verbose=True): 
+         return self.get_ssh_thread_pool_executor().submit(self.execute,
+                                                            node,
+                                                            command,
+                                                            verbose=False)
+                                                                                 
+    
+    def execute_on_all_edge_nodes(self, command, verbose=True):
+        for node in self.nodes:
+            self.execute(node,command,verbose=verbose)
+            
     def get_edge_nodes(self):
         edge_nodes = []
         
@@ -469,7 +660,8 @@ class FRRouting_Experiment():
                    'slice_name' :  self.slice_name,
                     'router_names' : self.router_names,
                     'router_links' : self.router_links,
-                    'local_networks' : self.local_networks }
+                    'local_networks' : self.local_networks,
+                     'nodes': self.nodes}
  
     
         file = open(f"{path}/{self.slice_name}_data.json", "w") 
@@ -483,7 +675,8 @@ class FRRouting_Experiment():
         pass
             
     def submit(self):
-        self.slice_id = self.slice.submit(wait=False)
+        #self.slice_id = self.slice.submit(wait=False)
+        self.slice_id = self.slice.submit()
         
         self.save_config()
         
@@ -501,4 +694,81 @@ class FRRouting_Experiment():
     def delete(self,name=None):
         fablib = fablib_manager()
         fablib.delete_slice(name)
+        
+        
+    def iperf3_run(self, source_node=None, target_node=None, w=None, P=1, t=60, i=10, O=None, verbose=False):
+        from IPython.display import clear_output
+        from concurrent.futures import ThreadPoolExecutor
+        
+        thread_pool_executor = ThreadPoolExecutor(10)
+        
+        target_ip=target_node['data_plane_ip']
+        
+        run_name=f"{source_node['name']}_{target_node['name']}_{datetime.now(tz=tz.tzutc()).strftime('%Y%m%d%H%M')}"
+
+        #target_thread = target_node.execute_thread(f'./fabric_node_tools/iperf3_server.sh {run_name} {P}')
+        
+        
+        command = f'./fabric_node_tools/iperf3_server.sh {run_name} {P}'
+        #command = f'iperf -J -t {t} -i {i} -c {target_ip} -P {P}'
+        
+        print(f"{command}")
+        
+        target_thread = self.execute_thread(target_node,command, verbose=False) 
+
+        # Make sure the target is running before the source starts
+        time.sleep(10)
+
+        net_name = f"{target_node['site']}_net"
+
+        retry = 3
+        while retry > 0:
+            command = f'./fabric_node_tools/iperf3_client.sh {run_name} {target_ip} {P} -t {t} -i {i}'
+            #command = f'iperf -J -t {t} -i {i} -c {target_ip} -P {P}'
+            if O != None:
+                command = f'{command} -O {O}'
+
+            if w != None:
+                command = f'{command} -w {w}'
+
+            print(f"{command}")
+
+            source_thread = self.execute_thread(source_node, command, verbose=False)
+
+            print(f"source_thread: {source_thread}")
+            
+            source_stdout, source_stderr = source_thread.result()
+
+            print(f"source_stdout: {source_stdout}")
+            print(f"source_stderr: {source_stderr}")
+
+
+            #if 'error' in json.loads(source_stdout).keys():
+            #    print(f"{source_node.get_name()} -> {target_node.get_name()} {target_ip}: error: {json.loads(source_stdout)['error']}")
+            #    retry = retry - 1
+            #    time.sleep(5)
+            #    continue
+
+            break
+
+
+
+        #print(f"source_stderr: {source_stderr}")
+
+        # Start target thread
+        target_stdout, target_stderr = target_thread.result()
+        print(f"target_stdout: {target_stdout}")
+        print(f"target_stderr: {target_stderr}")
+
+        time.sleep(10)
+
+        self.download_file(source_node, f'./output/{run_name}_client_summary_output',f'{run_name}_client_summary_output')
+        self.download_file(target_node, f'./output/{run_name}_server_summary_output',f'{run_name}_server_summary_output')
+
+        #source_node.download_file(f'./output/{run_name}_client_summary_output',f'{run_name}_client_summary_output')
+        #target_node.download_file(f'./output/{run_name}_server_summary_output',f'{run_name}_server_summary_output')
+
+
+
+
 
