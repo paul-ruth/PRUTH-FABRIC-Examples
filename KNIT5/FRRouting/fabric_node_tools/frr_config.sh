@@ -68,8 +68,8 @@ for i in $@; do
 cat >> /etc/frr/ospfd.conf <<EOL
 !
 interface ${dev}
- ip ospf hello-interval 60
- ip ospf dead-interval 240
+ ip ospf hello-interval 10
+ ip ospf dead-interval 20
 EOL
 done
 

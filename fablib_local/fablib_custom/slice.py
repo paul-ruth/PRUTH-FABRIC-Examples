@@ -21,6 +21,33 @@ from fabrictestbed.slice_editor import (
 
 class Slice_Custom():
 
+    def list_nodes(self, output=None):
+        """
+        Creates a tabulated string describing all nodes in the slice.
+
+        Intended for printing a list of all slices.
+
+        :return: Tabulated srting of all slices information
+        :rtype: String
+        """
+        table = []
+        for node in self.get_nodes():
+
+            table.append( [     node.get_reservation_id(),
+                                node.get_name(),
+                                node.get_site(),
+                                node.get_host(),
+                                node.get_cores(),
+                                node.get_ram(),
+                                node.get_disk(),
+                                node.get_image(),
+                                node.get_management_ip(),
+                                node.get_reservation_state(),
+                                node.get_error_message(),
+                                ] )
+
+        self.get_fablib_manager().print_list_table(table, title='Node Information', properties={'text-align': 'left', 'border': '1px black solid !important'}, hide_header=True, output=output)
+    
     def list_nodes_tabulate(self, quiet=False):
         """
         Creates a tabulated string describing all nodes in the slice.
@@ -46,6 +73,7 @@ class Slice_Custom():
                                 node.get_error_message(),
                                 ] )
 
+        
         output = tabulate(table, headers=["ID", "Name",  "Site",  "Host", "Cores", "RAM", "Disk", "Image", "Management IP", "State", "Error"])
 
         if not quiet:
@@ -83,6 +111,8 @@ class Slice_Custom():
         # build dataframe
 
         columns = ["ID", "Name",  "Site",  "Host", "Cores", "RAM", "Disk", "Image", "Management IP", "State", "Error"]
+        
+        
         df = pd.DataFrame(list(zip(reservation_ids, names, sites, hosts, cores, rams, disks, images, management_ips, reservation_states,error_messages)), columns = columns)
         #pd.set_option('colheader_justify', 'left')
         #df = df.style.set_properties(**{'text-align': 'left'})

@@ -91,9 +91,6 @@ def iperf3_process_output(output_dir='output', verbose=False):
             stream_sender_tcp_congestion = stream['end']['sender_tcp_congestion']
             stream_receiver_tcp_congestion = stream['end']['receiver_tcp_congestion']
             
-
-  
-   
             #print(f"Stream: {stream_port}. bw = {stream_bandwidth}")
             run_bandwidth += stream_bandwidth
             run_retransmits += stream_retransmits

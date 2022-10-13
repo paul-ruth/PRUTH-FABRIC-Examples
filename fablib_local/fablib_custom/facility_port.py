@@ -28,9 +28,10 @@ class FacilityPort_Custom():
 
         self.fim_interface.get_property(pname='label_allocations').vlan
 
-        fim_facility_port = slice.get_fim_topology().add_facility(name=name, site=site,
-                                                                     capacities=Capacities(bw=bandwidth),
-                                                                     labels=Labels(vlan=vlan))
+        fim_facility_port = slice.get_fim_topology().add_facility(name=name, 
+                                                                  site=site,
+                                                                  capacities=Capacities(bw=bandwidth),
+                                                                  labels=Labels(vlan=vlan))
 
 
         return self.slice_id
