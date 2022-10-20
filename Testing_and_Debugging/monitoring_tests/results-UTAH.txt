@@ -1,0 +1,20 @@
+0: UTAHa0,10.133.1.2,UTAH,utah-w3.fabric-testbed.net,10.132.3.0/24,0000:e2:07.0,success,
+1: UTAHa1,10.133.1.2,UTAH,utah-w3.fabric-testbed.net,10.132.4.0/24,0000:e2:0c.0,success,
+2: UTAHa2,10.133.1.2,UTAH,utah-w5.fabric-testbed.net,10.132.5.0/24,0000:e2:08.0,success,
+3: UTAHa3,10.133.1.2,UTAH,utah-w3.fabric-testbed.net,10.132.6.0/24,0000:e2:10.0,success,
+4: UTAHa4,10.133.1.2,UTAH,utah-w2.fabric-testbed.net,10.132.7.0/24,0000:a1:0b.3,success,
+5: UTAHa5,10.133.1.2,UTAH,utah-w2.fabric-testbed.net,10.132.8.0/24,0000:a1:04.0,fail,
+6: UTAHa6,10.133.1.2,UTAH,utah-w5.fabric-testbed.net,10.132.9.0/24,0000:e2:09.3,fail,
+7: UTAHa7,10.133.1.2,UTAH,utah-w1.fabric-testbed.net,10.132.10.0/24,0000:a1:08.0,fail,
+8: UTAHa8,10.133.1.2,UTAH,utah-w1.fabric-testbed.net,10.132.11.0/24,0000:a1:0a.4,fail,
+9: UTAHa9,10.133.1.2,UTAH,utah-w1.fabric-testbed.net,10.132.12.0/24,0000:a1:04.6,fail,
+10: UTAHa10,10.133.1.2,UTAH,utah-w1.fabric-testbed.net,10.132.13.0/24,0000:a1:00.7,fail,
+11: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+12: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+13: UTAHa13,10.133.1.2,UTAH,utah-w1.fabric-testbed.net,10.132.14.0/24,0000:a1:02.7,fail,
+14: UTAHa14,10.133.1.2,UTAH,utah-w3.fabric-testbed.net,10.132.3.0/24,0000:e2:07.0,fail,
+15: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+16: UTAHa16,10.133.1.2,UTAH,utah-w5.fabric-testbed.net,10.132.4.0/24,0000:e2:0c.6,fail,
+17: UTAHa17,10.133.1.2,UTAH,utah-w4.fabric-testbed.net,10.132.15.0/24,0000:e2:0e.7,fail,
+18: UTAHa18,10.133.1.2,UTAH,utah-w3.fabric-testbed.net,10.132.5.0/24,0000:e2:0c.0,fail,
+19: UTAHa19,10.133.1.2,UTAH,utah-w3.fabric-testbed.net,10.132.6.0/24,0000:e2:10.0,fail,

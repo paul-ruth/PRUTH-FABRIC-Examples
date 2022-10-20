@@ -1,0 +1,21 @@
+0: TACCa0,10.133.1.2,TACC,tacc-w2.fabric-testbed.net,10.130.132.0/24,0000:a1:07.7,success,
+1: TACCa1,10.133.1.2,TACC,tacc-w5.fabric-testbed.net,10.130.133.0/24,0000:e2:0d.1,success,
+2: TACCa2,10.133.1.2,TACC,tacc-w3.fabric-testbed.net,10.130.134.0/24,0000:e2:02.7,success,
+3: TACCa3,10.133.1.2,TACC,tacc-w4.fabric-testbed.net,10.130.135.0/24,0000:e2:08.5,success,
+4: TACCa4,10.133.1.2,TACC,tacc-w2.fabric-testbed.net,10.130.136.0/24,0000:a1:03.6,success,
+5: TACCa5,10.133.1.2,TACC,tacc-w2.fabric-testbed.net,10.130.137.0/24,0000:a1:05.1,success,
+6: TACCa6,10.133.1.2,TACC,tacc-w3.fabric-testbed.net,10.130.138.0/24,0000:e2:03.1,success,
+7: TACCa7,10.133.1.2,TACC,tacc-w2.fabric-testbed.net,10.130.139.0/24,0000:a1:0a.1,success,
+8: TACCa8,10.133.1.2,TACC,tacc-w2.fabric-testbed.net,10.130.140.0/24,0000:a1:04.6,success,
+9: TACCa9,10.133.1.2,TACC,tacc-w4.fabric-testbed.net,10.130.141.0/24,0000:e2:06.5,success,
+10: TACCa10,10.133.1.2,TACC,tacc-w1.fabric-testbed.net,10.130.142.0/24,0000:a1:07.3,success,
+11: TACCa11,10.133.1.2,TACC,tacc-w1.fabric-testbed.net,10.130.143.0/24,0000:a1:0a.3,success,
+12: TACCa12,10.133.1.2,TACC,tacc-w4.fabric-testbed.net,10.130.132.0/24,0000:e2:08.6,success,
+13: TACCa13,10.133.1.2,TACC,tacc-w4.fabric-testbed.net,10.130.133.0/24,0000:e2:0c.5,success,
+14: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+15: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+16: TACCa16,10.133.1.2,TACC,tacc-w5.fabric-testbed.net,10.130.134.0/24,0000:e2:0d.1,success,
+17: TACCa17,10.133.1.2,TACC,tacc-w5.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa17: Slice ID: 521b5d8e-4c7b-4ca9-ad9d-34468d0b55fc: Slice Exception: Slice Name: TACCa17: Slice ID: 521b5d8e-4c7b-4ca9-ad9d-34468d0b55fc: Node: TACC_node1: Site: TACC: State: Closed: Insufficient Resources: tacc-w5.fabric-testbed.net cannot serve the requested sliver
+Slice Exception: Slice Name: TACCa17: Slice ID: 521b5d8e-4c7b-4ca9-ad9d-34468d0b55fc: Slice Exception: Slice Name: TACCa17: Slice ID: 521b5d8e-4c7b-4ca9-ad9d-34468d0b55fc: Node: TACC_node1: Site: TACC: State: Closed: Insufficient Resources: tacc-w5.fabric-testbed.net cannot serve the requested sliver
+18: TACCa18,10.133.1.2,TACC,tacc-w2.fabric-testbed.net,10.130.135.0/24,0000:a1:07.7,success,
+19: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'

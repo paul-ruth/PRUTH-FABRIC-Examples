@@ -1,0 +1,468 @@
+0: UTAHb0,10.133.1.2,UTAH,utah-w5.fabric-testbed.net,10.132.1.0/24,0000:e2:08.0,fail,
+1: UTAHb1,10.133.1.2,UTAH,utah-w2.fabric-testbed.net,10.132.2.0/24,0000:a1:04.4,success,
+2: UTAHb2,10.133.1.2,UTAH,utah-w4.fabric-testbed.net,10.132.3.0/24,0000:e2:0e.7,fail,
+3: UTAHb3,10.133.1.2,UTAH,utah-w3.fabric-testbed.net,10.132.4.0/24,0000:e2:07.0,fail,
+4: UTAHb4,10.133.1.2,UTAH,utah-w1.fabric-testbed.net,10.132.5.0/24,0000:a1:08.0,fail,
+5: UTAHb5,10.133.1.2,UTAH,utah-w5.fabric-testbed.net,10.132.6.0/24,0000:e2:09.3,fail,
+6: UTAHb6,10.133.1.2,UTAH,utah-w4.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: UTAHb6: Slice ID: 573415bd-fa44-44bf-8ecb-2b3f80a1cac0: Slice Exception: Slice Name: UTAHb6: Slice ID: 573415bd-fa44-44bf-8ecb-2b3f80a1cac0: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb6: Slice ID: 573415bd-fa44-44bf-8ecb-2b3f80a1cac0: Slice Exception: Slice Name: UTAHb6: Slice ID: 573415bd-fa44-44bf-8ecb-2b3f80a1cac0: Node: UTAH_node1: Site: UTAH: State: Active: 
+
+Slice Exception: Slice Name: UTAHb6: Slice ID: 573415bd-fa44-44bf-8ecb-2b3f80a1cac0: Slice Exception: Slice Name: UTAHb6: Slice ID: 573415bd-fa44-44bf-8ecb-2b3f80a1cac0: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb6: Slice ID: 573415bd-fa44-44bf-8ecb-2b3f80a1cac0: Slice Exception: Slice Name: UTAHb6: Slice ID: 573415bd-fa44-44bf-8ecb-2b3f80a1cac0: Node: UTAH_node1: Site: UTAH: State: Active:
+7: UTAHb7,10.133.1.2,UTAH,utah-w5.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: UTAHb7: Slice ID: deb47000-2d57-4e7f-9b4f-cb4683d229cb: Slice Exception: Slice Name: UTAHb7: Slice ID: deb47000-2d57-4e7f-9b4f-cb4683d229cb: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb7: Slice ID: deb47000-2d57-4e7f-9b4f-cb4683d229cb: Slice Exception: Slice Name: UTAHb7: Slice ID: deb47000-2d57-4e7f-9b4f-cb4683d229cb: Node: UTAH_node1: Site: UTAH: State: Active: 
+
+Slice Exception: Slice Name: UTAHb7: Slice ID: deb47000-2d57-4e7f-9b4f-cb4683d229cb: Slice Exception: Slice Name: UTAHb7: Slice ID: deb47000-2d57-4e7f-9b4f-cb4683d229cb: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb7: Slice ID: deb47000-2d57-4e7f-9b4f-cb4683d229cb: Slice Exception: Slice Name: UTAHb7: Slice ID: deb47000-2d57-4e7f-9b4f-cb4683d229cb: Node: UTAH_node1: Site: UTAH: State: Active:
+8: UTAHb8,10.133.1.2,UTAH,utah-w3.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: UTAHb8: Slice ID: 536c9ce6-8b24-4278-ba6b-4d9e0ce88708: Slice Exception: Slice Name: UTAHb8: Slice ID: 536c9ce6-8b24-4278-ba6b-4d9e0ce88708: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb8: Slice ID: 536c9ce6-8b24-4278-ba6b-4d9e0ce88708: Slice Exception: Slice Name: UTAHb8: Slice ID: 536c9ce6-8b24-4278-ba6b-4d9e0ce88708: Node: UTAH_node1: Site: UTAH: State: Active: 
+
+Slice Exception: Slice Name: UTAHb8: Slice ID: 536c9ce6-8b24-4278-ba6b-4d9e0ce88708: Slice Exception: Slice Name: UTAHb8: Slice ID: 536c9ce6-8b24-4278-ba6b-4d9e0ce88708: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb8: Slice ID: 536c9ce6-8b24-4278-ba6b-4d9e0ce88708: Slice Exception: Slice Name: UTAHb8: Slice ID: 536c9ce6-8b24-4278-ba6b-4d9e0ce88708: Node: UTAH_node1: Site: UTAH: State: Active:
+9: UTAHb9,10.133.1.2,UTAH,utah-w3.fabric-testbed.net,10.132.2.0/24,0000:e2:10.0,fail,
+10: UTAHb10,10.133.1.2,UTAH,utah-w4.fabric-testbed.net,10.132.3.0/24,0000:e2:0a.5,fail,
+11: UTAHb11,10.133.1.2,UTAH,utah-w2.fabric-testbed.net,10.132.4.0/24,0000:a1:0b.3,fail,
+12: UTAHb12,10.133.1.2,UTAH,utah-w4.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: UTAHb12: Slice ID: ccbcd78a-680e-4dbb-9e5c-7975dd6b9679: Slice Exception: Slice Name: UTAHb12: Slice ID: ccbcd78a-680e-4dbb-9e5c-7975dd6b9679: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb12: Slice ID: ccbcd78a-680e-4dbb-9e5c-7975dd6b9679: Slice Exception: Slice Name: UTAHb12: Slice ID: ccbcd78a-680e-4dbb-9e5c-7975dd6b9679: Node: UTAH_node1: Site: UTAH: State: Active: 
+
+Slice Exception: Slice Name: UTAHb12: Slice ID: ccbcd78a-680e-4dbb-9e5c-7975dd6b9679: Slice Exception: Slice Name: UTAHb12: Slice ID: ccbcd78a-680e-4dbb-9e5c-7975dd6b9679: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb12: Slice ID: ccbcd78a-680e-4dbb-9e5c-7975dd6b9679: Slice Exception: Slice Name: UTAHb12: Slice ID: ccbcd78a-680e-4dbb-9e5c-7975dd6b9679: Node: UTAH_node1: Site: UTAH: State: Active:
+13: UTAHb13,10.133.1.2,UTAH,utah-w5.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: UTAHb13: Slice ID: 5964cc28-00dc-45c6-aa2a-43a924a9e13b: Slice Exception: Slice Name: UTAHb13: Slice ID: 5964cc28-00dc-45c6-aa2a-43a924a9e13b: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb13: Slice ID: 5964cc28-00dc-45c6-aa2a-43a924a9e13b: Slice Exception: Slice Name: UTAHb13: Slice ID: 5964cc28-00dc-45c6-aa2a-43a924a9e13b: Node: UTAH_node1: Site: UTAH: State: Active: 
+
+Slice Exception: Slice Name: UTAHb13: Slice ID: 5964cc28-00dc-45c6-aa2a-43a924a9e13b: Slice Exception: Slice Name: UTAHb13: Slice ID: 5964cc28-00dc-45c6-aa2a-43a924a9e13b: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb13: Slice ID: 5964cc28-00dc-45c6-aa2a-43a924a9e13b: Slice Exception: Slice Name: UTAHb13: Slice ID: 5964cc28-00dc-45c6-aa2a-43a924a9e13b: Node: UTAH_node1: Site: UTAH: State: Active:
+14: UTAHb14,10.133.1.2,UTAH,utah-w5.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: UTAHb14: Slice ID: bdc59e9c-3b98-4dfd-a31e-2cdf5991b88c: Slice Exception: Slice Name: UTAHb14: Slice ID: bdc59e9c-3b98-4dfd-a31e-2cdf5991b88c: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb14: Slice ID: bdc59e9c-3b98-4dfd-a31e-2cdf5991b88c: Slice Exception: Slice Name: UTAHb14: Slice ID: bdc59e9c-3b98-4dfd-a31e-2cdf5991b88c: Node: UTAH_node1: Site: UTAH: State: Active: 
+
+Slice Exception: Slice Name: UTAHb14: Slice ID: bdc59e9c-3b98-4dfd-a31e-2cdf5991b88c: Slice Exception: Slice Name: UTAHb14: Slice ID: bdc59e9c-3b98-4dfd-a31e-2cdf5991b88c: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHb14: Slice ID: bdc59e9c-3b98-4dfd-a31e-2cdf5991b88c: Slice Exception: Slice Name: UTAHb14: Slice ID: bdc59e9c-3b98-4dfd-a31e-2cdf5991b88c: Node: UTAH_node1: Site: UTAH: State: Active:
+15: UTAHb15,10.133.1.2,UTAH,utah-w1.fabric-testbed.net,10.132.8.0/24,0000:a1:0a.4,fail,
+16: UTAHb16,10.133.1.2,UTAH,utah-w3.fabric-testbed.net,10.132.1.0/24,0000:e2:07.0,fail,
+17: UTAHb17,10.133.1.2,UTAH,utah-w3.fabric-testbed.net,10.132.2.0/24,0000:e2:02.1,fail,
+18: UTAHb18,10.133.1.2,UTAH,utah-w2.fabric-testbed.net,10.132.9.0/24,0000:a1:04.4,fail,
+19: UTAHb19,10.133.1.2,UTAH,utah-w1.fabric-testbed.net,10.132.3.0/24,0000:a1:08.0,fail,
+0: MAXb0,10.133.1.2,MAX,max-w1.fabric-testbed.net,10.130.2.0/24,0000:a1:00.4,fail,
+1: MAXb1,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.3.0/24,0000:e2:06.2,fail,
+2: MAXb2,10.133.1.2,MAX,max-w1.fabric-testbed.net,10.130.4.0/24,0000:a1:04.4,fail,
+3: MAXb3,10.133.1.2,MAX,max-w5.fabric-testbed.net,10.130.5.0/24,0000:e2:0b.1,fail,
+4: MAXb4,10.133.1.2,MAX,max-w3.fabric-testbed.net,10.130.6.0/24,0000:e2:0b.5,fail,
+5: MAXb5,10.133.1.2,MAX,max-w5.fabric-testbed.net,10.130.7.0/24,0000:e2:02.3,fail,
+6: MAXb6,10.133.1.2,MAX,max-w2.fabric-testbed.net,10.130.2.0/24,0000:a1:0a.0,fail,
+7: MAXb7,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.3.0/24,0000:e2:0c.7,fail,
+8: MAXb8,10.133.1.2,MAX,max-w4.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: MAXb8: Slice ID: 80f978cb-23a1-4d4f-9058-15fcd371efde: Slice Exception: Slice Name: MAXb8: Slice ID: 80f978cb-23a1-4d4f-9058-15fcd371efde: Node: MAX_node1: Site: MAX: State: Active: 
+Slice Exception: Slice Name: MAXb8: Slice ID: 80f978cb-23a1-4d4f-9058-15fcd371efde: Slice Exception: Slice Name: MAXb8: Slice ID: 80f978cb-23a1-4d4f-9058-15fcd371efde: Node: MAX_node1: Site: MAX: State: Active: 
+
+Slice Exception: Slice Name: MAXb8: Slice ID: 80f978cb-23a1-4d4f-9058-15fcd371efde: Slice Exception: Slice Name: MAXb8: Slice ID: 80f978cb-23a1-4d4f-9058-15fcd371efde: Node: MAX_node1: Site: MAX: State: Active: 
+Slice Exception: Slice Name: MAXb8: Slice ID: 80f978cb-23a1-4d4f-9058-15fcd371efde: Slice Exception: Slice Name: MAXb8: Slice ID: 80f978cb-23a1-4d4f-9058-15fcd371efde: Node: MAX_node1: Site: MAX: State: Active:
+9: MAXb9,10.133.1.2,MAX,max-w5.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: MAXb9: Slice ID: 0c0d1a11-14de-4f15-94d4-5f2039c2beab: Slice Exception: Slice Name: MAXb9: Slice ID: 0c0d1a11-14de-4f15-94d4-5f2039c2beab: Node: MAX_node1: Site: MAX: State: Active: 
+Slice Exception: Slice Name: MAXb9: Slice ID: 0c0d1a11-14de-4f15-94d4-5f2039c2beab: Slice Exception: Slice Name: MAXb9: Slice ID: 0c0d1a11-14de-4f15-94d4-5f2039c2beab: Node: MAX_node1: Site: MAX: State: Active: 
+
+Slice Exception: Slice Name: MAXb9: Slice ID: 0c0d1a11-14de-4f15-94d4-5f2039c2beab: Slice Exception: Slice Name: MAXb9: Slice ID: 0c0d1a11-14de-4f15-94d4-5f2039c2beab: Node: MAX_node1: Site: MAX: State: Active: 
+Slice Exception: Slice Name: MAXb9: Slice ID: 0c0d1a11-14de-4f15-94d4-5f2039c2beab: Slice Exception: Slice Name: MAXb9: Slice ID: 0c0d1a11-14de-4f15-94d4-5f2039c2beab: Node: MAX_node1: Site: MAX: State: Active:
+10: MAXb10,10.133.1.2,MAX,max-w2.fabric-testbed.net,10.130.6.0/24,0000:a1:04.0,fail,
+11: MAXb11,10.133.1.2,MAX,max-w4.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: MAXb11: Slice ID: 0de4c135-5df6-4a26-a4fa-e55321486344: Slice Exception: Slice Name: MAXb11: Slice ID: 0de4c135-5df6-4a26-a4fa-e55321486344: Node: MAX_node1: Site: MAX: State: Active: 
+Slice Exception: Slice Name: MAXb11: Slice ID: 0de4c135-5df6-4a26-a4fa-e55321486344: Slice Exception: Slice Name: MAXb11: Slice ID: 0de4c135-5df6-4a26-a4fa-e55321486344: Node: MAX_node1: Site: MAX: State: Active: 
+
+Slice Exception: Slice Name: MAXb11: Slice ID: 0de4c135-5df6-4a26-a4fa-e55321486344: Slice Exception: Slice Name: MAXb11: Slice ID: 0de4c135-5df6-4a26-a4fa-e55321486344: Node: MAX_node1: Site: MAX: State: Active: 
+Slice Exception: Slice Name: MAXb11: Slice ID: 0de4c135-5df6-4a26-a4fa-e55321486344: Slice Exception: Slice Name: MAXb11: Slice ID: 0de4c135-5df6-4a26-a4fa-e55321486344: Node: MAX_node1: Site: MAX: State: Active:
+12: MAXb12,10.133.1.2,MAX,max-w3.fabric-testbed.net,10.130.7.0/24,0000:e2:08.6,fail,
+13: MAXb13,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.8.0/24,0000:e2:06.2,fail,
+14: MAXb14,10.133.1.2,MAX,max-w2.fabric-testbed.net,10.130.9.0/24,0000:a1:0d.5,fail,
+15: MAXb15,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.10.0/24,0000:e2:0e.4,fail,
+16: MAXb16,10.133.1.2,MAX,max-w3.fabric-testbed.net,10.130.3.0/24,0000:e2:0b.5,fail,
+17: MAXb17,10.133.1.2,MAX,max-w2.fabric-testbed.net,10.130.4.0/24,0000:a1:0a.0,fail,
+18: MAXb18,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.5.0/24,0000:e2:05.0,fail,
+19: MAXb19,10.133.1.2,MAX,max-w3.fabric-testbed.net,10.130.2.0/24,0000:e2:08.2,fail,
+0: MICHb0,10.133.1.2,MICH,mich-w2.fabric-testbed.net,10.131.1.0/24,0000:e2:00.3,success,
+1: MICHb1,10.133.1.2,MICH,mich-w1.fabric-testbed.net,10.131.2.0/24,0000:a1:09.1,success,
+2: MICHb2,10.133.1.2,MICH,mich-w3.fabric-testbed.net,10.131.3.0/24,0000:e2:0f.3,success,
+3: MICHb3,10.133.1.2,MICH,mich-w1.fabric-testbed.net,10.131.4.0/24,0000:a1:0b.7,success,
+4: MICHb4,10.133.1.2,MICH,mich-w3.fabric-testbed.net,10.131.5.0/24,0000:e2:08.2,success,
+5: MICHb5,10.133.1.2,MICH,mich-w3.fabric-testbed.net,10.131.6.0/24,0000:e2:06.3,success,
+6: MICHb6,10.133.1.2,MICH,mich-w3.fabric-testbed.net,10.131.7.0/24,0000:e2:0b.0,success,
+7: MICHb7,10.133.1.2,MICH,mich-w1.fabric-testbed.net,10.131.8.0/24,0000:a1:09.2,success,
+8: MICHb8,10.133.1.2,MICH,mich-w2.fabric-testbed.net,10.131.9.0/24,0000:e2:01.0,success,
+9: MICHb9,10.133.1.2,MICH,mich-w3.fabric-testbed.net,10.131.10.0/24,0000:e2:03.5,success,
+10: MICHb10,10.133.1.2,MICH,mich-w2.fabric-testbed.net,10.131.11.0/24,0000:e2:0b.6,success,
+11: MICHb11,10.133.1.2,MICH,mich-w1.fabric-testbed.net,10.131.1.0/24,0000:a1:0b.3,success,
+12: MICHb12,10.133.1.2,MICH,mich-w1.fabric-testbed.net,10.131.2.0/24,0000:a1:09.1,success,
+13: MICHb13,10.133.1.2,MICH,mich-w3.fabric-testbed.net,10.131.3.0/24,0000:e2:0f.3,success,
+14: MICHb14,10.133.1.2,MICH,mich-w1.fabric-testbed.net,10.131.12.0/24,0000:a1:0f.6,success,
+15: MICHb15,10.133.1.2,MICH,mich-w1.fabric-testbed.net,10.131.4.0/24,0000:a1:0b.7,success,
+16: MICHb16,10.133.1.2,MICH,mich-w1.fabric-testbed.net,10.131.5.0/24,0000:a1:05.7,success,
+17: MICHb17,10.133.1.2,MICH,mich-w1.fabric-testbed.net,10.131.6.0/24,0000:a1:05.5,success,
+18: MICHb18,10.133.1.2,MICH,mich-w3.fabric-testbed.net,10.131.7.0/24,0000:e2:08.2,success,
+19: MICHb19,10.133.1.2,MICH,mich-w1.fabric-testbed.net,10.131.8.0/24,0000:a1:09.2,success,
+0: MAXb0,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.3.0/24,0000:e2:06.2,success,
+1: MAXb1,10.133.1.2,MAX,max-w5.fabric-testbed.net,10.130.4.0/24,0000:e2:0b.1,success,
+2: MAXb2,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.5.0/24,0000:e2:0c.7,success,
+3: MAXb3,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.6.0/24,0000:e2:0f.4,success,
+4: MAXb4,10.133.1.2,MAX,max-w2.fabric-testbed.net,10.130.7.0/24,0000:a1:0a.0,success,
+5: MAXb5,10.133.1.2,MAX,max-w2.fabric-testbed.net,10.130.8.0/24,0000:a1:04.0,success,
+6: MAXb6,10.133.1.2,MAX,max-w3.fabric-testbed.net,10.130.9.0/24,0000:e2:0b.5,success,
+7: MAXb7,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.10.0/24,0000:e2:05.3,success,
+8: MAXb8,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.11.0/24,0000:e2:0e.4,success,
+9: MAXb9,10.133.1.2,MAX,max-w1.fabric-testbed.net,10.130.12.0/24,0000:a1:00.4,success,
+10: MAXb10,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.13.0/24,0000:e2:05.0,success,
+11: MAXb11,10.133.1.2,MAX,max-w2.fabric-testbed.net,10.130.3.0/24,0000:a1:0d.5,success,
+12: MAXb12,10.133.1.2,MAX,max-w2.fabric-testbed.net,10.130.4.0/24,0000:a1:01.1,success,
+13: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+14: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+15: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+16: MAXb16,10.133.1.2,MAX,max-w1.fabric-testbed.net,10.130.14.0/24,0000:a1:04.4,success,
+17: MAXb17,10.133.1.2,MAX,max-w5.fabric-testbed.net,10.130.5.0/24,0000:e2:0b.1,success,
+18: MAXb18,10.133.1.2,MAX,max-w2.fabric-testbed.net,10.130.6.0/24,0000:a1:08.6,success,
+19: MAXb19,10.133.1.2,MAX,max-w4.fabric-testbed.net,10.130.7.0/24,0000:e2:06.2,success,
+0: STARb0,10.133.1.2,STAR,star-w6.fabric-testbed.net,10.129.131.0/24,0000:e2:04.5,fail,
+1: STARb1,10.133.1.2,STAR,star-w5.fabric-testbed.net,10.129.132.0/24,0000:e2:05.2,fail,
+2: STARb2,10.133.1.2,STAR,star-w4.fabric-testbed.net,10.129.133.0/24,0000:e2:0f.7,fail,
+3: STARb3,10.133.1.2,STAR,star-w6.fabric-testbed.net,10.129.134.0/24,0000:e2:0c.3,fail,
+4: STARb4,10.133.1.2,STAR,star-w1.fabric-testbed.net,10.129.135.0/24,0000:a1:0c.6,fail,
+5: STARb5,10.133.1.2,STAR,star-w4.fabric-testbed.net,10.129.136.0/24,0000:e2:01.7,fail,
+6: STARb6,10.133.1.2,STAR,star-w1.fabric-testbed.net,10.129.137.0/24,0000:a1:0b.6,success,
+7: STARb7,10.133.1.2,STAR,star-w3.fabric-testbed.net,no subnet,no pci addr,None,dictionary changed size during iteration
+8: STARb8,10.133.1.2,STAR,star-w3.fabric-testbed.net,10.129.139.0/24,0000:e2:09.3,fail,
+9: STARb9,10.133.1.2,STAR,star-w4.fabric-testbed.net,10.129.140.0/24,0000:e2:0e.0,success,
+10: STARb10,10.133.1.2,STAR,star-w3.fabric-testbed.net,10.129.141.0/24,0000:e2:05.4,fail,
+11: Failed to get advertised_topology: Status.FAILURE, dictionary changed size during iteration
+12: STARb12,10.133.1.2,STAR,star-w2.fabric-testbed.net,10.129.131.0/24,0000:a1:0c.7,fail,
+13: STARb13,10.133.1.2,STAR,star-w1.fabric-testbed.net,10.129.142.0/24,0000:a1:04.7,success,
+14: STARb14,10.133.1.2,STAR,star-w2.fabric-testbed.net,10.129.132.0/24,0000:a1:08.7,fail,
+15: STARb15,10.133.1.2,STAR,star-w1.fabric-testbed.net,10.129.133.0/24,0000:a1:0f.1,fail,
+16: STARb16,10.133.1.2,STAR,star-w3.fabric-testbed.net,10.129.134.0/24,0000:e2:0e.5,fail,
+17: STARb17,10.133.1.2,STAR,star-w2.fabric-testbed.net,10.129.138.0/24,0000:a1:07.7,success,
+18: STARb18,10.133.1.2,STAR,star-w4.fabric-testbed.net,10.129.139.0/24,0000:e2:0f.7,success,
+19: STARb19,10.133.1.2,STAR,star-w1.fabric-testbed.net,10.129.135.0/24,0000:a1:0c.6,fail,
+0: UTAHb0,10.133.1.2,UTAH,utah-w5.fabric-testbed.net,10.132.1.0/24,0000:e2:08.0,fail,
+1: UTAHb1,10.133.1.2,UTAH,utah-w4.fabric-testbed.net,10.132.2.0/24,0000:e2:0e.7,fail,
+2: UTAHb2,10.133.1.2,UTAH,utah-w4.fabric-testbed.net,10.132.3.0/24,0000:e2:05.3,success,
+3: UTAHb3,10.133.1.2,UTAH,utah-w4.fabric-testbed.net,10.132.4.0/24,0000:e2:0a.5,success,
+4: UTAHb4,10.133.1.2,UTAH,utah-w1.fabric-testbed.net,10.132.5.0/24,0000:a1:08.0,success,
+5: UTAHb5,10.133.1.2,UTAH,utah-w5.fabric-testbed.net,10.132.6.0/24,0000:e2:09.3,success,
+6: UTAHb6,10.133.1.2,UTAH,utah-w4.fabric-testbed.net,10.132.7.0/24,0000:e2:0f.0,success,
+7: UTAHb7,10.133.1.2,UTAH,utah-w1.fabric-testbed.net,10.132.8.0/24,0000:a1:0a.4,success,
+8: UTAHb8,10.133.1.2,UTAH,utah-w1.fabric-testbed.net,10.132.9.0/24,0000:a1:04.6,success,
+9: UTAHb9,10.133.1.2,UTAH,utah-w5.fabric-testbed.net,10.132.10.0/24,0000:e2:0c.6,success,
+10: UTAHb10,10.133.1.2,UTAH,utah-w2.fabric-testbed.net,10.132.11.0/24,0000:a1:04.4,fail,
+11: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+0: STARb0,10.133.1.2,STAR,star-w5.fabric-testbed.net,10.129.131.0/24,0000:e2:05.2,fail,
+1: STARb1,10.133.1.2,STAR,star-w5.fabric-testbed.net,10.129.132.0/24,0000:e2:03.7,fail,
+0: STARb0,10.133.1.2,STAR,star-w1.fabric-testbed.net,10.129.131.0/24,0000:a1:0c.6,fail,
+1: STARb1,10.133.1.2,STAR,star-w3.fabric-testbed.net,10.129.132.0/24,0000:e2:02.6,fail,
+0: STARb0,10.133.1.2,STAR,star-w3.fabric-testbed.net,10.129.131.0/24,0000:e2:02.6,success,
+1: STARb1,10.133.1.2,STAR,star-w2.fabric-testbed.net,10.129.133.0/24,0000:a1:0a.2,success,
+2: STARb2,10.133.1.2,STAR,star-w1.fabric-testbed.net,10.129.134.0/24,0000:a1:0c.6,fail,
+3: STARb3,10.133.1.2,STAR,star-w5.fabric-testbed.net,10.129.135.0/24,0000:e2:05.2,success,
+4: STARb4,10.133.1.2,STAR,star-w4.fabric-testbed.net,10.129.136.0/24,0000:e2:0f.7,fail,
+0: TACCb0,10.130.130.2,TACC,tacc-w1.fabric-testbed.net,10.130.131.0/24,0000:a1:0d.1,success,
+1: TACCb1,10.130.130.2,TACC,tacc-w1.fabric-testbed.net,10.130.132.0/24,0000:a1:09.5,success,
+2: TACCb2,10.130.130.2,TACC,tacc-w4.fabric-testbed.net,10.130.133.0/24,0000:e2:08.5,success,
+3: TACCb3,10.130.130.2,TACC,tacc-w5.fabric-testbed.net,10.130.134.0/24,0000:e2:02.2,success,
+4: TACCb4,10.130.130.2,TACC,tacc-w1.fabric-testbed.net,10.130.135.0/24,0000:a1:0f.0,success,
+0: STARb0,10.130.130.2,TACC,tacc-w4.fabric-testbed.net,10.130.131.0/24,0000:e2:08.5,success,
+1: STARb1,10.130.130.2,TACC,tacc-w3.fabric-testbed.net,10.130.132.0/24,0000:e2:02.7,success,
+2: STARb2,10.130.130.2,TACC,tacc-w1.fabric-testbed.net,10.130.133.0/24,0000:a1:0d.1,success,
+3: STARb3,10.130.130.2,TACC,tacc-w4.fabric-testbed.net,10.130.134.0/24,0000:e2:06.5,success,
+4: STARb4,10.130.130.2,TACC,tacc-w4.fabric-testbed.net,10.130.135.0/24,0000:e2:08.6,success,
+5: STARb5,10.130.130.2,TACC,tacc-w1.fabric-testbed.net,10.130.136.0/24,0000:a1:09.5,success,
+6: STARb6,10.130.130.2,TACC,tacc-w4.fabric-testbed.net,10.130.137.0/24,0000:e2:0c.5,success,
+7: STARb7,10.130.130.2,TACC,tacc-w2.fabric-testbed.net,10.130.138.0/24,0000:a1:07.7,success,
+8: STARb8,10.130.130.2,TACC,tacc-w2.fabric-testbed.net,10.130.139.0/24,0000:a1:03.6,success,
+9: STARb9,10.130.130.2,TACC,tacc-w5.fabric-testbed.net,10.130.140.0/24,0000:e2:02.2,success,
+10: STARb10,10.130.130.2,TACC,tacc-w5.fabric-testbed.net,10.130.141.0/24,0000:e2:07.4,success,
+11: STARb11,10.130.130.2,TACC,tacc-w4.fabric-testbed.net,10.130.142.0/24,0000:e2:0a.5,success,
+12: STARb12,10.130.130.2,TACC,tacc-w4.fabric-testbed.net,10.130.143.0/24,0000:e2:08.2,success,
+13: STARb13,10.130.130.2,TACC,tacc-w2.fabric-testbed.net,10.130.144.0/24,0000:a1:05.1,success,
+14: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+15: STARb15,10.130.130.2,TACC,tacc-w3.fabric-testbed.net,10.130.145.0/24,0000:e2:03.1,success,
+16: STARb16,10.130.130.2,TACC,tacc-w1.fabric-testbed.net,10.130.146.0/24,0000:a1:0f.0,success,
+17: STARb17,10.130.130.2,TACC,tacc-w1.fabric-testbed.net,10.130.147.0/24,0000:a1:0b.4,success,
+18: STARb18,10.130.130.2,TACC,tacc-w2.fabric-testbed.net,10.130.148.0/24,0000:a1:0a.1,success,
+19: STARb19,10.130.130.2,TACC,tacc-w4.fabric-testbed.net,10.130.149.0/24,0000:e2:0a.7,success,
+0: STARa0,10.130.130.2,STAR,star-w5.fabric-testbed.net,10.129.131.0/24,0000:e2:05.2,success,
+1: STARa1,10.130.130.2,STAR,star-w4.fabric-testbed.net,10.129.132.0/24,0000:e2:0f.7,success,
+2: STARa2,10.130.130.2,STAR,star-w1.fabric-testbed.net,10.129.133.0/24,0000:a1:0c.6,success,
+3: STARa3,10.130.130.2,STAR,star-w4.fabric-testbed.net,10.129.134.0/24,0000:e2:01.7,success,
+4: STARa4,10.130.130.2,STAR,star-w1.fabric-testbed.net,10.129.135.0/24,0000:a1:0b.6,success,
+5: STARa5,10.130.130.2,STAR,star-w5.fabric-testbed.net,10.129.136.0/24,0000:e2:03.7,success,
+6: STARa6,10.130.130.2,STAR,star-w4.fabric-testbed.net,10.129.137.0/24,0000:e2:0e.0,success,
+7: STARa7,10.130.130.2,STAR,star-w2.fabric-testbed.net,10.129.138.0/24,0000:a1:0c.7,success,
+8: STARa8,10.130.130.2,STAR,star-w1.fabric-testbed.net,10.129.139.0/24,0000:a1:04.7,fail,
+9: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+10: STARa10,10.130.130.2,STAR,star-w5.fabric-testbed.net,10.129.140.0/24,0000:e2:00.3,fail,
+11: STARa11,10.130.130.2,STAR,star-w1.fabric-testbed.net,10.129.141.0/24,0000:a1:0f.1,fail,
+12: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+13: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+14: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+15: STARa15,10.130.130.2,STAR,star-w2.fabric-testbed.net,10.129.142.0/24,0000:a1:08.7,fail,
+16: STARa16,10.130.130.2,STAR,star-w1.fabric-testbed.net,10.129.143.0/24,0000:a1:0c.4,fail,
+17: STARa17,10.130.130.2,STAR,star-w2.fabric-testbed.net,10.129.144.0/24,0000:a1:0a.7,fail,
+18: STARa18,10.130.130.2,STAR,star-w2.fabric-testbed.net,10.129.145.0/24,0000:a1:0e.2,fail,
+19: STARa19,10.130.130.2,STAR,star-w2.fabric-testbed.net,10.129.146.0/24,0000:a1:0a.3,fail,
+0: TACCa0,10.130.130.2,TACC,tacc-w2.fabric-testbed.net,10.130.131.0/24,0000:a1:07.7,success,
+1: TACCa1,10.130.130.2,TACC,tacc-w1.fabric-testbed.net,10.130.132.0/24,0000:a1:0d.1,success,
+2: TACCa2,10.130.130.2,TACC,tacc-w3.fabric-testbed.net,10.130.133.0/24,0000:e2:02.7,success,
+3: TACCa3,10.130.130.2,TACC,tacc-w5.fabric-testbed.net,10.130.134.0/24,0000:e2:02.2,success,
+4: TACCa4,10.130.130.2,TACC,tacc-w2.fabric-testbed.net,10.130.135.0/24,0000:a1:03.6,success,
+5: TACCa5,10.130.130.2,TACC,tacc-w5.fabric-testbed.net,10.130.136.0/24,0000:e2:07.4,success,
+6: TACCa6,10.130.130.2,TACC,tacc-w2.fabric-testbed.net,10.130.137.0/24,0000:a1:05.1,success,
+7: TACCa7,10.130.130.2,TACC,tacc-w1.fabric-testbed.net,10.130.138.0/24,0000:a1:09.5,success,
+8: TACCa8,10.130.130.2,TACC,tacc-w5.fabric-testbed.net,10.130.139.0/24,0000:e2:07.6,success,
+9: TACCa9,10.130.130.2,TACC,tacc-w3.fabric-testbed.net,10.130.140.0/24,0000:e2:03.1,success,
+10: TACCa10,10.130.130.2,TACC,tacc-w4.fabric-testbed.net,10.130.141.0/24,0000:e2:08.5,success,
+11: TACCa11,10.130.130.2,TACC,tacc-w5.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa11: Slice ID: b2d05f5e-69d2-4669-9b68-2bcc0a237efe: Slice Exception: Slice Name: TACCa11: Slice ID: b2d05f5e-69d2-4669-9b68-2bcc0a237efe: Node: TACC_node1: Site: TACC: State: None:
+12: TACCa12,10.130.130.2,TACC,tacc-w3.fabric-testbed.net,10.130.142.0/24,0000:e2:0f.6,success,
+13: TACCa13,10.130.130.2,TACC,tacc-w3.fabric-testbed.net,10.130.143.0/24,0000:e2:0e.7,success,
+14: TACCa14,10.130.130.2,TACC,tacc-w5.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa14: Slice ID: 1b261265-d16d-4397-9d80-3b59de4b3d65: Slice Exception: Slice Name: TACCa14: Slice ID: 1b261265-d16d-4397-9d80-3b59de4b3d65: Node: TACC_node1: Site: TACC: State: None:
+15: TACCa15,10.130.130.2,TACC,tacc-w4.fabric-testbed.net,10.130.144.0/24,0000:e2:06.5,success,
+16: TACCa16,10.130.130.2,TACC,tacc-w3.fabric-testbed.net,10.130.145.0/24,0000:e2:09.1,success,
+17: TACCa17,10.130.130.2,TACC,tacc-w4.fabric-testbed.net,10.130.146.0/24,0000:e2:08.6,success,
+18: TACCa18,10.130.130.2,TACC,tacc-w3.fabric-testbed.net,10.130.147.0/24,0000:e2:07.5,success,
+19: TACCa19,10.130.130.2,TACC,tacc-w1.fabric-testbed.net,10.130.148.0/24,0000:a1:0f.0,success,
+0: STARa0,10.130.130.2,STAR,star-w3.fabric-testbed.net,10.129.131.0/24,0000:e2:02.6,success,
+1: STARa1,10.130.130.2,STAR,star-w5.fabric-testbed.net,10.129.132.0/24,0000:e2:05.2,success,
+2: STARa2,10.130.130.2,STAR,star-w1.fabric-testbed.net,10.129.133.0/24,0000:a1:0c.6,fail,
+3: STARa3,10.130.130.2,STAR,star-w4.fabric-testbed.net,10.129.134.0/24,0000:e2:0f.7,success,
+4: STARa4,10.130.130.2,STAR,star-w2.fabric-testbed.net,10.129.135.0/24,0000:a1:0c.7,fail,
+5: STARa5,10.130.130.2,STAR,star-w3.fabric-testbed.net,10.129.136.0/24,0000:e2:09.3,fail,
+6: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+7: STARa7,10.130.130.2,STAR,star-w2.fabric-testbed.net,10.129.137.0/24,0000:a1:08.7,fail,
+8: STARa8,10.130.130.2,STAR,star-w4.fabric-testbed.net,10.129.138.0/24,0000:e2:01.7,fail,
+9: STARa9,10.130.130.2,STAR,star-w3.fabric-testbed.net,10.129.139.0/24,0000:e2:05.4,fail,
+10: STARa10,10.130.130.2,STAR,star-w2.fabric-testbed.net,10.129.140.0/24,0000:a1:0a.7,fail,
+11: STARa11,10.130.130.2,STAR,star-w4.fabric-testbed.net,10.129.141.0/24,0000:e2:0e.0,fail,
+12: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+13: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+14: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+15: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+16: STARa16,10.130.130.2,STAR,star-w2.fabric-testbed.net,10.129.142.0/24,0000:a1:0e.2,fail,
+17: STARa17,10.130.130.2,STAR,star-w2.fabric-testbed.net,10.129.143.0/24,0000:a1:0a.3,fail,
+18: STARa18,10.130.130.2,STAR,star-w2.fabric-testbed.net,10.129.144.0/24,0000:a1:07.7,fail,
+19: STARa19,10.130.130.2,STAR,star-w6.fabric-testbed.net,10.129.145.0/24,0000:e2:04.5,fail,
+0: STARa0,10.133.134.2,STAR,star-w3.fabric-testbed.net,10.129.132.0/24,0000:e2:02.6,success,
+1: STARa1,10.133.134.2,STAR,star-w4.fabric-testbed.net,10.129.133.0/24,0000:e2:03.0,fail,
+2: STARa2,10.133.134.2,STAR,star-w2.fabric-testbed.net,10.129.134.0/24,0000:a1:01.6,fail,
+3: STARa3,10.133.134.2,STAR,star-w2.fabric-testbed.net,10.129.135.0/24,0000:a1:02.6,fail,
+4: STARa4,10.133.134.2,STAR,star-w5.fabric-testbed.net,10.129.136.0/24,0000:e2:05.2,fail,
+0: UTAHa0,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.2.0/24,0000:a1:08.0,success,
+1: UTAHa1,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.3.0/24,0000:e2:08.0,success,
+2: UTAHa2,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.4.0/24,0000:e2:0e.7,success,
+3: UTAHa3,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.5.0/24,0000:e2:09.3,success,
+4: UTAHa4,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.6.0/24,0000:a1:0b.3,success,
+0: MAXa0,10.133.134.2,MAX,max-w2.fabric-testbed.net,10.130.4.0/24,0000:a1:0a.0,success,
+1: MAXa1,10.133.134.2,MAX,max-w4.fabric-testbed.net,10.130.5.0/24,0000:e2:08.6,success,
+2: MAXa2,10.133.134.2,MAX,max-w2.fabric-testbed.net,10.130.6.0/24,0000:a1:04.0,success,
+3: MAXa3,10.133.134.2,MAX,max-w4.fabric-testbed.net,10.130.7.0/24,0000:e2:0b.7,success,
+4: MAXa4,10.133.134.2,MAX,max-w2.fabric-testbed.net,10.130.8.0/24,0000:a1:0d.5,success,
+0: MAXa0,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.4.0/24,0000:e2:0b.5,success,
+1: MAXa1,10.133.134.2,MAX,max-w2.fabric-testbed.net,10.130.5.0/24,0000:a1:0a.0,success,
+2: MAXa2,10.133.134.2,MAX,max-w5.fabric-testbed.net,10.130.6.0/24,0000:e2:0e.4,success,
+3: MAXa3,10.133.134.2,MAX,max-w1.fabric-testbed.net,10.130.7.0/24,0000:a1:00.4,success,
+4: MAXa4,10.133.134.2,MAX,max-w5.fabric-testbed.net,10.130.8.0/24,0000:e2:0d.1,success,
+5: MAXa5,10.133.134.2,MAX,max-w4.fabric-testbed.net,10.130.9.0/24,0000:e2:08.6,success,
+6: MAXa6,10.133.134.2,MAX,max-w2.fabric-testbed.net,10.130.10.0/24,0000:a1:04.0,success,
+7: MAXa7,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.11.0/24,0000:e2:08.6,fail,
+8: MAXa8,10.133.134.2,MAX,max-w5.fabric-testbed.net,10.130.12.0/24,0000:e2:0f.0,fail,
+9: MAXa9,10.133.134.2,MAX,max-w1.fabric-testbed.net,10.130.13.0/24,0000:a1:04.4,fail,
+10: MAXa10,10.133.134.2,MAX,max-w4.fabric-testbed.net,10.130.14.0/24,0000:e2:0b.7,success,
+11: MAXa11,10.133.134.2,MAX,max-w2.fabric-testbed.net,10.130.15.0/24,0000:a1:0d.5,fail,
+12: MAXa12,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.16.0/24,0000:e2:08.2,success,
+13: MAXa13,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.17.0/24,0000:e2:01.4,success,
+14: MAXa14,10.133.134.2,MAX,max-w5.fabric-testbed.net,10.130.18.0/24,0000:e2:07.5,success,
+15: MAXa15,10.133.134.2,MAX,max-w1.fabric-testbed.net,10.130.19.0/24,0000:a1:0b.2,fail,
+16: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+17: MAXa17,10.133.134.2,MAX,max-w5.fabric-testbed.net,10.130.20.0/24,0000:e2:00.4,success,
+18: MAXa18,10.133.134.2,MAX,max-w4.fabric-testbed.net,10.130.21.0/24,0000:e2:02.2,success,
+19: MAXa19,10.133.134.2,MAX,max-w4.fabric-testbed.net,10.130.22.0/24,0000:e2:07.5,success,
+0: UTAHa0,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.2.0/24,0000:a1:0b.3,success,
+1: UTAHa1,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.3.0/24,0000:a1:04.0,success,
+2: UTAHa2,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.4.0/24,0000:e2:08.0,success,
+3: UTAHa3,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.5.0/24,0000:e2:0e.7,success,
+4: UTAHa4,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.6.0/24,0000:e2:05.3,success,
+5: UTAHa5,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.7.0/24,0000:a1:0c.6,success,
+6: UTAHa6,10.133.134.2,UTAH,utah-w3.fabric-testbed.net,10.132.8.0/24,0000:e2:07.0,success,
+7: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+8: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+9: UTAHa9,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.9.0/24,0000:a1:07.4,success,
+10: UTAHa10,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.10.0/24,0000:e2:0a.5,success,
+11: UTAHa11,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.11.0/24,0000:e2:09.3,success,
+12: UTAHa12,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.12.0/24,0000:e2:0c.6,success,
+13: UTAHa13,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.13.0/24,0000:a1:0c.7,success,
+14: UTAHa14,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.14.0/24,0000:e2:0a.7,success,
+15: UTAHa15,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.15.0/24,0000:e2:0f.0,success,
+16: UTAHa16,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.16.0/24,0000:e2:0b.5,success,
+17: UTAHa17,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.17.0/24,0000:a1:08.0,success,
+18: UTAHa18,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.18.0/24,0000:a1:0a.4,success,
+19: UTAHa19,10.133.134.2,UTAH,utah-w3.fabric-testbed.net,10.132.19.0/24,0000:e2:0c.0,success,
+0: UTAHa0,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.2.0/24,0000:a1:0b.3,success,
+1: UTAHa1,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.3.0/24,0000:a1:04.0,success,
+2: UTAHa2,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.4.0/24,0000:e2:08.0,success,
+3: UTAHa3,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.5.0/24,0000:e2:09.3,success,
+4: UTAHa4,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.6.0/24,0000:a1:0c.6,success,
+5: UTAHa5,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.7.0/24,0000:e2:0e.7,success,
+6: UTAHa6,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.8.0/24,0000:e2:05.3,success,
+7: UTAHa7,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,no subnet,no pci addr,None,Interface not found: None
+8: UTAHa8,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.10.0/24,0000:e2:0a.5,success,
+9: UTAHa9,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.11.0/24,0000:a1:08.0,success,
+10: UTAHa10,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.12.0/24,0000:e2:0f.0,success,
+11: UTAHa11,10.133.134.2,UTAH,utah-w3.fabric-testbed.net,10.132.13.0/24,0000:e2:07.0,success,
+12: UTAHa12,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.14.0/24,0000:e2:0a.7,success,
+13: UTAHa13,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.16.0/24,0000:e2:0a.0,success,
+14: UTAHa14,10.133.134.2,UTAH,utah-w3.fabric-testbed.net,10.132.15.0/24,0000:e2:0c.0,success,
+15: UTAHa15,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.17.0/24,0000:a1:07.4,success,
+16: UTAHa16,10.133.134.2,UTAH,utah-w3.fabric-testbed.net,10.132.18.0/24,0000:e2:10.0,success,
+17: UTAHa17,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.19.0/24,0000:e2:0b.5,success,
+18: UTAHa18,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.20.0/24,0000:e2:02.3,success,
+19: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+20: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+21: UTAHa21,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.21.0/24,0000:a1:0c.7,success,
+22: UTAHa22,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.22.0/24,0000:e2:06.5,success,
+23: UTAHa23,10.133.134.2,UTAH,utah-w3.fabric-testbed.net,10.132.23.0/24,0000:e2:02.1,success,
+24: UTAHa24,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.24.0/24,0000:a1:0a.4,success,
+25: UTAHa25,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.25.0/24,0000:e2:04.4,success,
+26: UTAHa26,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.26.0/24,0000:a1:00.2,success,
+27: UTAHa27,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.27.0/24,0000:a1:04.6,success,
+28: UTAHa28,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.28.0/24,0000:a1:0e.0,success,
+29: UTAHa29,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.29.0/24,0000:a1:05.2,success,
+0: UTAHa0,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: UTAHa0: Slice ID: f2fa90ad-e8d5-4390-9590-89eb7b521843: Slice Exception: Slice Name: UTAHa0: Slice ID: f2fa90ad-e8d5-4390-9590-89eb7b521843: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHa0: Slice ID: f2fa90ad-e8d5-4390-9590-89eb7b521843: Slice Exception: Slice Name: UTAHa0: Slice ID: f2fa90ad-e8d5-4390-9590-89eb7b521843: Node: UTAH_node1: Site: UTAH: State: Active: 
+
+Slice Exception: Slice Name: UTAHa0: Slice ID: f2fa90ad-e8d5-4390-9590-89eb7b521843: Slice Exception: Slice Name: UTAHa0: Slice ID: f2fa90ad-e8d5-4390-9590-89eb7b521843: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHa0: Slice ID: f2fa90ad-e8d5-4390-9590-89eb7b521843: Slice Exception: Slice Name: UTAHa0: Slice ID: f2fa90ad-e8d5-4390-9590-89eb7b521843: Node: UTAH_node1: Site: UTAH: State: Active:
+1: UTAHa1,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: UTAHa1: Slice ID: 4f232de6-5bc6-4a1a-8d00-314af600b4e7: Slice Exception: Slice Name: UTAHa1: Slice ID: 4f232de6-5bc6-4a1a-8d00-314af600b4e7: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHa1: Slice ID: 4f232de6-5bc6-4a1a-8d00-314af600b4e7: Slice Exception: Slice Name: UTAHa1: Slice ID: 4f232de6-5bc6-4a1a-8d00-314af600b4e7: Node: UTAH_node1: Site: UTAH: State: Active: 
+
+Slice Exception: Slice Name: UTAHa1: Slice ID: 4f232de6-5bc6-4a1a-8d00-314af600b4e7: Slice Exception: Slice Name: UTAHa1: Slice ID: 4f232de6-5bc6-4a1a-8d00-314af600b4e7: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHa1: Slice ID: 4f232de6-5bc6-4a1a-8d00-314af600b4e7: Slice Exception: Slice Name: UTAHa1: Slice ID: 4f232de6-5bc6-4a1a-8d00-314af600b4e7: Node: UTAH_node1: Site: UTAH: State: Active:
+2: UTAHa2,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: UTAHa2: Slice ID: f9eb06a0-18d8-4c04-9152-771850317ca2: Slice Exception: Slice Name: UTAHa2: Slice ID: f9eb06a0-18d8-4c04-9152-771850317ca2: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHa2: Slice ID: f9eb06a0-18d8-4c04-9152-771850317ca2: Slice Exception: Slice Name: UTAHa2: Slice ID: f9eb06a0-18d8-4c04-9152-771850317ca2: Node: UTAH_node1: Site: UTAH: State: Active: 
+
+Slice Exception: Slice Name: UTAHa2: Slice ID: f9eb06a0-18d8-4c04-9152-771850317ca2: Slice Exception: Slice Name: UTAHa2: Slice ID: f9eb06a0-18d8-4c04-9152-771850317ca2: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHa2: Slice ID: f9eb06a0-18d8-4c04-9152-771850317ca2: Slice Exception: Slice Name: UTAHa2: Slice ID: f9eb06a0-18d8-4c04-9152-771850317ca2: Node: UTAH_node1: Site: UTAH: State: Active:
+3: UTAHa3,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: UTAHa3: Slice ID: 5ec8d772-a69b-453f-a299-650a937871c9: Slice Exception: Slice Name: UTAHa3: Slice ID: 5ec8d772-a69b-453f-a299-650a937871c9: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHa3: Slice ID: 5ec8d772-a69b-453f-a299-650a937871c9: Slice Exception: Slice Name: UTAHa3: Slice ID: 5ec8d772-a69b-453f-a299-650a937871c9: Node: UTAH_node1: Site: UTAH: State: Active: 
+
+Slice Exception: Slice Name: UTAHa3: Slice ID: 5ec8d772-a69b-453f-a299-650a937871c9: Slice Exception: Slice Name: UTAHa3: Slice ID: 5ec8d772-a69b-453f-a299-650a937871c9: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHa3: Slice ID: 5ec8d772-a69b-453f-a299-650a937871c9: Slice Exception: Slice Name: UTAHa3: Slice ID: 5ec8d772-a69b-453f-a299-650a937871c9: Node: UTAH_node1: Site: UTAH: State: Active:
+4: UTAHa4,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: UTAHa4: Slice ID: e57a57d5-82cc-42f6-8b4a-0afbdd1c862d: Slice Exception: Slice Name: UTAHa4: Slice ID: e57a57d5-82cc-42f6-8b4a-0afbdd1c862d: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHa4: Slice ID: e57a57d5-82cc-42f6-8b4a-0afbdd1c862d: Slice Exception: Slice Name: UTAHa4: Slice ID: e57a57d5-82cc-42f6-8b4a-0afbdd1c862d: Node: UTAH_node1: Site: UTAH: State: Active: 
+
+Slice Exception: Slice Name: UTAHa4: Slice ID: e57a57d5-82cc-42f6-8b4a-0afbdd1c862d: Slice Exception: Slice Name: UTAHa4: Slice ID: e57a57d5-82cc-42f6-8b4a-0afbdd1c862d: Node: UTAH_node1: Site: UTAH: State: Active: 
+Slice Exception: Slice Name: UTAHa4: Slice ID: e57a57d5-82cc-42f6-8b4a-0afbdd1c862d: Slice Exception: Slice Name: UTAHa4: Slice ID: e57a57d5-82cc-42f6-8b4a-0afbdd1c862d: Node: UTAH_node1: Site: UTAH: State: Active:
+0: TACCa0,10.133.134.2,TACC,tacc-w5.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa0: Slice ID: ba677e05-d356-40e0-8c84-9ca3176c3ecc: Slice Exception: Slice Name: TACCa0: Slice ID: ba677e05-d356-40e0-8c84-9ca3176c3ecc: Node: TACC_node1: Site: TACC: State: None:
+1: TACCa1,10.133.134.2,TACC,tacc-w4.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa1: Slice ID: c1e37b8d-61c6-4fb2-b04f-c3c7792a82aa: Slice Exception: Slice Name: TACCa1: Slice ID: c1e37b8d-61c6-4fb2-b04f-c3c7792a82aa: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa1: Slice ID: c1e37b8d-61c6-4fb2-b04f-c3c7792a82aa: Slice Exception: Slice Name: TACCa1: Slice ID: c1e37b8d-61c6-4fb2-b04f-c3c7792a82aa: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa1: Slice ID: c1e37b8d-61c6-4fb2-b04f-c3c7792a82aa: Slice Exception: Slice Name: TACCa1: Slice ID: c1e37b8d-61c6-4fb2-b04f-c3c7792a82aa: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa1: Slice ID: c1e37b8d-61c6-4fb2-b04f-c3c7792a82aa: Slice Exception: Slice Name: TACCa1: Slice ID: c1e37b8d-61c6-4fb2-b04f-c3c7792a82aa: Node: TACC_node1: Site: TACC: State: Active:
+2: TACCa2,10.133.134.2,TACC,tacc-w3.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa2: Slice ID: a6f4737a-3bee-48bb-9d1b-031bfaa140cc: Slice Exception: Slice Name: TACCa2: Slice ID: a6f4737a-3bee-48bb-9d1b-031bfaa140cc: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa2: Slice ID: a6f4737a-3bee-48bb-9d1b-031bfaa140cc: Slice Exception: Slice Name: TACCa2: Slice ID: a6f4737a-3bee-48bb-9d1b-031bfaa140cc: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa2: Slice ID: a6f4737a-3bee-48bb-9d1b-031bfaa140cc: Slice Exception: Slice Name: TACCa2: Slice ID: a6f4737a-3bee-48bb-9d1b-031bfaa140cc: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa2: Slice ID: a6f4737a-3bee-48bb-9d1b-031bfaa140cc: Slice Exception: Slice Name: TACCa2: Slice ID: a6f4737a-3bee-48bb-9d1b-031bfaa140cc: Node: TACC_node1: Site: TACC: State: Active:
+3: TACCa3,10.133.134.2,TACC,tacc-w2.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa3: Slice ID: 67525c22-6373-4a80-9866-c5c0eca81d1c: Slice Exception: Slice Name: TACCa3: Slice ID: 67525c22-6373-4a80-9866-c5c0eca81d1c: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa3: Slice ID: 67525c22-6373-4a80-9866-c5c0eca81d1c: Slice Exception: Slice Name: TACCa3: Slice ID: 67525c22-6373-4a80-9866-c5c0eca81d1c: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa3: Slice ID: 67525c22-6373-4a80-9866-c5c0eca81d1c: Slice Exception: Slice Name: TACCa3: Slice ID: 67525c22-6373-4a80-9866-c5c0eca81d1c: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa3: Slice ID: 67525c22-6373-4a80-9866-c5c0eca81d1c: Slice Exception: Slice Name: TACCa3: Slice ID: 67525c22-6373-4a80-9866-c5c0eca81d1c: Node: TACC_node1: Site: TACC: State: Active:
+4: TACCa4,10.133.134.2,TACC,tacc-w5.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa4: Slice ID: 7f1cbd36-12b5-423e-93f6-021928e305fa: Slice Exception: Slice Name: TACCa4: Slice ID: 7f1cbd36-12b5-423e-93f6-021928e305fa: Node: TACC_node1: Site: TACC: State: Closed: Insufficient Resources: tacc-w5.fabric-testbed.net cannot serve the requested sliver
+Slice Exception: Slice Name: TACCa4: Slice ID: 7f1cbd36-12b5-423e-93f6-021928e305fa: Slice Exception: Slice Name: TACCa4: Slice ID: 7f1cbd36-12b5-423e-93f6-021928e305fa: Node: TACC_node1: Site: TACC: State: Closed: Insufficient Resources: tacc-w5.fabric-testbed.net cannot serve the requested sliver
+5: TACCa5,10.133.134.2,TACC,tacc-w1.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa5: Slice ID: 4484af3c-beb9-4a82-9ae0-ea2c127d7508: Slice Exception: Slice Name: TACCa5: Slice ID: 4484af3c-beb9-4a82-9ae0-ea2c127d7508: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa5: Slice ID: 4484af3c-beb9-4a82-9ae0-ea2c127d7508: Slice Exception: Slice Name: TACCa5: Slice ID: 4484af3c-beb9-4a82-9ae0-ea2c127d7508: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa5: Slice ID: 4484af3c-beb9-4a82-9ae0-ea2c127d7508: Slice Exception: Slice Name: TACCa5: Slice ID: 4484af3c-beb9-4a82-9ae0-ea2c127d7508: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa5: Slice ID: 4484af3c-beb9-4a82-9ae0-ea2c127d7508: Slice Exception: Slice Name: TACCa5: Slice ID: 4484af3c-beb9-4a82-9ae0-ea2c127d7508: Node: TACC_node1: Site: TACC: State: Active:
+6: TACCa6,10.133.134.2,TACC,tacc-w2.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa6: Slice ID: 7367bb66-a2e7-4058-8790-43c5639c39b5: Slice Exception: Slice Name: TACCa6: Slice ID: 7367bb66-a2e7-4058-8790-43c5639c39b5: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa6: Slice ID: 7367bb66-a2e7-4058-8790-43c5639c39b5: Slice Exception: Slice Name: TACCa6: Slice ID: 7367bb66-a2e7-4058-8790-43c5639c39b5: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa6: Slice ID: 7367bb66-a2e7-4058-8790-43c5639c39b5: Slice Exception: Slice Name: TACCa6: Slice ID: 7367bb66-a2e7-4058-8790-43c5639c39b5: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa6: Slice ID: 7367bb66-a2e7-4058-8790-43c5639c39b5: Slice Exception: Slice Name: TACCa6: Slice ID: 7367bb66-a2e7-4058-8790-43c5639c39b5: Node: TACC_node1: Site: TACC: State: Active:
+7: TACCa7,10.133.134.2,TACC,tacc-w1.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa7: Slice ID: c22705cb-b479-4ff5-a52c-9adf42299fd6: Slice Exception: Slice Name: TACCa7: Slice ID: c22705cb-b479-4ff5-a52c-9adf42299fd6: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa7: Slice ID: c22705cb-b479-4ff5-a52c-9adf42299fd6: Slice Exception: Slice Name: TACCa7: Slice ID: c22705cb-b479-4ff5-a52c-9adf42299fd6: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa7: Slice ID: c22705cb-b479-4ff5-a52c-9adf42299fd6: Slice Exception: Slice Name: TACCa7: Slice ID: c22705cb-b479-4ff5-a52c-9adf42299fd6: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa7: Slice ID: c22705cb-b479-4ff5-a52c-9adf42299fd6: Slice Exception: Slice Name: TACCa7: Slice ID: c22705cb-b479-4ff5-a52c-9adf42299fd6: Node: TACC_node1: Site: TACC: State: Active:
+8: TACCa8,10.133.134.2,TACC,tacc-w1.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa8: Slice ID: 290a8e4f-25a2-4976-8dac-9844980dffcc: Slice Exception: Slice Name: TACCa8: Slice ID: 290a8e4f-25a2-4976-8dac-9844980dffcc: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa8: Slice ID: 290a8e4f-25a2-4976-8dac-9844980dffcc: Slice Exception: Slice Name: TACCa8: Slice ID: 290a8e4f-25a2-4976-8dac-9844980dffcc: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa8: Slice ID: 290a8e4f-25a2-4976-8dac-9844980dffcc: Slice Exception: Slice Name: TACCa8: Slice ID: 290a8e4f-25a2-4976-8dac-9844980dffcc: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa8: Slice ID: 290a8e4f-25a2-4976-8dac-9844980dffcc: Slice Exception: Slice Name: TACCa8: Slice ID: 290a8e4f-25a2-4976-8dac-9844980dffcc: Node: TACC_node1: Site: TACC: State: Active:
+9: TACCa9,10.133.134.2,TACC,tacc-w5.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa9: Slice ID: fcac8064-45b1-4592-b6c2-e1315c68d25f: Slice Exception: Slice Name: TACCa9: Slice ID: fcac8064-45b1-4592-b6c2-e1315c68d25f: Node: TACC_node1: Site: TACC: State: Closed: Insufficient Resources: tacc-w5.fabric-testbed.net cannot serve the requested sliver
+Slice Exception: Slice Name: TACCa9: Slice ID: fcac8064-45b1-4592-b6c2-e1315c68d25f: Slice Exception: Slice Name: TACCa9: Slice ID: fcac8064-45b1-4592-b6c2-e1315c68d25f: Node: TACC_node1: Site: TACC: State: Closed: Insufficient Resources: tacc-w5.fabric-testbed.net cannot serve the requested sliver
+10: TACCa10,10.133.134.2,TACC,tacc-w1.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa10: Slice ID: a6ba155c-d4dd-4505-8152-1daf66a28969: Slice Exception: Slice Name: TACCa10: Slice ID: a6ba155c-d4dd-4505-8152-1daf66a28969: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa10: Slice ID: a6ba155c-d4dd-4505-8152-1daf66a28969: Slice Exception: Slice Name: TACCa10: Slice ID: a6ba155c-d4dd-4505-8152-1daf66a28969: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa10: Slice ID: a6ba155c-d4dd-4505-8152-1daf66a28969: Slice Exception: Slice Name: TACCa10: Slice ID: a6ba155c-d4dd-4505-8152-1daf66a28969: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa10: Slice ID: a6ba155c-d4dd-4505-8152-1daf66a28969: Slice Exception: Slice Name: TACCa10: Slice ID: a6ba155c-d4dd-4505-8152-1daf66a28969: Node: TACC_node1: Site: TACC: State: Active:
+11: TACCa11,10.133.134.2,TACC,tacc-w4.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa11: Slice ID: 9a94b69d-eea0-45f3-beda-b5009d95e5b0: Slice Exception: Slice Name: TACCa11: Slice ID: 9a94b69d-eea0-45f3-beda-b5009d95e5b0: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa11: Slice ID: 9a94b69d-eea0-45f3-beda-b5009d95e5b0: Slice Exception: Slice Name: TACCa11: Slice ID: 9a94b69d-eea0-45f3-beda-b5009d95e5b0: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa11: Slice ID: 9a94b69d-eea0-45f3-beda-b5009d95e5b0: Slice Exception: Slice Name: TACCa11: Slice ID: 9a94b69d-eea0-45f3-beda-b5009d95e5b0: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa11: Slice ID: 9a94b69d-eea0-45f3-beda-b5009d95e5b0: Slice Exception: Slice Name: TACCa11: Slice ID: 9a94b69d-eea0-45f3-beda-b5009d95e5b0: Node: TACC_node1: Site: TACC: State: Active:
+12: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+13: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+14: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+15: TACCa15,10.133.134.2,TACC,tacc-w3.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa15: Slice ID: 6eeaedeb-90d3-4940-92ab-5f8413717c07: Slice Exception: Slice Name: TACCa15: Slice ID: 6eeaedeb-90d3-4940-92ab-5f8413717c07: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa15: Slice ID: 6eeaedeb-90d3-4940-92ab-5f8413717c07: Slice Exception: Slice Name: TACCa15: Slice ID: 6eeaedeb-90d3-4940-92ab-5f8413717c07: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa15: Slice ID: 6eeaedeb-90d3-4940-92ab-5f8413717c07: Slice Exception: Slice Name: TACCa15: Slice ID: 6eeaedeb-90d3-4940-92ab-5f8413717c07: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa15: Slice ID: 6eeaedeb-90d3-4940-92ab-5f8413717c07: Slice Exception: Slice Name: TACCa15: Slice ID: 6eeaedeb-90d3-4940-92ab-5f8413717c07: Node: TACC_node1: Site: TACC: State: Active:
+16: TACCa16,10.133.134.2,TACC,tacc-w1.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa16: Slice ID: 593adfe2-879d-408a-bcbd-5a0f8a71714e: Slice Exception: Slice Name: TACCa16: Slice ID: 593adfe2-879d-408a-bcbd-5a0f8a71714e: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa16: Slice ID: 593adfe2-879d-408a-bcbd-5a0f8a71714e: Slice Exception: Slice Name: TACCa16: Slice ID: 593adfe2-879d-408a-bcbd-5a0f8a71714e: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa16: Slice ID: 593adfe2-879d-408a-bcbd-5a0f8a71714e: Slice Exception: Slice Name: TACCa16: Slice ID: 593adfe2-879d-408a-bcbd-5a0f8a71714e: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa16: Slice ID: 593adfe2-879d-408a-bcbd-5a0f8a71714e: Slice Exception: Slice Name: TACCa16: Slice ID: 593adfe2-879d-408a-bcbd-5a0f8a71714e: Node: TACC_node1: Site: TACC: State: Active:
+17: TACCa17,10.133.134.2,TACC,tacc-w2.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa17: Slice ID: cc0029f7-a6bd-4983-b093-ea325b8307b0: Slice Exception: Slice Name: TACCa17: Slice ID: cc0029f7-a6bd-4983-b093-ea325b8307b0: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa17: Slice ID: cc0029f7-a6bd-4983-b093-ea325b8307b0: Slice Exception: Slice Name: TACCa17: Slice ID: cc0029f7-a6bd-4983-b093-ea325b8307b0: Node: TACC_node1: Site: TACC: State: Active: 
+
+Slice Exception: Slice Name: TACCa17: Slice ID: cc0029f7-a6bd-4983-b093-ea325b8307b0: Slice Exception: Slice Name: TACCa17: Slice ID: cc0029f7-a6bd-4983-b093-ea325b8307b0: Node: TACC_node1: Site: TACC: State: Active: 
+Slice Exception: Slice Name: TACCa17: Slice ID: cc0029f7-a6bd-4983-b093-ea325b8307b0: Slice Exception: Slice Name: TACCa17: Slice ID: cc0029f7-a6bd-4983-b093-ea325b8307b0: Node: TACC_node1: Site: TACC: State: Active:
+18: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+19: TACCa19,10.133.134.2,TACC,tacc-w1.fabric-testbed.net,no subnet,no pci addr,None,Slice Exception: Slice Name: TACCa19: Slice ID: 0b9a5a56-4b6b-4f62-ab09-d4eea9641df6: Slice Exception: Slice Name: TACCa19: Slice ID: 0b9a5a56-4b6b-4f62-ab09-d4eea9641df6: Node: TACC_node1: Site: TACC: State: None:
+0: b'<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n<hr><center>nginx/1.23.1</center>\r\n</body>\r\n</html>\r\n'
+1: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+2: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+3: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+4: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+5: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+0: UTAHa0,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.2.0/24,0000:a1:05.2,success,
+1: UTAHa1,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.3.0/24,0000:a1:08.4,success,
+2: UTAHa2,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.4.0/24,0000:a1:08.0,success,
+3: UTAHa3,10.133.134.2,UTAH,utah-w3.fabric-testbed.net,10.132.5.0/24,0000:e2:07.0,success,
+4: UTAHa4,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.6.0/24,0000:a1:01.4,success,
+5: UTAHa5,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.7.0/24,0000:e2:08.0,success,
+6: UTAHa6,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.8.0/24,0000:a1:0a.4,success,
+7: UTAHa7,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.9.0/24,0000:a1:04.6,success,
+8: UTAHa8,10.133.134.2,UTAH,utah-w2.fabric-testbed.net,10.132.10.0/24,0000:a1:07.0,success,
+9: UTAHa9,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.11.0/24,0000:e2:09.3,success,
+10: UTAHa10,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.12.0/24,0000:e2:0c.6,success,
+11: UTAHa11,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.13.0/24,0000:a1:00.7,success,
+12: UTAHa12,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.14.0/24,0000:e2:0e.7,success,
+13: UTAHa13,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.15.0/24,0000:a1:02.7,success,
+14: UTAHa14,10.133.134.2,UTAH,utah-w5.fabric-testbed.net,10.132.16.0/24,0000:e2:0a.7,success,
+15: UTAHa15,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.17.0/24,0000:a1:00.3,success,
+16: b'{\n    "errors": [\n        {\n            "details": "(invalid_grant) invalid refresh token",\n            "message": "Internal Server Error"\n        }\n    ],\n    "size": 1,\n    "status": 500,\n    "type": "error"\n}'
+17: UTAHa17,10.133.134.2,UTAH,utah-w4.fabric-testbed.net,10.132.18.0/24,0000:e2:05.3,success,
+18: UTAHa18,10.133.134.2,UTAH,utah-w1.fabric-testbed.net,10.132.19.0/24,0000:a1:0b.4,success,
+19: UTAHa19,10.133.134.2,UTAH,utah-w3.fabric-testbed.net,10.132.20.0/24,0000:e2:0c.0,success,
+0: MAXa0,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.7.0/24,0000:e2:0b.5,fail,
+1: MAXa1,10.133.134.2,MAX,max-w1.fabric-testbed.net,10.130.5.0/24,0000:a1:00.4,fail,
+2: MAXa2,10.133.134.2,MAX,max-w5.fabric-testbed.net,10.130.6.0/24,0000:e2:0e.4,success,
+3: MAXa3,10.133.134.2,MAX,max-w1.fabric-testbed.net,10.130.8.0/24,0000:a1:04.4,success,
+4: MAXa4,10.133.134.2,MAX,max-w1.fabric-testbed.net,10.130.9.0/24,0000:a1:0b.2,fail,
+5: MAXa5,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.10.0/24,0000:e2:08.6,fail,
+6: MAXa6,10.133.134.2,MAX,max-w4.fabric-testbed.net,10.130.11.0/24,0000:e2:08.6,fail,
+7: MAXa7,10.133.134.2,MAX,max-w4.fabric-testbed.net,10.130.12.0/24,0000:e2:0b.7,fail,
+8: MAXa8,10.133.134.2,MAX,max-w4.fabric-testbed.net,10.130.13.0/24,0000:e2:02.2,fail,
+9: MAXa9,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.14.0/24,0000:e2:08.2,fail,
+10: MAXa10,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.15.0/24,0000:e2:01.4,fail,
+11: MAXa11,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.16.0/24,0000:e2:09.1,fail,
+12: MAXa12,10.133.134.2,MAX,max-w5.fabric-testbed.net,10.130.17.0/24,0000:e2:0d.1,fail,
+13: MAXa13,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.18.0/24,0000:e2:0f.2,fail,
+14: MAXa14,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.19.0/24,0000:e2:0a.6,fail,
+15: MAXa15,10.133.134.2,MAX,max-w3.fabric-testbed.net,10.130.20.0/24,0000:e2:08.1,fail,
+16: MAXa16,10.133.134.2,MAX,max-w2.fabric-testbed.net,10.130.21.0/24,0000:a1:0a.0,fail,
+17: MAXa17,10.133.134.2,MAX,max-w1.fabric-testbed.net,10.130.22.0/24,0000:a1:0a.5,fail,
+18: MAXa18,10.133.134.2,MAX,max-w2.fabric-testbed.net,10.130.23.0/24,0000:a1:04.0,fail,
+19: MAXa19,10.133.134.2,MAX,max-w4.fabric-testbed.net,10.130.24.0/24,0000:e2:07.5,fail,

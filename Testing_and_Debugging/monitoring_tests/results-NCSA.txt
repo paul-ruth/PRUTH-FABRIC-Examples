@@ -1,0 +1,30 @@
+0: NCSAa0,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.131.0/24,0000:e2:13.7,success,None
+1: NCSAa1,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.132.0/24,0000:e2:1b.5,success,None
+2: NCSAa2,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.133.0/24,0000:e2:1d.1,success,None
+3: NCSAa3,10.133.1.2,NCSA,ncsa-w2.fabric-testbed.net,None,None,None,Slice Exception: Slice Name: NCSAa3, Slice ID: 62c55079-8d3d-44a6-9027-e82f8f1ab953: Slice Exception: Slice Name: NCSAa3, Slice ID: 62c55079-8d3d-44a6-9027-e82f8f1ab953: Node: NCSA_node1, Site: NCSA, State: None, 
+
+4: NCSAa4,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.134.0/24,0000:e2:11.1,success,None
+5: NCSAa5,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.135.0/24,0000:e2:1c.5,success,None
+6: NCSAa6,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.131.0/24,0000:e2:18.3,success,None
+7: NCSAa7,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.136.0/24,0000:e2:1c.0,success,None
+8: NCSAa8,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.132.0/24,0000:e2:13.7,success,None
+9: NCSAa9,10.133.1.2,NCSA,ncsa-w2.fabric-testbed.net,None,None,None,Slice Exception: Slice Name: NCSAa9, Slice ID: 4a300edd-781c-4b20-a60e-89884c65c5b8: Slice Exception: Slice Name: NCSAa9, Slice ID: 4a300edd-781c-4b20-a60e-89884c65c5b8: Node: NCSA_node1, Site: NCSA, State: Closed, Insufficient Resources: ncsa-w2.fabric-testbed.net cannot serve the requested sliver
+Slice Exception: Slice Name: NCSAa9, Slice ID: 4a300edd-781c-4b20-a60e-89884c65c5b8: Slice Exception: Slice Name: NCSAa9, Slice ID: 4a300edd-781c-4b20-a60e-89884c65c5b8: Node: NCSA_node1, Site: NCSA, State: Closed, Insufficient Resources: ncsa-w2.fabric-testbed.net cannot serve the requested sliver
+
+
+10: NCSAa10,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.133.0/24,0000:e2:1b.5,success,None
+11: NCSAa11,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.134.0/24,0000:e2:1d.1,success,None
+12: NCSAa12,10.133.1.2,NCSA,ncsa-w2.fabric-testbed.net,None,None,None,Slice Exception: Slice Name: NCSAa12, Slice ID: cae63902-bc48-4589-8266-7cccb0499bad: Slice Exception: Slice Name: NCSAa12, Slice ID: cae63902-bc48-4589-8266-7cccb0499bad: Node: NCSA_node1, Site: NCSA, State: Closed, Insufficient Resources: ncsa-w2.fabric-testbed.net cannot serve the requested sliver
+Slice Exception: Slice Name: NCSAa12, Slice ID: cae63902-bc48-4589-8266-7cccb0499bad: Slice Exception: Slice Name: NCSAa12, Slice ID: cae63902-bc48-4589-8266-7cccb0499bad: Node: NCSA_node1, Site: NCSA, State: Closed, Insufficient Resources: ncsa-w2.fabric-testbed.net cannot serve the requested sliver
+
+
+13: NCSAa13,10.133.1.2,NCSA,ncsa-w1.fabric-testbed.net,10.132.135.0/24,0000:a1:15.1,success,None
+14: NCSAa14,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.131.0/24,0000:e2:11.1,success,None
+15: NCSAa15,10.133.1.2,NCSA,ncsa-w2.fabric-testbed.net,None,None,None,Slice Exception: Slice Name: NCSAa15, Slice ID: 244b3dba-9eeb-4c86-a87a-0e975ffd8eca: Slice Exception: Slice Name: NCSAa15, Slice ID: 244b3dba-9eeb-4c86-a87a-0e975ffd8eca: Node: NCSA_node1, Site: NCSA, State: Closed, Insufficient Resources: ncsa-w2.fabric-testbed.net cannot serve the requested sliver
+Slice Exception: Slice Name: NCSAa15, Slice ID: 244b3dba-9eeb-4c86-a87a-0e975ffd8eca: Slice Exception: Slice Name: NCSAa15, Slice ID: 244b3dba-9eeb-4c86-a87a-0e975ffd8eca: Node: NCSA_node1, Site: NCSA, State: Closed, Insufficient Resources: ncsa-w2.fabric-testbed.net cannot serve the requested sliver
+
+
+16: NCSAa16,10.133.1.2,NCSA,ncsa-w1.fabric-testbed.net,10.132.132.0/24,0000:a1:17.6,success,None
+17: NCSAa17,10.133.1.2,NCSA,ncsa-w3.fabric-testbed.net,10.132.133.0/24,0000:e2:13.7,success,None
+18: NCSAa18,10.133.1.2,NCSA,ncsa-w1.fabric-testbed.net,10.132.136.0/24,0000:a1:1e.6,success,None
+19: NCSAa19,10.133.1.2,NCSA,ncsa-w1.fabric-testbed.net,10.132.134.0/24,0000:a1:11.5,success,None
