@@ -1,0 +1,3 @@
+[nodes] 
+rocky_node0 ansible_host=2001:1948:417:7:f816:3eff:fec4:fa92 ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+rocky_node1 ansible_host=129.114.110.105 ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 

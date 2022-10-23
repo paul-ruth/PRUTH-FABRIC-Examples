@@ -1,0 +1,23 @@
+---
+- name: Intro to Ansible Playbooks
+  hosts: all
+  gather_facts: True
+  become: true
+  strategy: free
+  #vars_files:
+  #  - external_vars.yml
+  tasks:      
+  - name: var test  
+    ansible.builtin.shell: |
+        echo {{ name }} > test.txt
+        echo {{ ip }} >> test.txt
+        echo {{ data[0]["l1"] }} >> test.txt
+        
+        exit 0
+    args:
+      chdir: .
+      #creates: "{{ myfile2 }}"
+    
+   
+   
+   
