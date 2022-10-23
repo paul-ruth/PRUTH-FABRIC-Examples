@@ -42,7 +42,7 @@
         
         #echo {{ data | to_json | tojson }}  | jq '.[].ip' |  xargs  -L1 -I'{}' echo xxx{}xxx >> test.txt
         
-        echo {{ data | to_json | tojson }}  |  jq -r '.[]|[.dev, .ip, .subnet .cidr] | @tsv' |
+        echo {{ data | to_json | tojson }}  |  jq -r '.[]|[.dev, .ip, .subnet, .cidr] | @tsv' |
         while IFS=$'\t' read -r dev ip subnet cidr; do
            ip addr add "$ip"/"$cidr" dev "$dev" >> test.txt 2>&1
         done
