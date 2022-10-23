@@ -1,0 +1,6 @@
+{
+    "name": "supernode1",
+    "ip": "10.20.30.40",
+   
+        "data":  [ { "l1": "line1"}, {"l2": "line2"}, {"l3": "line3"} ]
+}

@@ -19834,3 +19834,600 @@ stderr: Failed to stop NetworkManager.service: Unit NetworkManager.service not l
 [15:58:58] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:973} DEBUG - Getting interfaces for node ubuntu_node7
 [15:58:58] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:973} DEBUG - Getting interfaces for node ubuntu_node8
 [15:58:58] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:973} DEBUG - Getting interfaces for node ubuntu_node9
+[17:15:36] {/opt/conda/lib/python3.9/site-packages/fabric_cm/credmgr/swagger_client/rest.py:219} DEBUG - response body: b'{\n    "data": [\n        {\n            "created_at": "2022-10-23 17:15:36",\n            "id_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImI0MTUxNjcyMTExOTFlMmUwNWIyMmI1NGIxZDNiNzY2N2U3NjRhNzQ3NzIyMTg1ZTcyMmU1MmUxNDZmZTQzYWEifQ.eyJlbWFpbCI6InBydXRoQHJlbmNpLm9yZyIsImNlcnRfc3ViamVjdF9kbiI6Ii9EQz1vcmcvREM9Y2lsb2dvbi9DPVVTL089R29vZ2xlL0NOPVBhdWwgUnV0aCBFNTI5IiwiaWRwIjoiaHR0cDovL2dvb2dsZS5jb20vYWNjb3VudHMvbzgvaWQiLCJpZHBfbmFtZSI6Ikdvb2dsZSIsIm9pZGMiOiIxMDg3MjAyNjA3Njk5MDAzODU1NTEiLCJuYW1lIjoiUGF1bCBSdXRoIiwiaXNzIjoiaHR0cHM6Ly9jaWxvZ29uLm9yZyIsInN1YiI6Imh0dHA6Ly9jaWxvZ29uLm9yZy9zZXJ2ZXJFL3VzZXJzLzUyOSIsImF1ZCI6ImNpbG9nb246L2NsaWVudF9pZC8yOTdkZGZhZGM1ZWFiYTVlYmE5Yzg5ODY4YWE5NjI3ZCIsImp0aSI6Imh0dHBzOi8vY2lsb2dvbi5vcmcvb2F1dGgyL2lkVG9rZW4vMzk4NTNhY2Y1OTNjNDVkYmY4Y2Q3OGMwZmMxZmUzZC8xNjY2NDQ4MjMwMzIzIiwiYXV0aF90aW1lIjoxNjY2NDQ4MjI4LCJleHAiOjE2NjY1NDg5MzYsImlhdCI6MTY2NjU0NTMzNiwicHJvamVjdCI6eyJ1dWlkIjoiOTkwZDhhOGItN2U1MC00ZDEzLWEzYmUtMGYxMzNmZmE4NjUzIiwidGFncyI6WyJDb21wb25lbnQuRlBHQSIsIkNvbXBvbmVudC5HUFUiLCJDb21wb25lbnQuTlZNRSIsIkNvbXBvbmVudC5TbWFydE5JQyIsIkNvbXBvbmVudC5TdG9yYWdlIiwiTmV0LkFsbEZhY2lsaXR5UG9ydHMiLCJOZXQuTm9MaW1pdEJXIiwiTmV0LlBlZXJpbmciLCJOZXQuUG9ydE1pcnJvcmluZyIsIlNsaWNlLk11bHRpc2l0ZSIsIlNsaWNlLk1lYXN1cmVtZW50cyIsIlZNLk5vTGltaXQiLCJWTS5Ob0xpbWl0RGlzayIsIlZNLk5vTGltaXRSQU0iLCJWTS5Ob0xpbWl0Q1BVIiwiTmV0LkZhY2lsaXR5UG9ydC5DaGFtZWxlb24tU3RhckxpZ2h0Il0sIm1lbWJlcnNoaXBzIjp7ImlzX2NyZWF0b3IiOmZhbHNlLCJpc19tZW1iZXIiOnRydWUsImlzX293bmVyIjpmYWxzZX19LCJyb2xlcyI6W3siZGVzY3JpcHRpb24iOiJGQUJSSUMgU3RhZmYgTm8gUGVybWlzc2lvbnMiLCJuYW1lIjoiMDRiMTRjMTctZTY2YS00NDA1LTk4ZmMtZDczNzcxN2UyMTYwLXBvIn0seyJkZXNjcmlwdGlvbiI6IkZBQlJJQyBTdGFmZiIsIm5hbWUiOiI5OTBkOGE4Yi03ZTUwLTRkMTMtYTNiZS0wZjEzM2ZmYTg2NTMtcG0ifSx7ImRlc2NyaXB0aW9uIjoiQWN0aXZlIFVzZXJzIG9mIEZBQlJJQyAtIGluaXRpYWxseSBzZXQgYnkgZW5yb2xsbWVudCB3b3JrZmxvdyIsIm5hbWUiOiJmYWJyaWMtYWN0aXZlLXVzZXJzIn0seyJkZXNjcmlwdGlvbiI6Ikp1cHl0ZXJodWIgYWNjZXNzIC0gYmFzZWQgb24gcHJvamVjdCBwYXJ0aWNpcGF0aW9uIiwibmFtZSI6Ikp1cHl0ZXJodWIifV0sInNjb3BlIjoiYWxsIiwidXVpZCI6ImJkMTg5YTlhLTU0ZjktNGQ5Ny05MjQ1LTc4OGNiZmRkZTZlMCJ9.LHaJamSeCT2vw7GZ2dt50AXXAWzO12E4ETnip0xIHBk1QJ881kTfejWKIdl_CLvd35isDrNbfuOtCqxapC_A-G_uSWX7SOO66s4OZmoLdD2I8zkoM-cLzRbro1t1RmF1P0bIK5V2INECfhoZjO7jXm_NC-d17gIOSDpcKc_A7OeYowNmUTYrxZoYiS7lAq0bN6gtwi7lAaWdeF_39ph65LeylAGZsA3zxHllva_WiT1srqlRHwbtpkhirzdp899JNu3Avs-ovKYivcm6fShBC_HzhcqdEv3k2-shhlWSN8SeHL89lGSgboeb9H8wgePVF0ljXcwcvBlhGR2EUK6XQbhbXN8iVXWWhMT3qc1svTyHgMAIMu6202bc0tbqZbZYn8y5TTayZ2_kQukA3ncf0MXvYkuEZCkkeBf6GpVaECAMMRHTPBHb-4psyiiY25JbJMN96PibmyuCiB34WjuuZLS-0q1PHnQ3WkJYzO_Qyk6HsLKjNsM2yDPD5u_ee4ii_Nm-cFVBp4-U23B3ys1fiuHl-xkeBBKiJxmiyIF9FS5-SSmESnWO-LqqwgcG2J0D21mJD27fUclbtyPWyVcfs9SzyXZftwxBGFEZIeGHhfH1IqBSAWeE7VgPoqqqocJwW_G88DF52TA9XIpnv28wfyeYEvHTH8S3-i3TVSjfCUI",\n            "refresh_token": "NB2HI4DTHIXS6Y3JNRXWO33OFZXXEZZPN5QXK5DIGIXTOMJTG43DMMRSMVSWGZLDHE4DGZRQMJSDSZTCGEYDEOLGMVRGCYJ7OR4XAZJ5OJSWM4TFONUFI33LMVXCM5DTHUYTMNRWGU2DKMZTGU2DSOJGOZSXE43JN5XD25RSFYYCM3DJMZSXI2LNMU6TQNRUGAYDAMBQ"\n        }\n    ],\n    "size": 1,\n    "status": 200,\n    "type": "token"\n}'
+[17:16:04] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/fablib.py:816} INFO - oc_host=orchestrator.fabric-testbed.net,cm_host=cm.fabric-testbed.net,project_id=990d8a8b-7e50-4d13-a3be-0f133ffa8653,token_location=/home/fabric/.tokens.json,initialize=True,scope='all'
+[17:16:06] {/opt/conda/lib/python3.9/site-packages/fabric_cm/credmgr/swagger_client/rest.py:219} DEBUG - response body: b'{\n    "data": [\n        {\n            "created_at": "2022-10-23 17:16:06",\n            "id_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImI0MTUxNjcyMTExOTFlMmUwNWIyMmI1NGIxZDNiNzY2N2U3NjRhNzQ3NzIyMTg1ZTcyMmU1MmUxNDZmZTQzYWEifQ.eyJlbWFpbCI6InBydXRoQHJlbmNpLm9yZyIsImNlcnRfc3ViamVjdF9kbiI6Ii9EQz1vcmcvREM9Y2lsb2dvbi9DPVVTL089R29vZ2xlL0NOPVBhdWwgUnV0aCBFNTI5IiwiaWRwIjoiaHR0cDovL2dvb2dsZS5jb20vYWNjb3VudHMvbzgvaWQiLCJpZHBfbmFtZSI6Ikdvb2dsZSIsIm9pZGMiOiIxMDg3MjAyNjA3Njk5MDAzODU1NTEiLCJuYW1lIjoiUGF1bCBSdXRoIiwiaXNzIjoiaHR0cHM6Ly9jaWxvZ29uLm9yZyIsInN1YiI6Imh0dHA6Ly9jaWxvZ29uLm9yZy9zZXJ2ZXJFL3VzZXJzLzUyOSIsImF1ZCI6ImNpbG9nb246L2NsaWVudF9pZC8yOTdkZGZhZGM1ZWFiYTVlYmE5Yzg5ODY4YWE5NjI3ZCIsImp0aSI6Imh0dHBzOi8vY2lsb2dvbi5vcmcvb2F1dGgyL2lkVG9rZW4vMzk4NTNhY2Y1OTNjNDVkYmY4Y2Q3OGMwZmMxZmUzZC8xNjY2NDQ4MjMwMzIzIiwiYXV0aF90aW1lIjoxNjY2NDQ4MjI4LCJleHAiOjE2NjY1NDg5NjYsImlhdCI6MTY2NjU0NTM2NiwicHJvamVjdCI6eyJ1dWlkIjoiOTkwZDhhOGItN2U1MC00ZDEzLWEzYmUtMGYxMzNmZmE4NjUzIiwidGFncyI6WyJDb21wb25lbnQuRlBHQSIsIkNvbXBvbmVudC5HUFUiLCJDb21wb25lbnQuTlZNRSIsIkNvbXBvbmVudC5TbWFydE5JQyIsIkNvbXBvbmVudC5TdG9yYWdlIiwiTmV0LkFsbEZhY2lsaXR5UG9ydHMiLCJOZXQuTm9MaW1pdEJXIiwiTmV0LlBlZXJpbmciLCJOZXQuUG9ydE1pcnJvcmluZyIsIlNsaWNlLk11bHRpc2l0ZSIsIlNsaWNlLk1lYXN1cmVtZW50cyIsIlZNLk5vTGltaXQiLCJWTS5Ob0xpbWl0RGlzayIsIlZNLk5vTGltaXRSQU0iLCJWTS5Ob0xpbWl0Q1BVIiwiTmV0LkZhY2lsaXR5UG9ydC5DaGFtZWxlb24tU3RhckxpZ2h0Il0sIm1lbWJlcnNoaXBzIjp7ImlzX2NyZWF0b3IiOmZhbHNlLCJpc19tZW1iZXIiOnRydWUsImlzX293bmVyIjpmYWxzZX19LCJyb2xlcyI6W3siZGVzY3JpcHRpb24iOiJGQUJSSUMgU3RhZmYgTm8gUGVybWlzc2lvbnMiLCJuYW1lIjoiMDRiMTRjMTctZTY2YS00NDA1LTk4ZmMtZDczNzcxN2UyMTYwLXBvIn0seyJkZXNjcmlwdGlvbiI6IkZBQlJJQyBTdGFmZiIsIm5hbWUiOiI5OTBkOGE4Yi03ZTUwLTRkMTMtYTNiZS0wZjEzM2ZmYTg2NTMtcG0ifSx7ImRlc2NyaXB0aW9uIjoiQWN0aXZlIFVzZXJzIG9mIEZBQlJJQyAtIGluaXRpYWxseSBzZXQgYnkgZW5yb2xsbWVudCB3b3JrZmxvdyIsIm5hbWUiOiJmYWJyaWMtYWN0aXZlLXVzZXJzIn0seyJkZXNjcmlwdGlvbiI6Ikp1cHl0ZXJodWIgYWNjZXNzIC0gYmFzZWQgb24gcHJvamVjdCBwYXJ0aWNpcGF0aW9uIiwibmFtZSI6Ikp1cHl0ZXJodWIifV0sInNjb3BlIjoiYWxsIiwidXVpZCI6ImJkMTg5YTlhLTU0ZjktNGQ5Ny05MjQ1LTc4OGNiZmRkZTZlMCJ9.k8DRP1xJRuKYzlK-JfTSjQ3gdIgaKarDDC7AeapzgzcpeM1XrAsDveapppmhtl_v16ovwZItiaKP8SEoD9o-u9HLL3cQxqvLvHvFy_AghoDj6ax0vmddGXLK15a-leYzG4GBxnb3KvIkD9J8RMxSzim6FmPsoomd55B7bX492qpo1eIkMMTTMpiqdtgbtDEIH8YZPyheGAP8k67AlH4njgaqFzeSrb_eHEOQRPd63F6tevNys3w0hf2btwYp98cbE1GYyYs7FWWzIMHw1rYMwN10PEbLXNuMYMcZ6Fb3x0BYFBiWpAxgMZuUTflJjC1MQ8hNnW3LAAEE3Wq2w1on2N1ezxtfvnqab-7t21vAUpwi4cV8Oc6i06CkAPwulPCug3AkzcPXrjSDplrQbgpOgtIKci1oVdUYzAA--3YMLGygyGppPff0k-aKtFRmN9j1WNUcY5zzIEAiNuIFGeLUDTxEVgXbKE0DaTSZ-CvxPUyeJV1bD_i-sNGiTXwsPCRuZQCYmWEWZPnxiOeBb5USVgBw_b7Gg79OR8J2pr9123FByjJOGp4Jng32l_OykrEgf3kGN02yfBLQEFf1-rUp_2H_e2ByypzKVsYaCW1bt4UNaL-hs3pI9g1Kh4b7dSQZybL7YpiTK2YcN5kWUkUh7HABVfDYX4A1bNV-iqCqTEk",\n            "refresh_token": "NB2HI4DTHIXS6Y3JNRXWO33OFZXXEZZPN5QXK5DIGIXTCNJSMQ4DCZBXMU4TOYJSMQZTONRSMQ4TMOLEME2WIYJWGMYDSMZ7OR4XAZJ5OJSWM4TFONUFI33LMVXCM5DTHUYTMNRWGU2DKMZWGQ3DENRGOZSXE43JN5XD25RSFYYCM3DJMZSXI2LNMU6TQNRUGAYDAMBQ"\n        }\n    ],\n    "size": 1,\n    "status": 200,\n    "type": "token"\n}'
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted CLEM
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted CLEM
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted CLEM
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted CLEM
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted CLEM
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted CLEM
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted CLEM
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted CLEM
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted CLEM
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted CLEM
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted CLEM
+[17:16:11] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted CLEM
+[17:16:12] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted TACC
+[17:16:12] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted TACC
+[17:16:12] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted TACC
+[17:16:12] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted TACC
+[17:16:12] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted TACC
+[17:16:12] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted TACC
+[17:16:12] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted TACC
+[17:16:12] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted TACC
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted NCSA
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted NCSA
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted NCSA
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted NCSA
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted NCSA
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted NCSA
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted NCSA
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted NCSA
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted NCSA
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted NCSA
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted STAR
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted STAR
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted STAR
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted STAR
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted STAR
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted STAR
+[17:16:13] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted STAR
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted STAR
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted STAR
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted STAR
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UTAH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted WASH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted WASH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted WASH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted WASH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted WASH
+[17:16:14] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted WASH
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MAX
+[17:16:15] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MAX
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MAX
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MAX
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MAX
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MAX
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted DALL
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted DALL
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted DALL
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted DALL
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted DALL
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted DALL
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted DALL
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted DALL
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted DALL
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted DALL
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MASS
+[17:16:16] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MASS
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MICH
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MICH
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MICH
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MICH
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MICH
+[17:16:17] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MICH
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted SALT
+[17:16:18] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted SALT
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted SALT
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted SALT
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted SALT
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted SALT
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted FIU
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UCSD
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UCSD
+[17:16:19] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UCSD
+[17:16:20] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UCSD
+[17:16:20] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UCSD
+[17:16:20] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UCSD
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted CLEM
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted CLEM
+[17:16:21] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted CLEM
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted CLEM
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted CLEM
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted CLEM
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted CLEM
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted CLEM
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted CLEM
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted CLEM
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted CLEM
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted CLEM
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted TACC
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted TACC
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted TACC
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted TACC
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted TACC
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted TACC
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted TACC
+[17:16:22] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted TACC
+[17:16:23] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted NCSA
+[17:16:23] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted NCSA
+[17:16:23] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted NCSA
+[17:16:23] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted NCSA
+[17:16:23] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted NCSA
+[17:16:23] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted NCSA
+[17:16:23] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted NCSA
+[17:16:23] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted NCSA
+[17:16:23] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted NCSA
+[17:16:23] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted NCSA
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted STAR
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted STAR
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted STAR
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted STAR
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted STAR
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted STAR
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted STAR
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted STAR
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted STAR
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted STAR
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UTAH
+[17:16:24] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UTAH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UTAH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UTAH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UTAH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UTAH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UTAH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted WASH
+[17:16:25] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted WASH
+[17:16:26] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MAX
+[17:16:26] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MAX
+[17:16:26] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MAX
+[17:16:26] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MAX
+[17:16:26] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MAX
+[17:16:26] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MAX
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted DALL
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted DALL
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted DALL
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted DALL
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted DALL
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted DALL
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted DALL
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted DALL
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted DALL
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted DALL
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MASS
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MICH
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MICH
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MICH
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MICH
+[17:16:27] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MICH
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted SALT
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted SALT
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted SALT
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted SALT
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted SALT
+[17:16:28] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted SALT
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted FIU
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted FIU
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted FIU
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted FIU
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted FIU
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted FIU
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted FIU
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted FIU
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted FIU
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted FIU
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted FIU
+[17:16:29] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted FIU
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted FIU
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted FIU
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted FIU
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted FIU
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted FIU
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted FIU
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UCSD
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UCSD
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UCSD
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UCSD
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UCSD
+[17:16:30] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UCSD
+[17:16:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/node.py:147} INFO - Adding node: rocky_node0, slice: MySlice3000, site: UTAH
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted CLEM
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted TACC
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted TACC
+[17:16:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted TACC
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted TACC
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted TACC
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted TACC
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted TACC
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted TACC
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted NCSA
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted NCSA
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted NCSA
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted NCSA
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted NCSA
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted NCSA
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted NCSA
+[17:16:33] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted NCSA
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted NCSA
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted NCSA
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted STAR
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted STAR
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted STAR
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted STAR
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted STAR
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted STAR
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted STAR
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted STAR
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted STAR
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted STAR
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UTAH
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UTAH
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UTAH
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UTAH
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UTAH
+[17:16:34] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UTAH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted WASH
+[17:16:35] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted WASH
+[17:16:36] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted WASH
+[17:16:36] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted WASH
+[17:16:36] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted WASH
+[17:16:36] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted WASH
+[17:16:36] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted WASH
+[17:16:36] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MAX
+[17:16:36] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MAX
+[17:16:36] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MAX
+[17:16:36] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MAX
+[17:16:36] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MAX
+[17:16:36] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MAX
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted DALL
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted DALL
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted DALL
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted DALL
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted DALL
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted DALL
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted DALL
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted DALL
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted DALL
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted DALL
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MASS
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MASS
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MASS
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MASS
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MASS
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MASS
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MASS
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MASS
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MASS
+[17:16:37] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MASS
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MASS
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MASS
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MASS
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MASS
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MASS
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MASS
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MASS
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MASS
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted MICH
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted SALT
+[17:16:38] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted SALT
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted FIU
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted FIU
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted FIU
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted FIU
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted FIU
+[17:16:39] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted FIU
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UCSD
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:286} DEBUG - Failed to get cores alloacted UCSD
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UCSD
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:331} DEBUG - Failed to get ram alloacted UCSD
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UCSD
+[17:16:40] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:376} DEBUG - Failed to get disk alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SharedNIC-ConnectX-6 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-6 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get SmartNIC-ConnectX-5 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get NVME-P4510 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-Tesla T4 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/resources.py:177} DEBUG - Failed to get GPU-RTX6000 alloacted UCSD
+[17:16:41] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/node.py:147} INFO - Adding node: rocky_node1, slice: MySlice3000, site: TACC
+[17:16:43] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:1496} DEBUG - slice_reservations: [{'graph_node_id': '9a4f95af-28df-41ad-9e45-1ee58d9f6209',
+ 'join_state': None,
+ 'lease_end_time': '2022-10-24 17:16:41 +0000',
+ 'lease_start_time': '2022-10-23 17:16:43 +0000',
+ 'notice': None,
+ 'pending_state': 'None_',
+ 'slice_id': '2581f70e-ccd9-4a39-b22d-5439f1dd569e',
+ 'sliver': '{"Name": "rocky_node0", "Type": "VM", "Capacities": "{\\"core\\": '
+           '2, \\"disk\\": 10, \\"ram\\": 8}", "CapacityHints": '
+           '"{\\"instance_type\\": \\"fabric.c2.m8.d10\\"}", "StitchNode": '
+           '"false", "ImageRef": "default_rocky_8,qcow2", "Site": "UTAH"}',
+ 'sliver_id': 'b3f61c2d-d03f-4a25-8bb8-b3dac23213fb',
+ 'sliver_type': 'NodeSliver',
+ 'state': 'Unknown'}, {'graph_node_id': '8322bc9d-76bc-42f1-9a64-030d43481139',
+ 'join_state': None,
+ 'lease_end_time': '2022-10-24 17:16:41 +0000',
+ 'lease_start_time': '2022-10-23 17:16:43 +0000',
+ 'notice': None,
+ 'pending_state': 'None_',
+ 'slice_id': '2581f70e-ccd9-4a39-b22d-5439f1dd569e',
+ 'sliver': '{"Name": "rocky_node1", "Type": "VM", "Capacities": "{\\"core\\": '
+           '2, \\"disk\\": 10, \\"ram\\": 8}", "CapacityHints": '
+           '"{\\"instance_type\\": \\"fabric.c2.m8.d10\\"}", "StitchNode": '
+           '"false", "ImageRef": "default_rocky_8,qcow2", "Site": "TACC"}',
+ 'sliver_id': '741a1c46-bd59-40f8-8287-90d7a27733e5',
+ 'sliver_type': 'NodeSliver',
+ 'state': 'Unknown'}]
+[17:16:43] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:1497} DEBUG - slice_id: 2581f70e-ccd9-4a39-b22d-5439f1dd569e
+[17:16:44] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:973} DEBUG - Getting interfaces for node rocky_node0
+[17:16:44] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:973} DEBUG - Getting interfaces for node rocky_node1
+[17:19:10] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:1383} WARNING - slice not ready: node rocky_node0 management ip: None
+[17:19:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:1328} INFO - post_boot_config: slice_name: MySlice3000, slice_id 2581f70e-ccd9-4a39-b22d-5439f1dd569e
+[17:19:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:1332} INFO - Starting thread: rocky_node0_network_manager_stop
+[17:19:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/node.py:936} DEBUG - execute node: rocky_node0, management_ip: 2001:1948:417:7:f816:3eff:fec4:fa92, command: sudo systemctl stop NetworkManager
+[17:19:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:1332} INFO - Starting thread: rocky_node1_network_manager_stop
+[17:19:31] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/node.py:936} DEBUG - execute node: rocky_node1, management_ip: 129.114.110.105, command: sudo systemctl stop NetworkManager
+[17:19:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/node.py:1070} DEBUG - rtn_stdout: 
+[17:19:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/node.py:1071} DEBUG - rtn_stderr: 
+[17:19:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/node.py:1551} INFO - Stopped NetworkManager with 'sudo systemctl stop NetworkManager': stdout: 
+stderr: 
+[17:19:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/node.py:1070} DEBUG - rtn_stdout: 
+[17:19:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/node.py:1071} DEBUG - rtn_stderr: 
+[17:19:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/node.py:1551} INFO - Stopped NetworkManager with 'sudo systemctl stop NetworkManager': stdout: 
+stderr: 
+[17:19:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:973} DEBUG - Getting interfaces for node rocky_node0
+[17:19:32] {/home/fabric/.local/lib/python3.9/site-packages/fabrictestbed_extensions/fablib/slice.py:973} DEBUG - Getting interfaces for node rocky_node1
