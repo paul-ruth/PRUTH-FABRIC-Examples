@@ -1,0 +1,21 @@
+[nodes] 
+rocky_node0 ansible_host=205.172.170.93 ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+rocky_node1 ansible_host=2001:1948:417:7:f816:3eff:fec0:2111 ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+rocky_node2 ansible_host=129.114.110.82 ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+rocky_node3 ansible_host=205.172.170.85 ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+rocky_node4 ansible_host=2001:1948:417:7:f816:3eff:fe86:6824 ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+rocky_node5 ansible_host=2001:400:a100:3010:f816:3eff:fe60:f2cf ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+rocky_node6 ansible_host=2001:400:a100:3020:f816:3eff:fe83:1558 ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+rocky_node7 ansible_host=2001:400:a100:3010:f816:3eff:fe65:1127 ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+rocky_node8 ansible_host=2607:f018:110:11:f816:3eff:feba:b807 ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+rocky_node9 ansible_host=2001:400:a100:3000:f816:3eff:fe80:ac09 ansible_user=rocky ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+ubuntu_node0 ansible_host=2001:400:a100:3000:f816:3eff:fee8:2fec ansible_user=ubuntu ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+ubuntu_node1 ansible_host=2001:400:a100:3010:f816:3eff:fe92:6439 ansible_user=ubuntu ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+ubuntu_node2 ansible_host=205.172.170.73 ansible_user=ubuntu ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+ubuntu_node3 ansible_host=2607:f018:110:11:f816:3eff:feae:2cac ansible_user=ubuntu ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+ubuntu_node4 ansible_host=2001:400:a100:3010:f816:3eff:fe4a:9750 ansible_user=ubuntu ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+ubuntu_node5 ansible_host=2607:f018:110:11:f816:3eff:fe0a:a5d9 ansible_user=ubuntu ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+ubuntu_node6 ansible_host=2001:400:a100:3020:f816:3eff:fe5d:5e70 ansible_user=ubuntu ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+ubuntu_node7 ansible_host=2001:400:a100:3000:f816:3eff:fe43:fd33 ansible_user=ubuntu ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+ubuntu_node8 ansible_host=2607:f018:110:11:f816:3eff:fe45:56d1 ansible_user=ubuntu ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 
+ubuntu_node9 ansible_host=2001:400:a100:3000:f816:3eff:fe52:ac60 ansible_user=ubuntu ansible_port=22 ansible_ssh_private_key_file=/home/fabric/work/fabric_config/slice_key 

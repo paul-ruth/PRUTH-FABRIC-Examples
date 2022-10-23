@@ -204,6 +204,10 @@ class MyExperiment():
         
         try:
             network1 = self.slice.get_network(name=self.network1_name)
+            
+            if network1.get_reservation_state() == 'Closed':
+                raise Exception(f"{network1.get_error_message()}")
+                
             network1_available_ips = network1.get_available_ips()
             #network1.show()
             
