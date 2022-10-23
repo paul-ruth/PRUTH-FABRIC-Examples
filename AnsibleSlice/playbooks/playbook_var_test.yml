@@ -7,11 +7,45 @@
   #vars_files:
   #  - external_vars.yml
   tasks:      
+  
+  - name: Install RedHat Packages
+    dnf:
+      name: jq
+      state: latest
+    when: ansible_facts['os_family'] == 'RedHat'
   - name: var test  
     ansible.builtin.shell: |
         echo {{ name }} > test.txt
         echo {{ ip }} >> test.txt
-        echo {{ data[0]["l1"] }} >> test.txt
+        echo {{ choice }} >> test.txt
+        echo {{ data[0] }} >> test.txt
+        echo {{ inventory_hostname }} >> test.txt
+        echo {{ data | to_json | tojson }} >> test.txt
+        echo XXX >> test.txt
+        
+        echo {{ data | to_json | tojson }}  | jq ".[0].dev" >> test.txt
+        
+        myvar=`ls`
+        
+        echo myvar $myvar >> test.txt
+        
+        echo {{ data | to_json | tojson }}  | jq '.[].dev,.[].ip' >> test.txt
+        
+        dev=`echo {{ data | to_json | tojson }}  | jq '.[].dev'`
+        ip=`echo {{ data | to_json | tojson }}  | jq '.[].ip'`
+        subnet=`echo {{ data | to_json | tojson }}  | jq '.[].subnet'`
+        cidr=`echo {{ data | to_json | tojson }}  | jq '.[].cidr'`
+
+        echo ip addr add ${ip}/${cidr} dev $dev >> test.txt 
+        
+        #echo dev $dev >> test.txt 
+        
+        #echo {{ data | to_json | tojson }}  | jq '.[].ip' |  xargs  -L1 -I'{}' echo xxx{}xxx >> test.txt
+        
+        echo {{ data | to_json | tojson }}  |  jq -r '.[]|[.dev, .ip, .subnet .cidr] | @tsv' |
+        while IFS=$'\t' read -r dev ip subnet cidr; do
+           ip addr add "$ip"/"$cidr" dev "$dev" >> test.txt 2>&1
+        done
         
         exit 0
     args:
