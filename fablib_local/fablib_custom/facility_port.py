@@ -20,21 +20,13 @@ from fabrictestbed.slice_editor import (
 
 
 class FacilityPort_Custom():
+    
+    def place_holder():
+        pass
+   
 
 
-
-    # fablib.Slice.get_slice_id()
-    def get_vlan(self):
-
-        self.fim_interface.get_property(pname='label_allocations').vlan
-
-        fim_facility_port = slice.get_fim_topology().add_facility(name=name, 
-                                                                  site=site,
-                                                                  capacities=Capacities(bw=bandwidth),
-                                                                  labels=Labels(vlan=vlan))
-
-
-        return self.slice_id
+  
 
 
 
@@ -44,7 +36,7 @@ from fabrictestbed_extensions.fablib.faclity_port import FacilityPort
 
 
 #fablib.FacilityPort
-setattr(FacilityPort, 'get_vlan', FacilityPort_Custom.get_vlan)
+#setattr(FacilityPort, 'get_vlan', FacilityPort_Custom.get_vlan)
 
 
 

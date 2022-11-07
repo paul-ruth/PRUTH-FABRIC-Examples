@@ -18,102 +18,65 @@ from fabrictestbed.slice_editor import (
     Capacities
 )
 
+from ipaddress import IPv4Address, IPv6Address, IPv4Network, IPv6Network
+
 
 class NetworkService_Custom():
+    def place_holder():
+        pass
+
+    def get_userdata(self):
+        return list(filter(lambda x: x['name'] ==  self.get_name(), self.get_slice().userdata['networks']))[0]
     
-    @staticmethod
-    def validate_nstype(type, interfaces):
-        """
-        Not inteded for API use
-
-
-        Verifies the network service type against the number of interfaces.
-
-        :param type: the network service type to check
-        :type type: ServiceType
-        :param interfaces: the list of interfaces to check
-        :type interfaces: list[Interface]
-        :raises Exception: if the network service type is invalid based on the number of interfaces
-        :return: true if the network service type is valid based on the number of interfaces
-        :rtype: bool
-        """
-
-        # Hack for testing
-        return True
-
-        sites = set([])
-        nics = set([])
-        nodes = set([])
-        for interface in interfaces:
-            try:
-                sites.add(interface.get_site())
-                nics.add(interface.get_model())
-                nodes.add(interface.get_node())
-            except Excpetion as e:
-                logging.info(f"validate_nstype: skipping interface {interface.get_name()}, likely its a facility port")
+    def allocate_ip(self):
+        try:
+            network_userdata = self.get_userdata()
+            
+            ip_list = []
+            gateway = IPv4Address(network_userdata['gateway'])
+            for i in range(256):
+                ip = gateway+i
+                if str(ip) not in network_userdata['allocated_ips']:
+                    network_userdata['allocated_ips'].append(str(ip))
+                    break
+            return ip
+        except Exception as e:
+            #logging.warning(f"Failed to ip: {e}")
+            print(e)
+            return None
+        
+    def set_subnet(self, subnet):
+        
+        print(f"layer: {self.get_layer()}")
+        if str(self.get_layer()) == 'L2':
+            network_userdata = self.get_userdata()
+            
+            network_userdata['subnet'] = subnet
+            network_userdata['allocated_ips'] = []
+        else:
+            logging.warning("Cannot set subnet for L3 network")
             
 
-        # models: 'NIC_Basic', 'NIC_ConnectX_6', 'NIC_ConnectX_5'
-        if type == NetworkService.network_service_map['L2Bridge']:
-            if not len(sites) == 1:
-                raise Exception(f"Network type {type} must include interfaces from exactly one site. {len(sites)} sites requested: {sites}")
+    def set_gateway(self, gateway):
+        if str(self.get_layer()) == 'L2':
+            network_userdata = self.get_userdata()
+            
+            network_userdata['gateway'] = gateway
+            network_userdata['allocated_ips'].append(gateway)
 
-        elif type == NetworkService.network_service_map['L2PTP']:
-            if not len(sites) == 2:
-                raise Exception(f"Network type {type} must include interfaces from exactly two sites. {len(sites)} sites requested: {sites}")
-            if 'NIC_Basic' in nics:
-                raise Exception(f"Network type {type} does not support interfaces of type 'NIC_Basic'")
-
-        elif type == NetworkService.network_service_map['L2STS']:
-            exception_list = []
-            if  len(sites) != 2:
-                exception_list.append(f"Network type {type} must include interfaces from exactly two sites. {len(sites)} sites requested: {sites}")
-            if len(interfaces) > 2:
-                hosts = set([])
-                for interface in interfaces:
-                    node = interface.get_node()
-                    if interface.get_model() == 'NIC_Basic':
-                        if node.get_host() == None:
-                            exception_list.append(f"Network type {type} does not support multiple NIC_Basic interfaces on VMs residing on the same host. Please see Node.set_host(host_nane) to explicitily bind a nodes to a specific host. Node {node.get_name()} is unbound.")
-                        elif node.get_host() in hosts:
-                            exception_list.append(f"Network type {type} does not support multiple NIC_Basic interfaces on VMs residing on the same host. Please see Node.set_host(host_nane) to explicitily bind a nodes to a specific host. Multiple nodes bound to {node.get_host()}.")
-                        else:
-                            hosts.add(node.get_host())
-
-            if len(exception_list) > 0:
-                raise Exception(f"{exception_list}")
         else:
-            raise Exception(f"Unknown network type {type}")
-
-        return True
-    
-
-    # ##### From Brandons plugins file ###########
-    def show(self):
-        table = [ ["ID", self.get_reservation_id()],
-            ["Name", self.get_name()],
-            ["Layer", self.get_layer()],
-            ["Type", self.get_type()],
-            ["Site", self.get_site()],
-            ["Gateway", self.get_gateway()],
-            ["L3 Subnet", self.get_subnet()],
-            ["Reservation State", self.get_reservation_state()],
-            ["Error Message", self.get_error_message()],
-            ]
-
-        self.get_fablib_manager().print_table(table, title='Network Information', properties={'text-align': 'left', 'border': '1px black solid !important'}, hide_header=True)
-
-    # #################################################
-
-
-
+            logging.warning("Cannot set subnet for L3 network")
+            
+            
 # Add methods to FABlib Classes
 from fabrictestbed_extensions.fablib.network_service import NetworkService
 
 #fablib.Slice
-setattr(NetworkService, 'show', NetworkService_Custom.show )
-setattr(NetworkService, 'validate_nstype', NetworkService_Custom.validate_nstype )
+setattr(NetworkService, 'allocate_ip', NetworkService_Custom.allocate_ip )
+setattr(NetworkService, 'get_userdata', NetworkService_Custom.get_userdata )
 
+setattr(NetworkService, 'set_gateway', NetworkService_Custom.set_gateway )
+setattr(NetworkService, 'set_subnet', NetworkService_Custom.set_subnet )
 
 
             
