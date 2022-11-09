@@ -1,0 +1,1 @@
+{"slice_id": null, "slice_name": "FRRouting_OSPF_SC22", "router_names": ["router_cham", "router_mich"], "router_links": [{"name": "Link12", "subnet": "192.168.201.0/24", "router1": {"name": "router_cham", "ip": "192.168.201.1"}, "router2": {"name": "router_mich", "ip": "192.168.201.2"}}], "local_networks": [], "nodes": []}

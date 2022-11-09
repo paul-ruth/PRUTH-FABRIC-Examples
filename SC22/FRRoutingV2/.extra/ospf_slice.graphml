@@ -1,0 +1,2045 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d23" for="edge" attr.name="id" attr.type="string" />
+  <key id="d22" for="edge" attr.name="Class" attr.type="string" />
+  <key id="d21" for="edge" attr.name="label" attr.type="string" />
+  <key id="d20" for="node" attr.name="Labels" attr.type="string" />
+  <key id="d19" for="node" attr.name="Layer" attr.type="string" />
+  <key id="d18" for="node" attr.name="Details" attr.type="string" />
+  <key id="d17" for="node" attr.name="Model" attr.type="string" />
+  <key id="d16" for="node" attr.name="GraphID" attr.type="string" />
+  <key id="d15" for="node" attr.name="id" attr.type="string" />
+  <key id="d14" for="node" attr.name="StitchNode" attr.type="string" />
+  <key id="d13" for="node" attr.name="Capacities" attr.type="string" />
+  <key id="d12" for="node" attr.name="Site" attr.type="string" />
+  <key id="d11" for="node" attr.name="NodeID" attr.type="string" />
+  <key id="d10" for="node" attr.name="Type" attr.type="string" />
+  <key id="d9" for="node" attr.name="ImageRef" attr.type="string" />
+  <key id="d8" for="node" attr.name="Name" attr.type="string" />
+  <key id="d7" for="node" attr.name="Class" attr.type="string" />
+  <key id="d6" for="node" attr.name="LabelAllocations" attr.type="string" />
+  <key id="d5" for="node" attr.name="CapacityHints" attr.type="string" />
+  <key id="d4" for="node" attr.name="NodeMap" attr.type="string" />
+  <key id="d3" for="node" attr.name="CapacityAllocations" attr.type="string" />
+  <key id="d2" for="node" attr.name="MgmtIp" attr.type="string" />
+  <key id="d1" for="node" attr.name="ReservationInfo" attr.type="string" />
+  <key id="d0" for="node" attr.name="labels" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="9397">
+      <data key="d0">:GraphNode:NetworkNode</data>
+      <data key="d1">{"error_message": "", "reservation_id": "7b8ea53f-f65d-4f43-b448-e7f993a6f95e", "reservation_state": "Active"}</data>
+      <data key="d2">2001:400:a100:3000:f816:3eff:fe6e:8334</data>
+      <data key="d3">{"core": 32, "disk": 10, "ram": 128}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDXZNF3"]</data>
+      <data key="d5">{"instance_type": "fabric.c32.m128.d10"}</data>
+      <data key="d6">{"instance": "instance-000005be", "instance_parent": "dall-w1.fabric-testbed.net"}</data>
+      <data key="d7">NetworkNode</data>
+      <data key="d8">Site1_Router</data>
+      <data key="d9">default_rocky_8,qcow2</data>
+      <data key="d10">VM</data>
+      <data key="d11">387efc58-ffbc-48dd-ac9f-aacb717eb530</data>
+      <data key="d12">DALL</data>
+      <data key="d13">{"core": 32, "disk": 10, "ram": 128}</data>
+      <data key="d14">false</data>
+      <data key="d15">57</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9398">
+      <data key="d0">:GraphNode:NetworkNode</data>
+      <data key="d1">{"error_message": "", "reservation_id": "a75a1b2c-ede4-4713-85e2-8af3b9ecea3e", "reservation_state": "Active"}</data>
+      <data key="d2">2001:400:a100:3010:f816:3eff:fe54:d2dd</data>
+      <data key="d3">{"core": 32, "disk": 10, "ram": 128}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDY5PF3"]</data>
+      <data key="d5">{"instance_type": "fabric.c32.m128.d10"}</data>
+      <data key="d6">{"instance": "instance-000004d4", "instance_parent": "salt-w1.fabric-testbed.net"}</data>
+      <data key="d7">NetworkNode</data>
+      <data key="d8">Site2_Router</data>
+      <data key="d9">default_rocky_8,qcow2</data>
+      <data key="d10">VM</data>
+      <data key="d11">ebc89b5d-f1ba-41e3-8f8b-1eeb0952ddf9</data>
+      <data key="d12">SALT</data>
+      <data key="d13">{"core": 32, "disk": 10, "ram": 128}</data>
+      <data key="d14">false</data>
+      <data key="d15">58</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9399">
+      <data key="d0">:GraphNode:NetworkNode</data>
+      <data key="d1">{"error_message": "", "reservation_id": "48b08fb7-ac03-4804-aa12-066ae93b28a4", "reservation_state": "Active"}</data>
+      <data key="d2">2001:400:a100:3030:f816:3eff:fe1b:3fac</data>
+      <data key="d3">{"core": 32, "disk": 10, "ram": 128}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "BBQTH63"]</data>
+      <data key="d5">{"instance_type": "fabric.c32.m128.d10"}</data>
+      <data key="d6">{"instance": "instance-0000137c", "instance_parent": "star-w2.fabric-testbed.net"}</data>
+      <data key="d7">NetworkNode</data>
+      <data key="d8">Site3_Router</data>
+      <data key="d9">default_rocky_8,qcow2</data>
+      <data key="d10">VM</data>
+      <data key="d11">124a530c-2f49-4198-83b2-5d61c99041e2</data>
+      <data key="d12">STAR</data>
+      <data key="d13">{"core": 32, "disk": 10, "ram": 128}</data>
+      <data key="d14">false</data>
+      <data key="d15">59</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9400">
+      <data key="d0">:GraphNode:NetworkNode</data>
+      <data key="d2">2001:1948:417:7:f816:3eff:fef4:e7a</data>
+      <data key="d1">{"error_message": "", "reservation_id": "02a69134-baa8-435d-80a4-fba7a1209607", "reservation_state": "Active"}</data>
+      <data key="d3">{"core": 32, "disk": 10, "ram": 128}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "G5Y08B3"]</data>
+      <data key="d5">{"instance_type": "fabric.c32.m128.d10"}</data>
+      <data key="d6">{"instance": "instance-00001e91", "instance_parent": "utah-w2.fabric-testbed.net"}</data>
+      <data key="d7">NetworkNode</data>
+      <data key="d8">Site4_Router</data>
+      <data key="d9">default_rocky_8,qcow2</data>
+      <data key="d10">VM</data>
+      <data key="d11">439272d1-0af1-42fc-8be3-a239497278d5</data>
+      <data key="d12">UTAH</data>
+      <data key="d13">{"core": 32, "disk": 10, "ram": 128}</data>
+      <data key="d14">false</data>
+      <data key="d15">60</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9401">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:0c.6"}</data>
+      <data key="d8">Site1_Router-Link12</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">3330fd45-b18a-44bd-a692-a38467cce275</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">61</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDXZNF3-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9402">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site1_Router-Site1_Router-Link12-l2ovs</data>
+      <data key="d11">c2b2ab80-5d3e-459c-b2c4-86b9891aa79a</data>
+      <data key="d12">DALL</data>
+      <data key="d14">false</data>
+      <data key="d15">62</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9403">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site1_Router-Link12-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:0c.6", "local_name": "p1", "mac": "02:98:24:4F:AE:C2", "vlan": "2100"}</data>
+      <data key="d11">b235cf0d-7476-4038-9d41-ca60903e4ead</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">63</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9404">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:06.3"}</data>
+      <data key="d8">Site2_Router-Link12</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">dd52537e-edc8-4e63-980c-52b4f5d76ecb</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">64</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDY5PF3-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9405">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site2_Router-Site2_Router-Link12-l2ovs</data>
+      <data key="d11">0654ae3c-4277-4ae8-9fb3-3dac35e782ff</data>
+      <data key="d12">SALT</data>
+      <data key="d14">false</data>
+      <data key="d15">65</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9406">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site2_Router-Link12-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:06.3", "local_name": "p1", "mac": "06:02:EE:22:AE:93", "vlan": "2049"}</data>
+      <data key="d11">4bb634cf-ce45-4282-b4d7-84fdd122be67</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">66</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9407">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d8">Link12</data>
+      <data key="d1">{"error_message": "", "reservation_id": "7e8985c4-5b3d-4a5a-9448-787cf28f8a79", "reservation_state": "Active"}</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "node+salt-data-sw:ip+192.168.23.3-ns"]</data>
+      <data key="d11">0c7668a0-2e68-4af7-b626-27443cf1fdb1</data>
+      <data key="d14">false</data>
+      <data key="d15">67</data>
+      <data key="d10">L2STS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9408">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site1_Router-Site1_Router-Link12-p1</data>
+      <data key="d11">0996cf62-b5f9-4b44-8471-4f8033e5f921</data>
+      <data key="d14">false</data>
+      <data key="d15">68</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9409">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site1_Router-Site1_Router-Link12-p1-link</data>
+      <data key="d11">32abb2f4-c76e-488c-b1e6-c809781c33f0</data>
+      <data key="d14">false</data>
+      <data key="d15">69</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9410">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site2_Router-Site2_Router-Link12-p1</data>
+      <data key="d11">aad31a2e-658f-46f5-81e4-1f477b5f32e4</data>
+      <data key="d14">false</data>
+      <data key="d15">70</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9411">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site2_Router-Site2_Router-Link12-p1-link</data>
+      <data key="d11">122927bd-65b0-41e8-b834-b8a5238cc0f9</data>
+      <data key="d14">false</data>
+      <data key="d15">71</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9412">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:02.5"}</data>
+      <data key="d8">Site2_Router-Link23</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">f0e17959-6808-4625-846f-0baf42b578a7</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">72</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDY5PF3-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9413">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site2_Router-Site2_Router-Link23-l2ovs</data>
+      <data key="d11">35c05df9-1a7a-4137-8fa5-68a48fbf3395</data>
+      <data key="d12">SALT</data>
+      <data key="d14">false</data>
+      <data key="d15">73</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9414">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site2_Router-Link23-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:02.5", "local_name": "p1", "mac": "06:39:79:DA:98:DF", "vlan": "2019"}</data>
+      <data key="d11">f7058e1b-23aa-4002-9dc0-c71f7d8819d6</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">74</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9415">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:08.7"}</data>
+      <data key="d8">Site3_Router-Link23</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">e08035f7-c5fa-4824-870a-dcc4cd45e5d6</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">75</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "BBQTH63-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9416">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site3_Router-Site3_Router-Link23-l2ovs</data>
+      <data key="d11">dd02d556-bb36-4c5a-addb-ea2cfba0058d</data>
+      <data key="d12">STAR</data>
+      <data key="d14">false</data>
+      <data key="d15">76</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9417">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site3_Router-Link23-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:08.7", "local_name": "p1", "mac": "06:C3:46:52:1A:9A", "vlan": "2069"}</data>
+      <data key="d11">4e380960-c4d8-46ff-8d90-6f6e9baab1f5</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">77</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9418">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d8">Link23</data>
+      <data key="d1">{"error_message": "", "reservation_id": "d88f6651-ea4a-41dd-8861-e1bd9f37bb81", "reservation_state": "Active"}</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "node+star-data-sw:ip+192.168.14.3-ns"]</data>
+      <data key="d11">6cd76b68-d627-4120-96d8-057cf18556ad</data>
+      <data key="d14">false</data>
+      <data key="d15">78</data>
+      <data key="d10">L2STS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9419">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site2_Router-Site2_Router-Link23-p1</data>
+      <data key="d11">72408c66-05cd-4c4b-ac64-beb5917ddd13</data>
+      <data key="d14">false</data>
+      <data key="d15">79</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9420">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site2_Router-Site2_Router-Link23-p1-link</data>
+      <data key="d11">72555012-fc8a-42fa-845c-341d0c0ba8da</data>
+      <data key="d14">false</data>
+      <data key="d15">80</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9421">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site3_Router-Site3_Router-Link23-p1</data>
+      <data key="d11">099e332a-2225-44d8-a394-215d2be49a54</data>
+      <data key="d14">false</data>
+      <data key="d15">81</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9422">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site3_Router-Site3_Router-Link23-p1-link</data>
+      <data key="d11">5e1fc603-0f85-486c-8365-85a99611bca7</data>
+      <data key="d14">false</data>
+      <data key="d15">82</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9423">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:0a.7"}</data>
+      <data key="d8">Site3_Router-Link31</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">5bfed6d2-3fb8-461e-a21b-ef6256f10032</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">83</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "BBQTH63-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9424">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site3_Router-Site3_Router-Link31-l2ovs</data>
+      <data key="d11">8ac97017-16d7-44e8-9328-202126b9a930</data>
+      <data key="d12">STAR</data>
+      <data key="d14">false</data>
+      <data key="d15">84</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9425">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site3_Router-Link31-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:0a.7", "local_name": "p1", "mac": "0A:07:62:7E:09:E1", "vlan": "2085"}</data>
+      <data key="d11">8bd4b191-5f6b-4c83-94ce-b625b27fe8f2</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">85</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9426">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:08.2"}</data>
+      <data key="d8">Site1_Router-Link31</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">8b2494d4-ad8c-477e-81c9-c49cbd25d128</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">86</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDXZNF3-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9427">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site1_Router-Site1_Router-Link31-l2ovs</data>
+      <data key="d11">fc4ebe84-eb03-4d61-b2ac-7456c0e2351c</data>
+      <data key="d12">DALL</data>
+      <data key="d14">false</data>
+      <data key="d15">87</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9428">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site1_Router-Link31-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:08.2", "local_name": "p1", "mac": "02:76:DD:CA:86:30", "vlan": "2064"}</data>
+      <data key="d11">c04aa304-5f0a-444e-b33b-d641f744de58</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">88</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9429">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d8">Link31</data>
+      <data key="d1">{"error_message": "", "reservation_id": "f91c1885-7403-4424-9a50-95901dbbf823", "reservation_state": "Active"}</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "node+star-data-sw:ip+192.168.14.3-ns"]</data>
+      <data key="d11">a4781fe8-4d28-4311-a919-c9a0f4e29e26</data>
+      <data key="d14">false</data>
+      <data key="d15">89</data>
+      <data key="d10">L2STS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9430">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site3_Router-Site3_Router-Link31-p1</data>
+      <data key="d11">ae4f713e-53f9-4040-a064-ce7a8364dbf8</data>
+      <data key="d14">false</data>
+      <data key="d15">90</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9431">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site3_Router-Site3_Router-Link31-p1-link</data>
+      <data key="d11">25031f9d-5bc6-40cc-bc2d-688186755b88</data>
+      <data key="d14">false</data>
+      <data key="d15">91</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9432">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site1_Router-Site1_Router-Link31-p1</data>
+      <data key="d11">c457ee2f-c50b-4990-b781-e83200e0a651</data>
+      <data key="d14">false</data>
+      <data key="d15">92</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9433">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site1_Router-Site1_Router-Link31-p1-link</data>
+      <data key="d11">c0678dbd-6bf4-4dda-b974-d66e76959389</data>
+      <data key="d14">false</data>
+      <data key="d15">93</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9434">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:0e.6"}</data>
+      <data key="d8">Site2_Router-Link24</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">9bfc6d0e-a716-4da9-9107-4a909f475476</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">94</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDY5PF3-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9435">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site2_Router-Site2_Router-Link24-l2ovs</data>
+      <data key="d11">443ec98a-3b4b-468c-9a1e-acf1825a8836</data>
+      <data key="d12">SALT</data>
+      <data key="d14">false</data>
+      <data key="d15">95</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9436">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site2_Router-Link24-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:0e.6", "local_name": "p1", "mac": "0A:BC:96:8A:36:66", "vlan": "2116"}</data>
+      <data key="d11">92c88013-0c13-40ab-9782-0d45d704aa04</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">96</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9437">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:0c.7"}</data>
+      <data key="d8">Site4_Router-Link24</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">d6cef0ff-ee69-41b3-b3ee-539bd7c516c2</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">97</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "G5Y08B3-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9438">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site4_Router-Site4_Router-Link24-l2ovs</data>
+      <data key="d11">ac9649ce-9685-455f-bf61-cd78731ed301</data>
+      <data key="d12">UTAH</data>
+      <data key="d14">false</data>
+      <data key="d15">98</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9439">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site4_Router-Link24-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:0c.7", "local_name": "p1", "mac": "0E:63:4A:0A:65:DF", "vlan": "2101"}</data>
+      <data key="d11">18882cbe-e505-48d2-85bf-6d5f78fc801a</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">99</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9440">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d8">Link24</data>
+      <data key="d1">{"error_message": "", "reservation_id": "eb0541d7-3d03-4ddd-acbc-c5739e3e725c", "reservation_state": "Active"}</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "node+utah-data-sw:ip+192.168.19.3-ns"]</data>
+      <data key="d11">1673d855-b554-410e-bdd0-5b7220e69a6d</data>
+      <data key="d14">false</data>
+      <data key="d15">100</data>
+      <data key="d10">L2STS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9441">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site2_Router-Site2_Router-Link24-p1</data>
+      <data key="d11">cec20d6a-3bb9-473a-8c2f-b7d2421cc66a</data>
+      <data key="d14">false</data>
+      <data key="d15">101</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9442">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site2_Router-Site2_Router-Link24-p1-link</data>
+      <data key="d11">4bc06dc9-e0d0-4462-9566-41d05fc60ebd</data>
+      <data key="d14">false</data>
+      <data key="d15">102</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9443">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site4_Router-Site4_Router-Link24-p1</data>
+      <data key="d11">46d3cfe6-c595-4e34-9473-0134fedfec24</data>
+      <data key="d14">false</data>
+      <data key="d15">103</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9444">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site4_Router-Site4_Router-Link24-p1-link</data>
+      <data key="d11">80723bf6-ab6e-416e-8f74-95250637a767</data>
+      <data key="d14">false</data>
+      <data key="d15">104</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9445">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:0c.3"}</data>
+      <data key="d8">Site1_Router-Site1_local_net</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">f4fa8a7e-766b-4ee2-a3c1-68d8ddc30f04</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">105</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDXZNF3-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9446">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site1_Router-Site1_Router-Site1_local_net-l2ovs</data>
+      <data key="d11">2a3992d4-54a8-4061-b3db-96c4a2e0045d</data>
+      <data key="d12">DALL</data>
+      <data key="d14">false</data>
+      <data key="d15">106</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9447">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site1_Router-Site1_local_net-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:0c.3", "local_name": "p1", "mac": "02:44:2D:C0:D1:D3", "vlan": "2097"}</data>
+      <data key="d11">360d0581-d168-4c55-a896-df90489ec90e</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">107</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9448">
+      <data key="d0">:GraphNode:NetworkNode</data>
+      <data key="d5">{"instance_type": "fabric.c4.m16.d10"}</data>
+      <data key="d1">{"error_message": "", "reservation_id": "33dff2a6-bc17-42d9-850a-d2be79112071", "reservation_state": "Active"}</data>
+      <data key="d2">2001:400:a100:3000:f816:3eff:feb0:3f4d</data>
+      <data key="d8">Site1_local_net1</data>
+      <data key="d6">{"instance": "instance-000005c0", "instance_parent": "dall-w3.fabric-testbed.net"}</data>
+      <data key="d7">NetworkNode</data>
+      <data key="d3">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GN3RNF3"]</data>
+      <data key="d9">default_rocky_8,qcow2</data>
+      <data key="d10">VM</data>
+      <data key="d11">7219e7eb-c817-4076-a64a-d25abef5b97d</data>
+      <data key="d12">DALL</data>
+      <data key="d13">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d14">false</data>
+      <data key="d15">108</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9449">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:e2:01.0"}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GN3RNF3-slot7"]</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">3b267676-7cdf-4545-8fd2-ca85e039ffe9</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">109</data>
+      <data key="d8">Site1_local_net1-Site1_local_net</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9450">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site1_local_net1-Site1_local_net1-Site1_local_net-l2ovs</data>
+      <data key="d11">423e5247-919a-4982-aa79-2e84c3f21262</data>
+      <data key="d12">DALL</data>
+      <data key="d14">false</data>
+      <data key="d15">110</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9451">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d8">Site1_local_net1-Site1_local_net-p1</data>
+      <data key="d6">{"bdf": "0000:e2:01.0", "local_name": "p1", "mac": "0E:C8:50:3C:20:E5", "vlan": "2006"}</data>
+      <data key="d11">4e15b6c9-26e9-4ffc-b449-62d3e739537f</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">111</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9452">
+      <data key="d0">:GraphNode:NetworkNode</data>
+      <data key="d5">{"instance_type": "fabric.c4.m16.d10"}</data>
+      <data key="d1">{"error_message": "", "reservation_id": "75c0e528-4823-4804-a106-e691ce06954c", "reservation_state": "Active"}</data>
+      <data key="d2">2001:400:a100:3000:f816:3eff:fea3:12cc</data>
+      <data key="d8">Site1_local_net2</data>
+      <data key="d6">{"instance": "instance-000005bf", "instance_parent": "dall-w3.fabric-testbed.net"}</data>
+      <data key="d7">NetworkNode</data>
+      <data key="d3">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GN3RNF3"]</data>
+      <data key="d9">default_rocky_8,qcow2</data>
+      <data key="d10">VM</data>
+      <data key="d11">1e66f5b6-6255-408d-9ee7-e94b441c5a57</data>
+      <data key="d12">DALL</data>
+      <data key="d13">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d14">false</data>
+      <data key="d15">112</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9453">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:e2:04.6"}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GN3RNF3-slot7"]</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">9215c877-2b10-4f16-86fd-2a000f45c2ed</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">113</data>
+      <data key="d8">Site1_local_net2-Site1_local_net</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9454">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site1_local_net2-Site1_local_net2-Site1_local_net-l2ovs</data>
+      <data key="d11">727d52a9-9f49-4f24-9600-87272de543b6</data>
+      <data key="d12">DALL</data>
+      <data key="d14">false</data>
+      <data key="d15">114</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9455">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d8">Site1_local_net2-Site1_local_net-p1</data>
+      <data key="d6">{"bdf": "0000:e2:04.6", "local_name": "p1", "mac": "0E:CD:D8:DE:C5:92", "vlan": "2036"}</data>
+      <data key="d11">1ceb0c34-0e1f-4eef-8bc2-71e63d361c4d</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">115</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9456">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d1">{"error_message": "", "reservation_id": "9053d9b7-110a-47ea-ad7b-850dbeb9c423", "reservation_state": "Active"}</data>
+      <data key="d8">Site1_local_net</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "node+dall-data-sw:ip+192.168.22.3-ns"]</data>
+      <data key="d10">L2Bridge</data>
+      <data key="d7">NetworkService</data>
+      <data key="d11">21a4fe13-f167-41ad-8cad-055a4808559a</data>
+      <data key="d12">DALL</data>
+      <data key="d14">false</data>
+      <data key="d15">116</data>
+      <data key="d19">L2</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9457">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site1_Router-Site1_Router-Site1_local_net-p1</data>
+      <data key="d11">f79135ba-4768-4ff3-bc69-ad05363718db</data>
+      <data key="d14">false</data>
+      <data key="d15">117</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9458">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site1_Router-Site1_Router-Site1_local_net-p1-link</data>
+      <data key="d11">46df9d87-1fd6-4c21-b5bb-a1d262955b43</data>
+      <data key="d14">false</data>
+      <data key="d15">118</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9459">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site1_local_net1-Site1_local_net1-Site1_local_net-p1</data>
+      <data key="d11">593def5e-65f0-40d0-bdd0-4c8ba1ece042</data>
+      <data key="d14">false</data>
+      <data key="d15">119</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9460">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site1_local_net1-Site1_local_net1-Site1_local_net-p1-link</data>
+      <data key="d11">984b13ea-b458-4f91-842b-172528e3c7a1</data>
+      <data key="d14">false</data>
+      <data key="d15">120</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9461">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site1_local_net2-Site1_local_net2-Site1_local_net-p1</data>
+      <data key="d11">2579861c-a15e-4c7b-b674-ff97cad95537</data>
+      <data key="d14">false</data>
+      <data key="d15">121</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9462">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site1_local_net2-Site1_local_net2-Site1_local_net-p1-link</data>
+      <data key="d11">e19dc1a3-22eb-4197-b58e-7e19a142cdeb</data>
+      <data key="d14">false</data>
+      <data key="d15">122</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9463">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:03.3"}</data>
+      <data key="d8">Site2_Router-Site2_local_net</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">658e2060-527f-4b32-9538-d5ee4c8165bc</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">123</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDY5PF3-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9464">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site2_Router-Site2_Router-Site2_local_net-l2ovs</data>
+      <data key="d11">e532c230-c3ad-4b8b-ae0c-845d1ca1c4ef</data>
+      <data key="d12">SALT</data>
+      <data key="d14">false</data>
+      <data key="d15">124</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9465">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site2_Router-Site2_local_net-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:03.3", "local_name": "p1", "mac": "02:09:16:54:61:EB", "vlan": "2025"}</data>
+      <data key="d11">97932633-b489-481b-a4f7-1ab8e29a5843</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">125</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9466">
+      <data key="d0">:GraphNode:NetworkNode</data>
+      <data key="d5">{"instance_type": "fabric.c4.m16.d10"}</data>
+      <data key="d1">{"error_message": "", "reservation_id": "47648ef5-cf40-4f2d-b127-7e8eaa93e718", "reservation_state": "Active"}</data>
+      <data key="d2">2001:400:a100:3010:f816:3eff:fecc:44a2</data>
+      <data key="d8">Site2_local_net1</data>
+      <data key="d6">{"instance": "instance-000004d5", "instance_parent": "salt-w1.fabric-testbed.net"}</data>
+      <data key="d7">NetworkNode</data>
+      <data key="d3">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDY5PF3"]</data>
+      <data key="d9">default_rocky_8,qcow2</data>
+      <data key="d10">VM</data>
+      <data key="d11">6b0b94cc-1dde-4478-a3eb-e120548a45e3</data>
+      <data key="d12">SALT</data>
+      <data key="d13">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d14">false</data>
+      <data key="d15">126</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9467">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:07.6"}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDY5PF3-slot6"]</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">70634a99-b49e-43fd-947c-ee59ff72d206</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">127</data>
+      <data key="d8">Site2_local_net1-Site2_local_net</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9468">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site2_local_net1-Site2_local_net1-Site2_local_net-l2ovs</data>
+      <data key="d11">ae993a82-0f3c-430c-87df-5a6efe2d4697</data>
+      <data key="d12">SALT</data>
+      <data key="d14">false</data>
+      <data key="d15">128</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9469">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d8">Site2_local_net1-Site2_local_net-p1</data>
+      <data key="d6">{"bdf": "0000:a1:07.6", "local_name": "p1", "mac": "0A:E5:FE:3A:3D:C7", "vlan": "2060"}</data>
+      <data key="d11">c4b3341e-b5bb-431e-8e32-caeb95671556</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">129</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9470">
+      <data key="d0">:GraphNode:NetworkNode</data>
+      <data key="d5">{"instance_type": "fabric.c4.m16.d10"}</data>
+      <data key="d1">{"error_message": "", "reservation_id": "36031955-eb81-42c0-8898-9760b977da87", "reservation_state": "Active"}</data>
+      <data key="d2">2001:400:a100:3010:f816:3eff:fe6d:16e7</data>
+      <data key="d8">Site2_local_net2</data>
+      <data key="d6">{"instance": "instance-000004d6", "instance_parent": "salt-w1.fabric-testbed.net"}</data>
+      <data key="d7">NetworkNode</data>
+      <data key="d3">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDY5PF3"]</data>
+      <data key="d9">default_rocky_8,qcow2</data>
+      <data key="d10">VM</data>
+      <data key="d11">8e3e6518-ec65-4672-8848-19f97fbf2291</data>
+      <data key="d12">SALT</data>
+      <data key="d13">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d14">false</data>
+      <data key="d15">130</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9471">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:06.2"}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "GDY5PF3-slot6"]</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">85df0c28-4ec9-484c-b590-f7d52880f5a1</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">131</data>
+      <data key="d8">Site2_local_net2-Site2_local_net</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9472">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site2_local_net2-Site2_local_net2-Site2_local_net-l2ovs</data>
+      <data key="d11">ca930ba6-28e0-4dfd-b566-51b1dcecaafb</data>
+      <data key="d12">SALT</data>
+      <data key="d14">false</data>
+      <data key="d15">132</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9473">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d8">Site2_local_net2-Site2_local_net-p1</data>
+      <data key="d6">{"bdf": "0000:a1:06.2", "local_name": "p1", "mac": "0E:66:EA:F1:5B:83", "vlan": "2048"}</data>
+      <data key="d11">e12933ad-d110-44a7-8dcc-40ed16517ce0</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">133</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9474">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d1">{"error_message": "", "reservation_id": "a6b96c34-11f8-4d18-b6ad-6416daab8229", "reservation_state": "Active"}</data>
+      <data key="d8">Site2_local_net</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "node+salt-data-sw:ip+192.168.23.3-ns"]</data>
+      <data key="d10">L2Bridge</data>
+      <data key="d7">NetworkService</data>
+      <data key="d11">49f03d62-5378-48e2-851e-c7ca07af8edf</data>
+      <data key="d12">SALT</data>
+      <data key="d14">false</data>
+      <data key="d15">134</data>
+      <data key="d19">L2</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9475">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site2_Router-Site2_Router-Site2_local_net-p1</data>
+      <data key="d11">1366ff0b-ddd6-4643-a1d0-49ddc3ac898a</data>
+      <data key="d14">false</data>
+      <data key="d15">135</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9476">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site2_Router-Site2_Router-Site2_local_net-p1-link</data>
+      <data key="d11">f6a6b8a4-34ff-43a9-804c-99f36166728f</data>
+      <data key="d14">false</data>
+      <data key="d15">136</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9477">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site2_local_net1-Site2_local_net1-Site2_local_net-p1</data>
+      <data key="d11">b1acb2f5-e335-4402-9cb9-64b533b5c226</data>
+      <data key="d14">false</data>
+      <data key="d15">137</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9478">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site2_local_net1-Site2_local_net1-Site2_local_net-p1-link</data>
+      <data key="d11">5dac6f55-c3c7-4b5f-8324-f58c0a769c5e</data>
+      <data key="d14">false</data>
+      <data key="d15">138</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9479">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site2_local_net2-Site2_local_net2-Site2_local_net-p1</data>
+      <data key="d11">a763b637-3383-44ff-975e-68fa39737ec7</data>
+      <data key="d14">false</data>
+      <data key="d15">139</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9480">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site2_local_net2-Site2_local_net2-Site2_local_net-p1-link</data>
+      <data key="d11">1680131b-cb4e-4d7f-aa18-5073710ea9c3</data>
+      <data key="d14">false</data>
+      <data key="d15">140</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9481">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:0c.7"}</data>
+      <data key="d8">Site3_Router-Site3_local_net</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">988428c7-74d6-4945-b6e0-519500f3b5d0</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">141</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "BBQTH63-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9482">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site3_Router-Site3_Router-Site3_local_net-l2ovs</data>
+      <data key="d11">be439988-339c-4748-bfb4-d8ba8b3a8175</data>
+      <data key="d12">STAR</data>
+      <data key="d14">false</data>
+      <data key="d15">142</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9483">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site3_Router-Site3_local_net-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:0c.7", "local_name": "p1", "mac": "02:C1:DF:78:07:78", "vlan": "2101"}</data>
+      <data key="d11">10aeb63d-5567-4d07-9367-0e8eca0359cf</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">143</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9484">
+      <data key="d0">:GraphNode:NetworkNode</data>
+      <data key="d8">Chameleon-StarLight</data>
+      <data key="d10">Facility</data>
+      <data key="d7">NetworkNode</data>
+      <data key="d11">a67c6e56-31ed-48a9-97a6-36c78ea06dd5</data>
+      <data key="d12">STAR</data>
+      <data key="d14">false</data>
+      <data key="d15">144</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9485">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d8">Chameleon-StarLight-ns</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d11">9e04fdfe-566c-47a3-b968-80654753a723</data>
+      <data key="d12">STAR</data>
+      <data key="d14">false</data>
+      <data key="d15">145</data>
+      <data key="d10">VLAN</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9486">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Chameleon-StarLight-int</data>
+      <data key="d20">{"vlan": "3301"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">FacilityPort</data>
+      <data key="d11">eecea780-39d7-4921-913e-a7919a67a596</data>
+      <data key="d13">{"bw": 10}</data>
+      <data key="d14">false</data>
+      <data key="d15">146</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9487">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d1">{"error_message": "", "reservation_id": "2a3583c3-ca46-4db3-96ff-313a2c156b97", "reservation_state": "Active"}</data>
+      <data key="d8">Site3_local_net</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "node+star-data-sw:ip+192.168.14.3-ns"]</data>
+      <data key="d10">L2Bridge</data>
+      <data key="d7">NetworkService</data>
+      <data key="d11">0996d6d3-8ea4-44ed-a23e-82833db2614a</data>
+      <data key="d12">STAR</data>
+      <data key="d14">false</data>
+      <data key="d15">147</data>
+      <data key="d19">L2</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9488">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site3_Router-Site3_Router-Site3_local_net-p1</data>
+      <data key="d11">7080afb8-1eb2-47c4-ab99-47ac25d6f0ad</data>
+      <data key="d14">false</data>
+      <data key="d15">148</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9489">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site3_Router-Site3_Router-Site3_local_net-p1-link</data>
+      <data key="d11">bc4c3d1d-a072-4c1a-ae92-615d5cc853b8</data>
+      <data key="d14">false</data>
+      <data key="d15">149</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9490">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Chameleon-StarLight-Chameleon-StarLight-int</data>
+      <data key="d11">29a412d1-cfe5-4f46-8d6a-be857e02bb73</data>
+      <data key="d14">false</data>
+      <data key="d15">150</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9491">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Chameleon-StarLight-Chameleon-StarLight-int-link</data>
+      <data key="d11">1395a637-1de7-461d-8e76-f971f56c7d07</data>
+      <data key="d14">false</data>
+      <data key="d15">151</data>
+      <data key="d10">Patch</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9492">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:07.4"}</data>
+      <data key="d8">Site4_Router-Site4_local_net</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">ac1047f7-e9d4-406b-90c3-7187eda72366</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">152</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "G5Y08B3-slot6"]</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9493">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site4_Router-Site4_Router-Site4_local_net-l2ovs</data>
+      <data key="d11">99bc24d2-66bc-4a0a-be40-2c21d565c04d</data>
+      <data key="d12">UTAH</data>
+      <data key="d14">false</data>
+      <data key="d15">153</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9494">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d8">Site4_Router-Site4_local_net-p1</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d6">{"bdf": "0000:a1:07.4", "local_name": "p1", "mac": "0E:03:29:78:E1:CC", "vlan": "2058"}</data>
+      <data key="d11">04fe96ef-e5d2-477b-982a-eb45d3f65642</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">154</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9495">
+      <data key="d0">:GraphNode:NetworkNode</data>
+      <data key="d2">2001:1948:417:7:f816:3eff:fe45:e1bf</data>
+      <data key="d5">{"instance_type": "fabric.c4.m16.d10"}</data>
+      <data key="d1">{"error_message": "", "reservation_id": "62c7db14-9bd2-4c65-9892-a1ecdded373f", "reservation_state": "Active"}</data>
+      <data key="d8">Site4_local_net1</data>
+      <data key="d6">{"instance": "instance-00001e93", "instance_parent": "utah-w1.fabric-testbed.net"}</data>
+      <data key="d7">NetworkNode</data>
+      <data key="d3">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "G5Y18B3"]</data>
+      <data key="d9">default_rocky_8,qcow2</data>
+      <data key="d10">VM</data>
+      <data key="d11">869d642d-e7a4-4c1f-a4ff-12cb531d32da</data>
+      <data key="d12">UTAH</data>
+      <data key="d13">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d14">false</data>
+      <data key="d15">155</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9496">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:08.0"}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "G5Y18B3-slot6"]</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">e77496df-1806-4a43-a1e2-ca952db4d493</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">156</data>
+      <data key="d8">Site4_local_net1-Site4_local_net</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9497">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site4_local_net1-Site4_local_net1-Site4_local_net-l2ovs</data>
+      <data key="d11">ea3dccf6-6820-470c-9faf-b8896ca9c9c9</data>
+      <data key="d12">UTAH</data>
+      <data key="d14">false</data>
+      <data key="d15">157</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9498">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d8">Site4_local_net1-Site4_local_net-p1</data>
+      <data key="d6">{"bdf": "0000:a1:08.0", "local_name": "p1", "mac": "02:69:29:21:73:A8", "vlan": "2062"}</data>
+      <data key="d11">8a2f37df-b931-4e83-94d1-3aac4f2ed9b0</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">158</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9499">
+      <data key="d0">:GraphNode:NetworkNode</data>
+      <data key="d2">2001:1948:417:7:f816:3eff:fe12:19f7</data>
+      <data key="d5">{"instance_type": "fabric.c4.m16.d10"}</data>
+      <data key="d1">{"error_message": "", "reservation_id": "c8d829ca-1bad-4484-8f16-bad03ba1e931", "reservation_state": "Active"}</data>
+      <data key="d8">Site4_local_net2</data>
+      <data key="d6">{"instance": "instance-00001e92", "instance_parent": "utah-w1.fabric-testbed.net"}</data>
+      <data key="d7">NetworkNode</data>
+      <data key="d3">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "G5Y18B3"]</data>
+      <data key="d9">default_rocky_8,qcow2</data>
+      <data key="d10">VM</data>
+      <data key="d11">c5b25624-5c20-4a76-88f4-66d9dc3e063c</data>
+      <data key="d12">UTAH</data>
+      <data key="d13">{"core": 4, "disk": 10, "ram": 16}</data>
+      <data key="d14">false</data>
+      <data key="d15">159</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9500">
+      <data key="d0">:Component:GraphNode</data>
+      <data key="d6">{"bdf": "0000:a1:0a.4"}</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "G5Y18B3-slot6"]</data>
+      <data key="d7">Component</data>
+      <data key="d3">{"unit": 1}</data>
+      <data key="d10">SharedNIC</data>
+      <data key="d17">ConnectX-6</data>
+      <data key="d11">11fbed01-0f98-4075-8937-970d687ce6fd</data>
+      <data key="d18">Mellanox ConnectX-6 VPI MCX653 dual port 100Gbps</data>
+      <data key="d14">false</data>
+      <data key="d15">160</data>
+      <data key="d8">Site4_local_net2-Site4_local_net</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9501">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d19">L2</data>
+      <data key="d7">NetworkService</data>
+      <data key="d8">Site4_local_net2-Site4_local_net2-Site4_local_net-l2ovs</data>
+      <data key="d11">9ec7cbc6-31e8-49c8-a5cd-e0b1124f58e1</data>
+      <data key="d12">UTAH</data>
+      <data key="d14">false</data>
+      <data key="d15">161</data>
+      <data key="d10">OVS</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9502">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d20">{"local_name": "p1"}</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d10">SharedPort</data>
+      <data key="d8">Site4_local_net2-Site4_local_net-p1</data>
+      <data key="d6">{"bdf": "0000:a1:0a.4", "local_name": "p1", "mac": "02:AD:A3:9A:1F:87", "vlan": "2082"}</data>
+      <data key="d11">82da58f9-97eb-4af1-a011-30fbe4383b34</data>
+      <data key="d13">{"unit": 1}</data>
+      <data key="d14">false</data>
+      <data key="d15">162</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9503">
+      <data key="d0">:GraphNode:NetworkService</data>
+      <data key="d1">{"error_message": "", "reservation_id": "1bb5f6b8-e368-468f-8347-ae97c8d194b4", "reservation_state": "Active"}</data>
+      <data key="d8">Site4_local_net</data>
+      <data key="d4">["508c3fa3-df17-41ab-bb95-fdf71c105a61", "node+utah-data-sw:ip+192.168.19.3-ns"]</data>
+      <data key="d10">L2Bridge</data>
+      <data key="d7">NetworkService</data>
+      <data key="d11">454f099e-b066-4ee5-adc6-e814fd44dfd7</data>
+      <data key="d12">UTAH</data>
+      <data key="d14">false</data>
+      <data key="d15">163</data>
+      <data key="d19">L2</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9504">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site4_Router-Site4_Router-Site4_local_net-p1</data>
+      <data key="d11">29afb4d0-ddbb-4969-8825-5a3e300e8bed</data>
+      <data key="d14">false</data>
+      <data key="d15">164</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9505">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site4_Router-Site4_Router-Site4_local_net-p1-link</data>
+      <data key="d11">4659c82c-a695-4cb5-a129-bc5e87817636</data>
+      <data key="d14">false</data>
+      <data key="d15">165</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9506">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site4_local_net1-Site4_local_net1-Site4_local_net-p1</data>
+      <data key="d11">b6def332-e60d-45f0-a876-f0d1a1ccbd2e</data>
+      <data key="d14">false</data>
+      <data key="d15">166</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9507">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site4_local_net1-Site4_local_net1-Site4_local_net-p1-link</data>
+      <data key="d11">4f0ab642-46c2-4183-a355-755f2017a76b</data>
+      <data key="d14">false</data>
+      <data key="d15">167</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9508">
+      <data key="d0">:ConnectionPoint:GraphNode</data>
+      <data key="d7">ConnectionPoint</data>
+      <data key="d8">Site4_local_net2-Site4_local_net2-Site4_local_net-p1</data>
+      <data key="d11">7c0d0d27-663a-41ff-abe7-87ab7f1c0f03</data>
+      <data key="d14">false</data>
+      <data key="d15">168</data>
+      <data key="d10">ServicePort</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <node id="9509">
+      <data key="d0">:GraphNode:Link</data>
+      <data key="d19">L2</data>
+      <data key="d7">Link</data>
+      <data key="d8">Site4_local_net2-Site4_local_net2-Site4_local_net-p1-link</data>
+      <data key="d11">630acdfb-c514-4b28-8dde-d687c1a5a67b</data>
+      <data key="d14">false</data>
+      <data key="d15">169</data>
+      <data key="d10">L2Path</data>
+      <data key="d16">c14a5e9e-9b75-4dfe-9c23-9441d1db2a63</data>
+    </node>
+    <edge source="9397" target="9401">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161986</data>
+    </edge>
+    <edge source="9397" target="9426">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161987</data>
+    </edge>
+    <edge source="9397" target="9445">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161988</data>
+    </edge>
+    <edge source="9398" target="9404">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161989</data>
+    </edge>
+    <edge source="9398" target="9412">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161990</data>
+    </edge>
+    <edge source="9398" target="9434">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161991</data>
+    </edge>
+    <edge source="9398" target="9463">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161992</data>
+    </edge>
+    <edge source="9399" target="9415">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161993</data>
+    </edge>
+    <edge source="9399" target="9423">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161994</data>
+    </edge>
+    <edge source="9399" target="9481">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161995</data>
+    </edge>
+    <edge source="9400" target="9437">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161996</data>
+    </edge>
+    <edge source="9400" target="9492">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161997</data>
+    </edge>
+    <edge source="9401" target="9402">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e161998</data>
+    </edge>
+    <edge source="9402" target="9403">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e161999</data>
+    </edge>
+    <edge source="9403" target="9409">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162000</data>
+    </edge>
+    <edge source="9404" target="9405">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162001</data>
+    </edge>
+    <edge source="9405" target="9406">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162002</data>
+    </edge>
+    <edge source="9406" target="9411">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162003</data>
+    </edge>
+    <edge source="9407" target="9408">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162004</data>
+    </edge>
+    <edge source="9407" target="9410">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162005</data>
+    </edge>
+    <edge source="9408" target="9409">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162006</data>
+    </edge>
+    <edge source="9410" target="9411">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162007</data>
+    </edge>
+    <edge source="9412" target="9413">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162008</data>
+    </edge>
+    <edge source="9413" target="9414">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162009</data>
+    </edge>
+    <edge source="9414" target="9420">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162010</data>
+    </edge>
+    <edge source="9415" target="9416">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162011</data>
+    </edge>
+    <edge source="9416" target="9417">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162012</data>
+    </edge>
+    <edge source="9417" target="9422">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162013</data>
+    </edge>
+    <edge source="9418" target="9419">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162014</data>
+    </edge>
+    <edge source="9418" target="9421">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162015</data>
+    </edge>
+    <edge source="9419" target="9420">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162016</data>
+    </edge>
+    <edge source="9421" target="9422">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162017</data>
+    </edge>
+    <edge source="9423" target="9424">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162018</data>
+    </edge>
+    <edge source="9424" target="9425">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162019</data>
+    </edge>
+    <edge source="9425" target="9431">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162020</data>
+    </edge>
+    <edge source="9426" target="9427">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162021</data>
+    </edge>
+    <edge source="9427" target="9428">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162022</data>
+    </edge>
+    <edge source="9428" target="9433">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162023</data>
+    </edge>
+    <edge source="9429" target="9430">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162024</data>
+    </edge>
+    <edge source="9429" target="9432">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162025</data>
+    </edge>
+    <edge source="9430" target="9431">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162026</data>
+    </edge>
+    <edge source="9432" target="9433">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162027</data>
+    </edge>
+    <edge source="9434" target="9435">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162028</data>
+    </edge>
+    <edge source="9435" target="9436">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162029</data>
+    </edge>
+    <edge source="9436" target="9442">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162030</data>
+    </edge>
+    <edge source="9437" target="9438">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162031</data>
+    </edge>
+    <edge source="9438" target="9439">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162032</data>
+    </edge>
+    <edge source="9439" target="9444">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162033</data>
+    </edge>
+    <edge source="9440" target="9441">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162034</data>
+    </edge>
+    <edge source="9440" target="9443">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162035</data>
+    </edge>
+    <edge source="9441" target="9442">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162036</data>
+    </edge>
+    <edge source="9443" target="9444">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162037</data>
+    </edge>
+    <edge source="9445" target="9446">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162038</data>
+    </edge>
+    <edge source="9446" target="9447">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162039</data>
+    </edge>
+    <edge source="9447" target="9458">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162040</data>
+    </edge>
+    <edge source="9448" target="9449">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162041</data>
+    </edge>
+    <edge source="9449" target="9450">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162042</data>
+    </edge>
+    <edge source="9450" target="9451">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162043</data>
+    </edge>
+    <edge source="9451" target="9460">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162044</data>
+    </edge>
+    <edge source="9452" target="9453">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162045</data>
+    </edge>
+    <edge source="9453" target="9454">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162046</data>
+    </edge>
+    <edge source="9454" target="9455">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162047</data>
+    </edge>
+    <edge source="9455" target="9462">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162048</data>
+    </edge>
+    <edge source="9456" target="9457">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162049</data>
+    </edge>
+    <edge source="9456" target="9459">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162050</data>
+    </edge>
+    <edge source="9456" target="9461">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162051</data>
+    </edge>
+    <edge source="9457" target="9458">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162052</data>
+    </edge>
+    <edge source="9459" target="9460">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162053</data>
+    </edge>
+    <edge source="9461" target="9462">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162054</data>
+    </edge>
+    <edge source="9463" target="9464">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162055</data>
+    </edge>
+    <edge source="9464" target="9465">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162056</data>
+    </edge>
+    <edge source="9465" target="9476">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162057</data>
+    </edge>
+    <edge source="9466" target="9467">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162058</data>
+    </edge>
+    <edge source="9467" target="9468">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162059</data>
+    </edge>
+    <edge source="9468" target="9469">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162060</data>
+    </edge>
+    <edge source="9469" target="9478">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162061</data>
+    </edge>
+    <edge source="9470" target="9471">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162062</data>
+    </edge>
+    <edge source="9471" target="9472">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162063</data>
+    </edge>
+    <edge source="9472" target="9473">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162064</data>
+    </edge>
+    <edge source="9473" target="9480">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162065</data>
+    </edge>
+    <edge source="9474" target="9475">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162066</data>
+    </edge>
+    <edge source="9474" target="9477">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162067</data>
+    </edge>
+    <edge source="9474" target="9479">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162068</data>
+    </edge>
+    <edge source="9475" target="9476">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162069</data>
+    </edge>
+    <edge source="9477" target="9478">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162070</data>
+    </edge>
+    <edge source="9479" target="9480">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162071</data>
+    </edge>
+    <edge source="9481" target="9482">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162072</data>
+    </edge>
+    <edge source="9482" target="9483">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162073</data>
+    </edge>
+    <edge source="9483" target="9489">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162074</data>
+    </edge>
+    <edge source="9484" target="9485">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162075</data>
+    </edge>
+    <edge source="9485" target="9486">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162076</data>
+    </edge>
+    <edge source="9486" target="9491">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162077</data>
+    </edge>
+    <edge source="9487" target="9488">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162078</data>
+    </edge>
+    <edge source="9487" target="9490">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162079</data>
+    </edge>
+    <edge source="9488" target="9489">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162080</data>
+    </edge>
+    <edge source="9490" target="9491">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162081</data>
+    </edge>
+    <edge source="9492" target="9493">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162082</data>
+    </edge>
+    <edge source="9493" target="9494">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162083</data>
+    </edge>
+    <edge source="9494" target="9505">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162084</data>
+    </edge>
+    <edge source="9495" target="9496">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162085</data>
+    </edge>
+    <edge source="9496" target="9497">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162086</data>
+    </edge>
+    <edge source="9497" target="9498">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162087</data>
+    </edge>
+    <edge source="9498" target="9507">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162088</data>
+    </edge>
+    <edge source="9499" target="9500">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162089</data>
+    </edge>
+    <edge source="9500" target="9501">
+      <data key="d21">has</data>
+      <data key="d22">has</data>
+      <data key="d23">e162090</data>
+    </edge>
+    <edge source="9501" target="9502">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162091</data>
+    </edge>
+    <edge source="9502" target="9509">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162092</data>
+    </edge>
+    <edge source="9503" target="9504">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162093</data>
+    </edge>
+    <edge source="9503" target="9506">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162094</data>
+    </edge>
+    <edge source="9503" target="9508">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162095</data>
+    </edge>
+    <edge source="9504" target="9505">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162096</data>
+    </edge>
+    <edge source="9506" target="9507">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162097</data>
+    </edge>
+    <edge source="9508" target="9509">
+      <data key="d21">connects</data>
+      <data key="d22">connects</data>
+      <data key="d23">e162098</data>
+    </edge>
+  </graph>
+</graphml>

@@ -70,7 +70,46 @@ class Node_Custom():
         except Exception as e:
             logging.error(f"Faled to add static route {node.get_name()}, {subnet} {gatewau}")
         
-   
+    def upload_directory(self, local_directory_path: str, remote_directory_path: str, retry: int = 3,
+                         retry_interval: int = 10):
+        """
+        Upload a directory to remote location on the node.
+        Makes a gzipped tarball of a directory and uploades it to a node. Then
+        unzips and tars the directory at the remote_directory_path
+        :param local_directory_path: the path to the directory to upload
+        :type local_directory_path: str
+        :param remote_directory_path: the destination path of the directory on the node
+        :type remote_directory_path: str
+        :param retry: how many times to retry SCP upon failure
+        :type retry: int
+        :param retry_interval: how often to retry SCP on failure
+        :type retry_interval: int
+        :raise Exception: if management IP is invalid
+        """
+        import tarfile
+        import os
+        import tempfile
+
+        
+        logging.debug(f"upload node: {self.get_name()}, local_directory_path: {local_directory_path}")
+
+        output_filename = local_directory_path.split('/')[-1]
+        root_size = len(local_directory_path) - len(output_filename)
+        
+        temp_name = next(tempfile._get_candidate_names())
+
+        temp_file = "/tmp/" + str(temp_name) + ".tar.gz"
+
+        with tarfile.open(temp_file, "w:gz") as tar_handle:
+            for root, dirs, files in os.walk(local_directory_path):
+                for file in files:
+                    tar_handle.add(os.path.join(root, file), arcname = os.path.join(root, file)[root_size:])
+
+        self.upload_file(temp_file, temp_file, retry, retry_interval)
+        os.remove(temp_file)
+        self.execute("mkdir -p "+remote_directory_path + "; tar -xf " + temp_file + " -C " +
+                     remote_directory_path + "; rm " + temp_file, retry, retry_interval, quiet=True)
+        return "success"
         
 # Add methods to FABlib Classes
 from fabrictestbed_extensions.fablib.node import Node
@@ -79,8 +118,7 @@ from fabrictestbed_extensions.fablib.node import Node
 setattr(Node, 'add_static_route', Node_Custom.add_static_route)
 setattr(Node, 'get_userdata', Node_Custom.get_userdata)
 setattr(Node, 'init_userdata', Node_Custom.init_userdata)
-
-#setattr(Node, 'get_paramiko_key', Node_Custom.get_paramiko_key)
+setattr(Node, 'upload_directory', Node_Custom.upload_directory)
 #setattr(Node, 'execute', Node_Custom.execute)
 
 

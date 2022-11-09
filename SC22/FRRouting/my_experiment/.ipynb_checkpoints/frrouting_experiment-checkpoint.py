@@ -13,7 +13,7 @@ import sys
 module_path = os.path.abspath(os.path.join(f"{os.environ['HOME']}/work/PRUTH-FABRIC-Examples/fablib_local"))
 if module_path not in sys.path:
     sys.path.append(module_path)
-#from fablib_custom.fablib_custom import *
+from fablib_custom.fablib_custom import *
 
 
 
@@ -113,28 +113,12 @@ class FRRouting_Experiment():
             
         self.thread_pool_executor = ThreadPoolExecutor(10)
         
-        
-    def deploy(self):
-        print('Submit FABRIC Slice...')
-        self.submit()
-        print('Deploy Node Tools...')
-        self.execute_on_all_edge_nodes(f'rm -rf fabric_node_tools')
-        self.upload_directory_to_all_edge_nodes('fabric_node_tools','.')
-        self.execute_on_all_edge_nodes(f'chmod +x fabric_node_tools/*.sh')
-        print('Configure Node Devices...')
-        self.configure_devs()
-        print('Configure Routers...')
-        self.configure_routers()
-        print('Tune Network Devices...')
-        command = f'sudo yum install -y -q iperf3 iproute-tc && sudo ./fabric_node_tools/host_tune_redhat.sh'
-        self.execute_on_all_edge_nodes(f'{command}')
-        print('Done')
-
-        
-        
+    
     def configure(self, frr_sites, frr_links):
         import traceback
         try:
+            self.node_logs = {}
+            
             # Add routers
             routers = {}
             for name, data in frr_sites.items():
@@ -155,7 +139,7 @@ class FRRouting_Experiment():
                     self.add_local_network(name=f'{name}',           #name=f'{name}_local_net', 
                                            router=routers[name], 
                                            node_count=data['node_count'], 
-                                           cores=8, ram=32, disk=10)
+                                           cores=16, ram=64, disk=10)
                 elif data['facility'] == 'CHI@UC':
                     self.add_chameleon_local_network(name=f'{name}',  #name=f'{name}_local_net', 
                                                      router=routers[name], 
@@ -167,6 +151,27 @@ class FRRouting_Experiment():
         except Exception as e:
             print(f"Slice Fail: {e}")
             traceback.print_exc()
+        
+    def deploy(self):
+        print('Submit FABRIC Slice...')
+        self.submit()
+        print('Deploy Node Tools...')
+        self.execute_on_all_edge_nodes(f'rm -rf fabric_node_tools')
+        self.upload_directory_to_all_edge_nodes('fabric_node_tools','.')
+        self.execute_on_all_edge_nodes(f'chmod +x fabric_node_tools/*.sh')
+        print('Configure Node Devices...')
+        self.configure_devs()
+        print('Configure Routers...')
+        self.configure_routers()
+        print('Tune Network Devices...')
+        command = f'sudo yum install -y -q iperf3 iproute-tc && sudo ./fabric_node_tools/host_tune_redhat.sh'
+        self.execute_on_all_edge_nodes(f'{command}')
+        print('Done')
+
+        
+        
+
+    
             
     def get_ssh_thread_pool_executor(self):
         return self.thread_pool_executor
@@ -231,6 +236,8 @@ class FRRouting_Experiment():
         #
         #host = f"{site.lower()}-w{host_num}.fabric-testbed.net"
         
+        self.node_logs[name] = f'{name}.log'
+
         
         router = self.slice.add_node(name=name, site=site, cores=cores, ram=ram, disk=disk) #, host=host)
         self.router_names.append(name)
@@ -460,6 +467,9 @@ class FRRouting_Experiment():
         nodes = []
         for i in range(node_count):
             node_name=f'{name}{i+1}'
+            self.node_logs[node_name] = f'{node_name}.log'
+
+            
             node = self.slice.add_node(name=node_name, site=site, cores=cores, ram=ram, disk=disk, image=image)
             node_iface = node.add_component(model='NIC_Basic', name=f'{name}').get_interfaces()[0]
             ifaces.append(node_iface)
@@ -629,8 +639,17 @@ class FRRouting_Experiment():
         
     
     def upload_directory_to_all_edge_nodes(self, directory, verbose=False):
+        threads = []
         for node in self.nodes:
-            rtn_val = self.upload_directory(node,directory,verbose=False)
+            threads.append(self.get_ssh_thread_pool_executor().submit(self.upload_directory,
+                                                            node,
+                                                            directory,
+                                                            verbose=False))
+                                                                       
+        for t in threads:
+            result = t.result()
+            #print(f"{result}")
+            
     
     
     def execute(self, node, command, verbose=False):
@@ -643,7 +662,7 @@ class FRRouting_Experiment():
         if node['facility'] == 'FABRIC':
 
             fnode = self.slice.get_node(node['name'])
-            stdout, stderr = fnode.execute(command)
+            stdout, stderr = fnode.execute(command, quiet=True, output_file=f'logs/{self.node_logs[fnode.get_name()]}')
             if verbose:
                 print(f"stdout: {stdout}")
                 print(f"stderr: {stderr}")
@@ -670,8 +689,13 @@ class FRRouting_Experiment():
                                                                                  
     
     def execute_on_all_edge_nodes(self, command, verbose=False):
+        
+        threads = []
         for node in self.nodes:
-            self.execute(node,command,verbose=verbose)
+            threads.append(self.execute_thread(node,command,verbose=verbose))
+            
+        for t in threads:
+            stdout, stderr = t.result()
             
             
     def get_node(self, name):
@@ -724,7 +748,53 @@ class FRRouting_Experiment():
         
         return router_link_names
           
-        
+    def configure_router(self, router=None, type='ospf', verbose=False):
+        if verbose:
+            print(f"config router: {router.get_name()}")
+            
+        log_file = f"logs/{router.get_name()}"
+
+        router.upload_directory('fabric_node_tools','.')
+        router.execute(f'chmod +x fabric_node_tools/*.sh', quiet=True, output_file=log_file)
+
+        #sudo ./node_utils/frr_config.sh  1.2.3.4 1.2.0.0/16 1.2.0.0 0.0.255.255 eth1:1.2.100.100/24 eth2:1.2.101.102/24 1.2.102.102/24
+
+
+        zebra_devs = ''
+        for iface in router.get_interfaces():
+
+            # Test if iface has a network. If not, skip this iface
+            try:
+                network_name = iface.get_network().get_name()
+            except:
+                continue
+
+            if iface.get_network().get_name() in self.get_local_network_names():
+                local_network_name = iface.get_network().get_name()
+                local_network = self.get_local_network(local_network_name)
+                router_local_ip = iface.get_ip_addr()
+                zebra_devs=f"{zebra_devs} {iface.get_os_interface()}:{local_network['subnet']}"
+
+            else:
+                router_link_name = iface.get_network().get_name()
+                router_link = self.get_router_link(router_link_name)
+                zebra_devs=f"{zebra_devs} {iface.get_os_interface()}:{router_link['subnet']}"
+
+
+        command= 'sudo ./fabric_node_tools/frr_config.sh {} {} {} {} {}'.format(router_local_ip,
+                                                                          self.all_cidr,
+                                                                          self.all_ip,
+                                                                          self.all_backward_mask,
+                                                                          zebra_devs)
+        #command=f'{command} {router_local_ip}'
+        #command=f'{command} {self.all_cidr}'
+        #command=f'{command} {self.all_ip}'
+        #command=f'{command} {self.all_backward_mask}'
+        #for all devs:   command=f'{command} dev:subnet_cidr'
+        if verbose:
+            print(f"router: {router.get_name()}, command: {command}")
+
+        return router.execute(command, quiet=True, output_file=log_file)
     
     def configure_routers(self, type='ospf', verbose=False):
         router_names = []
@@ -733,55 +803,14 @@ class FRRouting_Experiment():
         
         threads = {}
         for router in self.get_routers():
-            if verbose:
-                print(f"config router: {router.get_name()}")
-                        
-            router.upload_directory('fabric_node_tools','.')
-            router.execute(f'chmod +x fabric_node_tools/*.sh')
+            print(f"Config router: {router.get_name()}")
+            threads[router] = self.get_ssh_thread_pool_executor().submit(self.configure_router,
+                                                            router,
+                                                            type=type)
             
-            #sudo ./node_utils/frr_config.sh  1.2.3.4 1.2.0.0/16 1.2.0.0 0.0.255.255 eth1:1.2.100.100/24 eth2:1.2.101.102/24 1.2.102.102/24
-            
-            
-            zebra_devs = ''
-            for iface in router.get_interfaces():
-                
-                # Test if iface has a network. If not, skip this iface
-                try:
-                    network_name = iface.get_network().get_name()
-                except:
-                    continue
-                
-                if iface.get_network().get_name() in self.get_local_network_names():
-                    local_network_name = iface.get_network().get_name()
-                    local_network = self.get_local_network(local_network_name)
-                    router_local_ip = iface.get_ip_addr()
-                    zebra_devs=f"{zebra_devs} {iface.get_os_interface()}:{local_network['subnet']}"
-                    
-                else:
-                    router_link_name = iface.get_network().get_name()
-                    router_link = self.get_router_link(router_link_name)
-                    zebra_devs=f"{zebra_devs} {iface.get_os_interface()}:{router_link['subnet']}"
-                    
-            
-            command= 'sudo ./fabric_node_tools/frr_config.sh {} {} {} {} {}'.format(router_local_ip,
-                                                                              self.all_cidr,
-                                                                              self.all_ip,
-                                                                              self.all_backward_mask,
-                                                                              zebra_devs)
-            #command=f'{command} {router_local_ip}'
-            #command=f'{command} {self.all_cidr}'
-            #command=f'{command} {self.all_ip}'
-            #command=f'{command} {self.all_backward_mask}'
-            #for all devs:   command=f'{command} dev:subnet_cidr'
-            if verbose:
-                print(f"router: {router.get_name()}, command: {command}")
-            
-            threads[router] = router.execute_thread(command) 
-            
-        for router,thread in threads.items():
-            if verbose:
-                print(f"waiting for {router.get_name()} config")
-            stdout, stderr = thread.result()
+        for router,t in threads.items():
+            print(f"waiting for {router.get_name()} config")
+            stdout, stderr = t.result()
         
             if verbose:
                 print(f"stdout: {stdout}")
@@ -1392,13 +1421,15 @@ class FRRouting_Experiment():
     def display(self):
         #update the fabric management ips
         self.update_nodes()
+            
         
+            
         self.selected_node1 = None
         self.selected_node2 = None
         self.cytoscape_node_map = {}
         
         self.out = Output()
-
+    
         self.cytoscapeobj = cy.CytoscapeWidget(layout=Layout(width='70%'))
         self.data = { 'nodes': [], 'edges': [] }
         
@@ -1500,7 +1531,6 @@ class FRRouting_Experiment():
         display(self.main_vbox)
         #display(self.out)
         
-        pass
 
     
     def create_table_local(self, table, headers=None, title='', properties={}, hide_header=False, title_font_size='1.25em', index=None):
@@ -1531,5 +1561,4 @@ class FRRouting_Experiment():
 
 
 
-
-
+    
