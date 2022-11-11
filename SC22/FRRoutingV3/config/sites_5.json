@@ -125,8 +125,8 @@
             "facility": "FABRIC",
             "network": "dall",
             "ip": "192.168.1.100",
-            "cores": "8",
-            "ram": "32",
+            "cores": "32",
+            "ram": "128",
             "disk": "10",
             "static_routes": [
                 [
@@ -140,8 +140,8 @@
             "facility": "FABRIC",
             "network": "dall",
             "ip": "192.168.1.101",
-            "cores": "8",
-            "ram": "32",
+            "cores": "32",
+            "ram": "128",
             "disk": "10",
             "static_routes": [
                 [
@@ -155,8 +155,8 @@
             "facility": "FABRIC",
             "network": "salt",
             "ip": "192.168.2.100",
-            "cores": "8",
-            "ram": "32",
+            "cores": "32",
+            "ram": "128",
             "disk": "10",
             "static_routes": [
                 [
@@ -170,8 +170,8 @@
             "facility": "FABRIC",
             "network": "salt",
             "ip": "192.168.2.101",
-            "cores": "8",
-            "ram": "32",
+            "cores": "32",
+            "ram": "128",
             "disk": "10",
             "static_routes": [
                 [
@@ -185,8 +185,8 @@
             "facility": "FABRIC",
             "network": "utah",
             "ip": "192.168.3.100",
-            "cores": "8",
-            "ram": "32",
+            "cores": "32",
+            "ram": "128",
             "disk": "10",
             "static_routes": [
                 [
@@ -200,8 +200,8 @@
             "facility": "FABRIC",
             "network": "utah",
             "ip": "192.168.3.101",
-            "cores": "8",
-            "ram": "32",
+            "cores": "32",
+            "ram": "128",
             "disk": "10",
             "static_routes": [
                 [
@@ -215,8 +215,8 @@
             "facility": "FABRIC",
             "network": "wash",
             "ip": "192.168.4.100",
-            "cores": "8",
-            "ram": "32",
+            "cores": "32",
+            "ram": "128",
             "disk": "10",
             "static_routes": [
                 [
@@ -230,8 +230,8 @@
             "facility": "FABRIC",
             "network": "wash",
             "ip": "192.168.4.101",
-            "cores": "8",
-            "ram": "32",
+            "cores": "32",
+            "ram": "128",
             "disk": "10",
             "static_routes": [
                 [

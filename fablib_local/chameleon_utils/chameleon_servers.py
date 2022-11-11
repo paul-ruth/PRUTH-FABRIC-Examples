@@ -36,9 +36,9 @@ def create_chameleon_servers(name='chameleon_servers',
                               image_name=default_chameleon_image_name,
                               key_name=default_chameleon_key_name,
                               network_name=None,
-                              lease=None):
+                              lease=None, compute_reservation_id=None):
     
-    if lease == None:
+    if lease == None and compute_reservation_id == None:
         print(f"Creating lease {name}")
         lease = create_chameleon_server_lease(name=name, 
                                       count=count, 
@@ -47,7 +47,7 @@ def create_chameleon_servers(name='chameleon_servers',
                                       key_name=key_name,
                                       network_name=network_name)
           
-    compute_reservation_id = [reservation for reservation in lease['reservations'] if reservation['resource_type'] == 'physical:host'][0]['id']
+        compute_reservation_id = [reservation for reservation in lease['reservations'] if reservation['resource_type'] == 'physical:host'][0]['id']
     print(f"Compute reservation_id {compute_reservation_id}")
     
     #wait 

@@ -1,0 +1,67 @@
+{
+    "slice": {},
+    "networks": [
+        {
+            "name": "dall",
+            "site": "DALL",
+            "subnet": "192.168.1.0/24",
+            "router": {
+                "name": "dall_router",
+                "facility": "FABRIC",
+                "network": "dall",
+                "ip": "192.168.1.1",
+                "cores": "32",
+                "ram": "128",
+                "disk": "10",
+                "static_routes": []
+            }
+        },
+        {
+            "name": "salt",
+            "site": "SALT",
+            "subnet": "192.168.2.0/24",
+            "router": {
+                "name": "dall_router",
+                "facility": "FABRIC",
+                "network": "salt",
+                "ip": "192.168.2.1",
+                "cores": "32",
+                "ram": "128",
+                "disk": "10",
+                "static_routes": []
+            }
+        },
+        {
+            "name": "utah",
+            "site": "UTAH",
+            "subnet": "192.168.3.0/24",
+            "router": {
+                "name": "dall_router",
+                "facility": "FABRIC",
+                "network": "utah",
+                "ip": "192.168.3.1",
+                "cores": "32",
+                "ram": "128",
+                "disk": "10",
+                "static_routes": []
+            }
+        },
+        {
+            "name": "wash",
+            "site": "WASH",
+            "subnet": "192.168.4.0/24",
+            "router": {
+                "name": "dall_router",
+                "facility": "FABRIC",
+                "network": "wash",
+                "ip": "192.168.4.1",
+                "cores": "32",
+                "ram": "128",
+                "disk": "10",
+                "static_routes": []
+            }
+        }
+    ],
+    "links": [],
+    "nodes": []
+}
