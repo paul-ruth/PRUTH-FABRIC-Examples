@@ -136,7 +136,7 @@ class FRRouting_Experiment():
                 iface_map[network['name']] = [ router.get_interface(name=iface_name) ]         
                 
                 if network['facility'] == 'CHI@UC':
-                    network_lease_name = f"fabric_stitch_{network['name']}"
+                    network_lease_name = f"fabric_stitch1_{network['name']}"
                     
                     chameleon_subnet = IPv4Network(network['subnet'])
                     chameleon_allocation_pool_start = IPv4Address(network['allocation_pool_start'])
@@ -217,7 +217,7 @@ class FRRouting_Experiment():
                 
             
             
-            #self.slice.submit()
+            self.submit()
             
         except Exception as e:
             print(f"Slice Fail: {e}")
@@ -225,7 +225,9 @@ class FRRouting_Experiment():
         
     def deploy(self):
         print('Submit FABRIC Slice...')
-        self.submit()
+        #self.submit()
+        print('Wait for all nodes...')
+        #self.test_ssh()
         print('Deploy Node Tools...')
         self.execute_on_all_nodes(f'rm -rf fabric_node_tools')
         self.upload_directory_to_all_nodes('fabric_node_tools','.')
@@ -268,25 +270,25 @@ class FRRouting_Experiment():
         config_str = file.read()
         file.close() 
         
-        config = json.loads(config_str)
-        self.slice_id = config['slice_id']
-        self.slice_name = config['slice_name']
-        self.router_names = config['router_names']
-        self.router_links = config['router_links']
-        self.local_networks = config['local_networks']
-        self.nodes = config['nodes']
+        self.config = json.loads(config_str)
+        #self.slice_id = config['slice_id']
+        #self.slice_name = config['slice_name']
+        #self.router_names = config['router_names']
+        #self.router_links = config['router_links']
+        #self.local_networks = config['local_networks']
+        #self.nodes = config['nodes']
         
         self.slice = self.fablib.get_slice(name=self.slice_name)
-        self.update_nodes()
+        #self.update_nodes()
         
-        if verbose:
-            print(f"self.slice_id: {self.slice_id}")
-            print(f"self.slice_name: {self.slice_name}")
-            print(f"self.router_names: {self.router_names}")
-            print(f"self.router_links: {self.router_links}")
-            print(f"self.local_networks: {self.local_networks}")
-            print(f"self.nodes: {self.nodes}")
-            print(f"{self.slice}")
+        #if verbose:
+        #    print(f"self.slice_id: {self.slice_id}")
+        #    print(f"self.slice_name: {self.slice_name}")
+        #    print(f"self.router_names: {self.router_names}")
+        #    print(f"self.router_links: {self.router_links}")
+        #    print(f"self.local_networks: {self.local_networks}")
+        #    print(f"self.nodes: {self.nodes}")
+        #    print(f"{self.slice}")
             
     
     def get_ex_network(self, network_name):
@@ -452,7 +454,7 @@ class FRRouting_Experiment():
                 associate_floating_ip(server_id, floating_ip_address=floating_ip_address)
                 
                 self.nodes.append( { 'name': node_name,
-                                     'facility': 'Chameleon',
+                                     'facility': 'CHI@UC',
                                      'site': 'CHI@UC',
                                      'management_ip': str(floating_ip_address),
                                      'data_plane_ip': str(fixed_ip),
@@ -588,7 +590,7 @@ class FRRouting_Experiment():
 
             local_network_router_iface.ip_addr_add(addr=local_network_router_ip, subnet=local_network_subnet) 
             
-            if local_network['site'] == 'Chameleon@UC':
+            if local_network['facility'] == 'CHI@UC':
                 continue
             
             for ex_node in self.get_all_network_ex_nodes(local_network['name']):
@@ -596,11 +598,14 @@ class FRRouting_Experiment():
                 node = self.slice.get_node(ex_node['name'])
                 node_iface = node.get_interface(network_name=local_network['name'])
                 #node_dev = node_iface.get_os_interface()
+                print(f"ip_addr_add:  ip: {node_ip}, subnet:{IPv4Network(local_network['subnet'])}")
                 node_iface.ip_addr_add(addr=node_ip, subnet=IPv4Network(local_network['subnet'])) 
                 
                 #for subnet in self.get_all_subnets():
                 #    node.ip_route_add(subnet, local_network_router_ip)
                 for static_route_subnet,static_route_gw in ex_node['static_routes']:
+                    print(f"ip_route_add:  subnet: {IPv4Network(static_route_subnet)}, gw: {static_route_gw}")
+
                     node.ip_route_add(IPv4Network(static_route_subnet), static_route_gw)
                     
     #def get_routers(self):
@@ -620,7 +625,7 @@ class FRRouting_Experiment():
             #if verbose:
             #    print(f"rtn_val: {rtn_val}")
 
-        elif node['facility'] == 'Chameleon':        
+        elif node['facility'] == 'CHI@UC':        
             rtn_val = upload_directory(directory,'.', 
                     username='cc', 
                     ip_addr= node['management_ip'],
@@ -643,7 +648,7 @@ class FRRouting_Experiment():
             if verbose:
                 print(f"rtn_val: {rtn_val}")
 
-        elif node['facility'] == 'Chameleon':        
+        elif node['facility'] == 'CHI@UC':        
             rtn_val = upload_file(local_file, remote_file, 
                     username='cc', 
                     ip_addr= node['management_ip'],
@@ -665,7 +670,7 @@ class FRRouting_Experiment():
             if verbose:
                 print(f"rtn_val: {rtn_val}")
 
-        elif node['facility'] == 'Chameleon':        
+        elif node['facility'] == 'CHI@UC':        
             rtn_val = download_file(local_file, remote_file, 
                     username='cc', 
                     ip_addr= node['management_ip'],
@@ -717,6 +722,10 @@ class FRRouting_Experiment():
             
     
     
+    def execute_chameleon_node(self, command, username='cc', ip_addr=None, private_key_file=None):
+        pass
+    
+    
     def execute(self, node, command, verbose=False):
         stdout = None
         stderr = None
@@ -731,7 +740,7 @@ class FRRouting_Experiment():
                 print(f"stdout: {stdout}")
                 print(f"stderr: {stderr}")
 
-        elif node['facility'] == 'Chameleon':        
+        elif node['facility'] == 'CHI@UC':        
             stdout, stderr = execute(command, 
                     username='cc', 
                     ip_addr= node['management_ip'],
@@ -757,6 +766,18 @@ class FRRouting_Experiment():
             routers.append(network['router'])
               
         return routers
+    
+    def test_ssh(self):
+        import time
+        count = 1
+        while True:
+            try:
+                self.execute_on_all_nodes('echo Hello, FABRIC from node `hostname -s`');
+            except Exception as e:
+                print(f"test_ssh failed, retrying! {count}")
+                count += 1
+                time.sleep(20)
+    
     
     def execute_on_all_nodes(self, command, verbose=False):
         threads = []
@@ -811,12 +832,12 @@ class FRRouting_Experiment():
         
         return None
     
-    def get_local_network_names(self): 
-        local_network_names = []
-        for net in self.get_local_networks():
-            local_network_names.append(net['name'])
-        
-        return local_network_names
+    #def get_local_network_names(self): 
+    #    local_network_names = []
+    #    for net in self.get_local_networks():
+    #        local_network_names.append(net['name'])
+    #    
+    #    return local_network_names
     
     def get_router_links(self):        
         return self.router_links
@@ -876,11 +897,22 @@ class FRRouting_Experiment():
                 
                 ex_network = self.get_ex_network(iface.get_network().get_name())
 
-                zebra_devs=f"{zebra_devs} {iface.get_os_interface()}:{ex_network['subnet']}"
+                cidr=ex_network['subnet'].split('/')[1]
+                ip=router_local_ip
+                zebra_subnet=f"{ip}/{cidr}"
+                print(f"network zebra_subnet = {zebra_subnet}")
+                
+                zebra_devs=f"{zebra_devs} {iface.get_os_interface()}:{zebra_subnet}"
 
             elif iface.get_network().get_name() in self.get_link_network_names():
                 ex_link = self.get_ex_link(iface.get_network().get_name())
-                zebra_devs=f"{zebra_devs} {iface.get_os_interface()}:{ex_link['subnet']}"
+                
+                cidr=ex_link['subnet'].split('/')[1]
+                ip=iface.get_ip_addr()
+                zebra_subnet=f"{ip}/{cidr}"
+                print(f"link zebra_subnet = {zebra_subnet}")
+                
+                zebra_devs=f"{zebra_devs} {iface.get_os_interface()}:{zebra_subnet}"
             else:
                 print(f"Found unknown network: {iface.get_network().get_name()}")
 
@@ -926,6 +958,10 @@ class FRRouting_Experiment():
         n = file.write(json.dumps(config))
         file.close() 
         
+    
+        
+        
+        
     def save_fim_topology(self, path='config'):
         self.slice.save(f"{path}/{self.slice_name}_topology.json")
 
@@ -937,7 +973,7 @@ class FRRouting_Experiment():
         
         node_name = f"{ex_node['name']}"
         compute_reservation_id = ex_node['compute_reservation_id']
-        network_name = f"fabric_stitch_{ex_node['network']}" 
+        network_name = f"fabric_stitch1_{ex_node['network']}" 
         
         print(f"compute_reservation_id: {compute_reservation_id}")
         create_chameleon_servers(name=node_name, 
@@ -1332,7 +1368,7 @@ class FRRouting_Experiment():
         if self.selected_node1:                     
             #node1 = self.get_node(self.selected_node1.data['name'])
             node1 = self.get_ex_node(self.selected_node1.data['name'])
-            fim_node = self.slice.get_node(node1['name'])
+            #fim_node = self.slice.get_node(node1['name'])
             
             #with self.out: print(f"node1: {node1}")
             
@@ -1349,7 +1385,7 @@ class FRRouting_Experiment():
                 self.node1_info['type'].value = f"VM (cores:{fnode.get_cores()}, ram: {fnode.get_ram()}, disk: {fnode.get_disk()})"
                 self.node1_info['management_ip'].value = str(fim_node.get_management_ip())
 
-            elif node1['facility'] == 'Chameleon': 
+            elif node1['facility'] == 'CHI@UC': 
                 self.node1_info['type'].value = 'Baremetal'
             else:
                 self.node1_info['type'].value = 'unknown'
@@ -1365,7 +1401,7 @@ class FRRouting_Experiment():
         if self.selected_node2:
             #node2 = self.get_node(self.selected_node2.data['name'])
             node2 = self.get_ex_node(self.selected_node2.data['name'])
-            fim_node = self.slice.get_node(node2['name'])
+            #fim_node = self.slice.get_node(node2['name'])
             
             #with self.out: print(f"node2: {node2}")
             
@@ -1382,7 +1418,7 @@ class FRRouting_Experiment():
                 self.node2_info['type'].value = f"VM (cores:{fnode.get_cores()}, ram: {fnode.get_ram()}, disk: {fnode.get_disk()})"
                 self.node2_info['management_ip'].value = str(fim_node.get_management_ip())
 
-            elif node2['facility'] == 'Chameleon': 
+            elif node2['facility'] == 'CHI@UC': 
                 self.node2_info['type'].value = 'Baremetal'
             else:
                 self.node2_info['type'].value = 'unknown'

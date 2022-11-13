@@ -31,16 +31,16 @@ HOST_NAME=`hostname`
 
 echo $HOST_NAME
 
-for i in $@; do
-   dev=`echo $i | cut -d ":" -f 1`
-   subnet=`echo $i | cut -d ":" -f 2`
-
-   echo $dev
-   echo $subnet
-   
-   chmod +x fabric_node_tools/host_tune_redhat.sh
-   ./fabric_node_tools/host_tune_redhat.sh $dev
-done
+#for i in $@; do
+#   dev=`echo $i | cut -d ":" -f 1`
+#   subnet=`echo $i | cut -d ":" -f 2`
+#
+#  echo $dev
+#   echo $subnet
+#   
+#   chmod +x fabric_node_tools/host_tune_redhat.sh
+#   ./fabric_node_tools/host_tune_redhat.sh $dev
+#done
 
 
 #Edit /etc/frr/zebra: add these lines
