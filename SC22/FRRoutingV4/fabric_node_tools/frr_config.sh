@@ -22,6 +22,28 @@ sudo /usr/bin/crb enable
 sudo dnf install -y frr vim httpd iproute-tc net-tools pciutils tcpdump iftop iperf3 
 #sudo yum install -y vim tcpdump frr iproute-tc net-tools 
 
+cat >> /etc/sysctl.conf <<EOL
+# allow testing with buffers up to 128MB
+net.core.rmem_max = 536870912 
+net.core.wmem_max = 536870912 
+# increase Linux autotuning TCP buffer limit to 64MB
+net.ipv4.tcp_rmem = 4096 87380 536870912
+net.ipv4.tcp_wmem = 4096 65536 536870912
+# recommended default congestion control is htcp  or bbr
+net.ipv4.tcp_congestion_control=bbr
+# recommended for hosts with jumbo frames enabled
+net.ipv4.tcp_mtu_probing=1
+# recommended to enable 'fair queueing'
+#net.core.default_qdisc = fq
+net.core.default_qdisc = fq_codel
+EOL
+
+
+sysctl --system
+
+
+
+
 sudo sysctl -w net.ipv4.ip_forward=1
 
 sudo sed -i 's/ospfd=no/ospfd=yes/g' /etc/frr/daemons

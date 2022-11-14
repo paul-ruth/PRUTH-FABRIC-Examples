@@ -20,7 +20,9 @@ net.ipv4.tcp_congestion_control=bbr
 net.ipv4.tcp_mtu_probing=1
 # recommended to enable 'fair queueing'
 net.core.default_qdisc = fq
+#net.core.default_qdisc = fq_codel
 EOL
+
 
 sysctl --system
 
