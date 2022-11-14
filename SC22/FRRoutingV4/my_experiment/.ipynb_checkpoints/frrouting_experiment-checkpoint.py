@@ -1383,10 +1383,12 @@ class FRRouting_Experiment():
             if node1['facility'] == 'FABRIC':
                 fnode = self.slice.get_node(node1['name'])   
                 self.node1_info['type'].value = f"VM (cores:{fnode.get_cores()}, ram: {fnode.get_ram()}, disk: {fnode.get_disk()})"
-                self.node1_info['management_ip'].value = str(fim_node.get_management_ip())
+                self.node1_info['management_ip'].value = str(fnode.get_management_ip())
 
             elif node1['facility'] == 'CHI@UC': 
                 self.node1_info['type'].value = 'Baremetal'
+                self.node1_info['management_ip'].value = node1['management_ip']
+
             else:
                 self.node1_info['type'].value = 'unknown'
         else:
@@ -1416,10 +1418,12 @@ class FRRouting_Experiment():
             if node2['facility'] == 'FABRIC':
                 fnode = self.slice.get_node(node2['name'])   
                 self.node2_info['type'].value = f"VM (cores:{fnode.get_cores()}, ram: {fnode.get_ram()}, disk: {fnode.get_disk()})"
-                self.node2_info['management_ip'].value = str(fim_node.get_management_ip())
+                self.node2_info['management_ip'].value = str(fnode.get_management_ip())
 
             elif node2['facility'] == 'CHI@UC': 
                 self.node2_info['type'].value = 'Baremetal'
+                self.node1_info['management_ip'].value = node1['management_ip']
+
             else:
                 self.node2_info['type'].value = 'unknown'
         else:
